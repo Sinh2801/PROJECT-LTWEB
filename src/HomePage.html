@@ -11,9 +11,7 @@
 <body>
 <header>
     <!-- Dòng 1: Thanh chữ chạy -->
-    <div class="top-bar">
-        <marquee>Lập Trình Web - Thầy Long - Nhóm 32 KTS</marquee>
-    </div>
+    <div class="sroll-text">Lập Trình Web - Thầy Long - Nhóm 32 KTS</div>
 
     <!-- Dòng 2: Đăng nhập / Đăng ký -->
     <div class="user-bar">
@@ -34,7 +32,8 @@
         </div>
 
         <div class="logo">KTS</div>
-        <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+        <label for="search" class="sr-only">Tìm kiếm sản phẩm</label>
+        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
         <div class="cart">🛒 (0)</div>
     </div>
 

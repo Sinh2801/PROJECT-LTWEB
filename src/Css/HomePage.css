@@ -6,13 +6,16 @@ header {
 }
 
 /* Dòng 1 */
-.top-bar {
-    background-color: purple;
-    color: white;
-    font-size: 14px;
-    padding: 4px 0;
+.scroll-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    animation: scroll 10s linear infinite;
 }
-
+@keyframes scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
 /* Dòng 2 */
 .user-bar {
     background-color: #f9f9f9;
@@ -50,6 +53,10 @@ header {
     padding: 8px 15px;
     border: 1px solid purple;
     border-radius: 25px;
+}
+.sr-only {
+    position: absolute;
+    left: -9999px;
 }
 
 .cart {
@@ -114,4 +121,3 @@ header {
 .menu-bar a:hover {
     color: purple;
 }
-/*===================================================================Main===============================================*/
