@@ -1,0 +1,117 @@
+/*============================================================= Header===============================================*/
+header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+}
+
+/* Dòng 1 */
+.top-bar {
+    background-color: purple;
+    color: white;
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+/* Dòng 2 */
+.user-bar {
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+.user-bar a {
+    color: purple;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* ==========================Dòng 3 ========================= */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #fff;
+    gap: 15px;
+    position: relative;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: purple;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px 15px;
+    border: 1px solid purple;
+    border-radius: 25px;
+}
+
+.cart {
+    font-size: 20px;
+    color: purple;
+}
+/*List menu*/
+.menu-toggle {
+    font-size: 24px;
+    color: purple;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+/* Menu dropdown sổ xuống */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px; /* nằm dưới nút 3 gạch */
+    left: 30px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    width: 220px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f3e6ff;
+    color: purple;
+}
+
+/* Khi menu mở */
+.dropdown-menu.active {
+    display: block;
+}
+/* =========================== Dòng 4 ================================= */
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.menu-bar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-bar a:hover {
+    color: purple;
+}
+/*===================================================================Main===============================================*/
