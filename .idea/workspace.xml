@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Thang-23130300">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Css/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,11 @@
         <option value="Sinh2801 &lt;23130275@st.hcmuaf.edu.vn&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -46,6 +47,9 @@
     &quot;accountId&quot;: &quot;c2c5c49e-35ab-4dd3-9658-39de4685b3b2&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -62,8 +66,9 @@
     "Application.Main.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "HomePage",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -105,7 +110,7 @@
       <workItem from="1760064048459" duration="172000" />
       <workItem from="1760180954991" duration="761000" />
       <workItem from="1760663218242" duration="77000" />
-      <workItem from="1761760315757" duration="12129000" />
+      <workItem from="1761760315757" duration="16787000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -147,11 +152,30 @@
       <option name="project" value="LOCAL" />
       <updated>1761817127081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Thang-23130300">
+      <option name="closed" value="true" />
+      <created>1761817639312</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761817639312</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tao da commit" />
