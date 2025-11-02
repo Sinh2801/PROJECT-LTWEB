@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giỏ hàng KTS</title>
+    <link rel="stylesheet" href="giohangstyle.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo">KTS</div>
+    <nav class="checkout-steps">
+        <a href="#" class="active">Giỏ hàng</a>
+        <span>›</span>
+        <a href="#">Thanh toán</a>
+        <span>›</span>
+        <a href="#">Hoàn thành</a>
+    </nav>
+    <div class="auth-links">
+        <a href="#">Đăng nhập</a>
+        <a href="#">Đăng kí</a>
+    </div>
+</header>
+
+<main>
+    <div class="cart-left">
+        <h2>GIỎ HÀNG CỦA BẠN</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th style="text-align:right;">Tổng</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Sản phẩm 1 -->
+            <tr>
+                <td>
+                    <span class="delete-btn" title="Xóa sản phẩm">×</span>
+                    <div class="product-info">
+                        <img src="https://demo.com/path-to-image/set-gift.jpg" alt="Set quà tặng" />
+                        <div>
+                            <a href="#" class="product-name">Set quà tặng</a><br />
+                            <span class="price-old">1.506.000₫</span>
+                            <span class="price-new">1.204.800₫</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity-control">
+                        <button type="button" class="qty-dec">−</button>
+                        <input type="text" value="1" />
+                        <button type="button" class="qty-inc">+</button>
+                    </div>
+                </td>
+                <td class="price-total">1.204.800₫</td>
+            </tr>
+
+            <!-- Sản phẩm 2 -->
+            <tr>
+                <td>
+                    <span class="delete-btn" title="Xóa sản phẩm">×</span>
+                    <div class="product-info">
+                        <img src="https://demo.com/path-to-image/set-gift.jpg" alt="Set quà tặng" />
+                        <div>
+                            <a href="#" class="product-name">Set quà tặng</a><br />
+                            <span class="price-old">1.506.000₫</span>
+                            <span class="price-new">1.204.800₫</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity-control">
+                        <button type="button" class="qty-dec">−</button>
+                        <input type="text" value="1" />
+                        <button type="button" class="qty-inc">+</button>
+                    </div>
+                </td>
+                <td class="price-total">1.204.800₫</td>
+            </tr>
+
+            <!-- Sản phẩm 3 -->
+            <tr>
+                <td>
+                    <span class="delete-btn" title="Xóa sản phẩm">×</span>
+                    <div class="product-info">
+                        <img src="https://demo.com/path-to-image/set-gift.jpg" alt="Set quà tặng" />
+                        <div>
+                            <a href="#" class="product-name">Set quà tặng</a><br />
+                            <span class="price-old">1.506.000₫</span>
+                            <span class="price-new">1.204.800₫</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity-control">
+                        <button type="button" class="qty-dec">−</button>
+                        <input type="text" value="1" />
+                        <button type="button" class="qty-inc">+</button>
+                    </div>
+                </td>
+                <td class="price-total">1.204.800₫</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="order-note">
+            <label for="note">Ghi chú đơn hàng</label>
+            <textarea id="note" placeholder="Nhập ghi chú..."></textarea>
+        </div>
+    </div>
+
+    <aside class="cart-right">
+        <div class="cart-summary">
+            <strong>TỔNG CỘNG</strong>
+            <span class="total-price">3.509.300₫</span>
+        </div>
+        <button class="btn-checkout">Tiến hành thanh toán</button>
+
+        <div class="payment-icons" aria-label="Các phương thức thanh toán">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" />
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" />
+            <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Circle.png" alt="MoMo" style="height: 36px;" />
+            <img src="https://play-lh.googleusercontent.com/woYAzPCG1I8Z8HXCsdH3diL7oly0N8uth_1g6k7R_9Gu7lbxrsYeriEXLecRG2E9rP0" alt="ZaloPay" style="height: 36px;" />
+            <!-- Thêm icon khác nếu cần -->
+        </div>
+
+        <div class="product-description">
+            <img src="https://demo.com/path-to-image/product-demo.jpg" alt="Sản phẩm CHUS" />
+            <p style="font-size:12px; color:#666;">
+                Một số sản phẩm trên CHUS đặc biệt và giá cả rất cạnh tranh với nhiều ưu đãi hấp dẫn. Bạn có thể tham khảo bảng giá chi tiết trong phần hướng dẫn của chúng tôi.
+            </p>
+        </div>
+    </aside>
+</main>
+
+</body>
+</html>
