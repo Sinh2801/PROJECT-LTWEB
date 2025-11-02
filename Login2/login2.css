@@ -1,0 +1,158 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_inola {
+    height: 40px;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.purple_bg {
+    background-color: #7f56da;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.purple_bg:hover {
+    background-color: #6a46c2;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #d19a00;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+    transition: 0.2s;
+}
+
+.sidebar li:hover {
+    color: #7f56da;
+}
+
+.sidebar .logout {
+    color: #e74c3c;
+    font-weight: bold;
+    border: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Profile Card */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.hello {
+    color: #777;
+    font-size: 14px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Orders Card */
+.order-status {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Wishlist, Viewed, Reviews */
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #888;
+    font-size: 14px;
+}
