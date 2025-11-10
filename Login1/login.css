@@ -27,13 +27,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .logo_inola {
     height: 40px;
 }
-
 .pix_button {
     display: inline-block;
     text-decoration: none;

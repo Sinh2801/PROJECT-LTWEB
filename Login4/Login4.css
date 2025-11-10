@@ -1,0 +1,153 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* ========== HEADER ========== */
+#section_header_1 {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pix_button {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.purple_bg {
+    background-color: #7c4dff;
+}
+
+.purple_bg:hover {
+    background-color: #5e35b1;
+}
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    color: #333;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+    color: #d19cff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.card.reviews {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.reviews h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Bảng danh sách đánh giá */
+.review-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.review-list th, .review-list td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.review-list th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.star {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+/* Khối trống khi chưa có đánh giá */
+.empty-review {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+}
+
+.empty-review button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.empty-review button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
