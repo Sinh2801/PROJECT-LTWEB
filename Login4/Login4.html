@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Login4.css">
+</head>
+<body>
+<!-- ========== HEADER ========== -->
+<div class="page_login" id="section_header_1">
+    <div class="container">
+        <img src="../image/Logo.png" alt="Logo INOLA" style="height:36px; width:auto;">
+        <a href="#" class="pix_button small_button purple_bg">
+            <span>Trung tâm trợ giúp</span>
+        </a>
+    </div>
+</div>
+<!-- DASHBOARD -->
+<div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Chus của tôi</h3>
+        <ul>
+            <li><a href="profile.html">Tài khoản của tôi</a></li>
+            <li><a href="orders.html">Đơn hàng</a></li>
+            <li><a href="pending.html">Sản phẩm chờ đánh giá</a></li>
+            <li class="active"><a href="review.html">Đánh giá của tôi</a></li>
+            <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
+            <li><a href="viewed.html">Các sản phẩm đã xem</a></li>
+            <li class="logout">Thoát</li>
+        </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+        <section class="card reviews">
+            <h3>Đánh giá của tôi</h3>
+
+            <!-- Nếu chưa có đánh giá -->
+            <div class="empty-review" style="display: none;">
+                <p>Bạn chưa có đánh giá</p>
+                <button>Tiếp tục mua hàng</button>
+            </div>
+
+            <!-- Nếu có đánh giá -->
+            <div class="review-list">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Đánh giá</th>
+                        <th>Nội dung</th>
+                        <th>Ngày đánh giá</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="images/sp1.jpg" alt="Áo linen">
+                                <span>Áo linen tay ngắn</span>
+                            </div>
+                        </td>
+                        <td><span class="star">★★★★★</span></td>
+                        <td>Vải mát, giao hàng nhanh.</td>
+                        <td>10/11/2025</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="images/sp2.jpg" alt="Giày sneaker">
+                                <span>Giày sneaker nữ trắng</span>
+                            </div>
+                        </td>
+                        <td><span class="star">★★★★☆</span></td>
+                        <td>Form đẹp, hơi chật nhẹ.</td>
+                        <td>12/11/2025</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+
+</div>
+</body>
+</html>
