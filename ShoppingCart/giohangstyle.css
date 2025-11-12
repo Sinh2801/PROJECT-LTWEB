@@ -15,22 +15,34 @@ body {
 
 /* Container chính */
 .cart-container {
-    max-width: 1200px;
+    max-width: 1360px;
     margin: auto;
-    margin-top: 20px   ;
+    margin-top: 20px;
+    box-sizing: border-box;
 
+}
+
+.cart-quantity-controls button, input {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.cart-quantity-controls .trash {
+    margin-left: 20px;
+    border: none
 }
 
 
 .cart-row {
     display: flex;
-    flex-wrap: wrap;
+
     gap: 20px;
 }
 
 
 .cart-products {
-    width: 65%;
+    flex: 1;
 
 }
 
@@ -132,19 +144,6 @@ body {
     margin: 0 5px;
 }
 
-.btn-delete {
-    background-color: #dc3545;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 0.875rem;
-}
-
-.btn-delete:hover {
-    background-color: #c82333;
-}
 
 
 
@@ -182,7 +181,7 @@ body {
     color: white;
     border: none;
     padding: 8px 15px;
-    border-radius: 3px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -223,7 +222,7 @@ body {
     border: none;
     padding: 10px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     margin-top: 15px;
     font-size: 1rem;
@@ -254,34 +253,40 @@ body {
     height: 70px;
 
 }
+
 .container-header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 1360px;
     margin: auto;
     height: 100%;
     align-items: center;
 
 }
+
 .login-signin {
 
     margin-right: 20px;
 
 }
+
 .login-signin .btn {
     margin-right: 10px;
     padding: 5px;
     border: white;
 }
+
 .login-signin ul {
     display: flex;
     list-style: none;
 }
+
 .login-signin ul li a i {
     color: #007bff;
-    font-size: 40px ;
+    font-size: 40px;
     margin-right: 20px;
 }
+
 .payment-icons {
     display: flex;
     gap: 12px;
@@ -295,4 +300,11 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+.cart-summary {
+    flex-basis: 500px;
+    flex-shrink: 0;   /* Đảm bảo nó không bị co lại */
 
+}
+.summary-box{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}

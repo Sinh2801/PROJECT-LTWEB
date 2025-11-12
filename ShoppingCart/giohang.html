@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="giohangstyle.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
         <div class="login-signin">
             <ul>
                 <li><a href="trang-dang-nhap.html"><i class="fa-regular fa-circle-user"></i></a></li>
-                <li><a href="trang-gio-hang.html"><i class="fa-solid fa-cart-shopping"></i>  </a></li>
+                <li><a href="trang-gio-hang.html"><i class="fa-solid fa-cart-shopping"></i> </a></li>
             </ul>
         </div>
 
@@ -31,6 +32,7 @@
 
 
 <div class="cart-container">
+    <!--    left-->
     <div class="cart-row">
 
         <div class="cart-products">
@@ -57,7 +59,7 @@
                         <button class="btn-quantity btn-minus">-</button>
                         <input type="number" value="1" min="1" class="quantity-input">
                         <button class="btn-quantity btn-plus">+</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="trash"><img src="../image/trash.png" alt="trash" , width="20"></button>
                     </div>
                 </div>
             </div>
@@ -77,7 +79,7 @@
                         <button class="btn-quantity btn-minus">-</button>
                         <input type="number" value="1" min="1" class="quantity-input">
                         <button class="btn-quantity btn-plus">+</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="trash"><img src="../image/trash.png" alt="trash" , width="20"></button>
                     </div>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                         <button class="btn-quantity btn-minus">-</button>
                         <input type="number" value="1" min="1" class="quantity-input">
                         <button class="btn-quantity btn-plus">+</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="trash"><img src="../image/trash.png" alt="trash" , width="20"></button>
                     </div>
                 </div>
             </div>
@@ -117,7 +119,7 @@
                         <button class="btn-quantity btn-minus">-</button>
                         <input type="number" value="1" min="1" class="quantity-input">
                         <button class="btn-quantity btn-plus">+</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="trash"><img src="../image/trash.png" alt="trash" , width="20"></button>
                     </div>
                 </div>
             </div>
@@ -137,7 +139,7 @@
                         <button class="btn-quantity btn-minus">-</button>
                         <input type="number" value="1" min="1" class="quantity-input">
                         <button class="btn-quantity btn-plus">+</button>
-                        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="trash"><img src="../image/trash.png" alt="trash" , width="20"></button>
                     </div>
                 </div>
             </div>
@@ -159,14 +161,15 @@
                 <p class="summary-line">Tổng giá trước thuế: <span>95,775,561 VND</span></p>
                 <p class="summary-line">Thuế GTGT: <span>9,577,556 VND</span></p>
                 <hr class="summary-divider">
-                <h5 class="summary-total">Tổng cộng: <span class="total-amount">105,353,117 VND</span></h5>
+                <h3 class="summary-total">Tổng cộng: <span class="total-amount">105,353,117 VND</span></h3>
                 <button class="btn-checkout">Thanh Toán</button>
 
                 <div class="payment-icons" aria-label="Các phương thức thanh toán">
-                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" />
-                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" />
-                    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Circle.png" alt="MoMo" style="height: 36px;" />
-                    <img src="https://play-lh.googleusercontent.com/woYAzPCG1I8Z8HXCsdH3diL7oly0N8uth_1g6k7R_9Gu7lbxrsYeriEXLecRG2E9rP0" alt="ZaloPay" style="height: 36px;" />
+                    <img src="../image/momo.png" alt="Visa"/>
+                    <img src="../image/visa.png" alt="Mastercard"/>
+                    <img src="" alt="MoMo" style="height: 36px;"/>
+                    <img src="https://play-lh.googleusercontent.com/woYAzPCG1I8Z8HXCsdH3diL7oly0N8uth_1g6k7R_9Gu7lbxrsYeriEXLecRG2E9rP0"
+                         alt="ZaloPay" style="height: 36px;"/>
                     <!-- Thêm icon khác nếu cần -->
                 </div>
 
