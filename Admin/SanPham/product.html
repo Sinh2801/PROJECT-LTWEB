@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
+            <li class="active"><i class="fa-solid fa-box"></i> Sản phẩm</li>
+            <li><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
+            <li><i class="fa-solid fa-users"></i> Khách hàng</li>
+            <li><i class="fa-solid fa-user-gear"></i> Hồ sơ</li>
+            <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <main class="product-page">
+            <div class="page-header">
+                <h2>Quản lý sản phẩm</h2>
+                <button class="btn-add"><i class="fa-solid fa-plus"></i> Thêm Sản Phẩm</button>
+            </div>
+
+            <div class="toolbar">
+                <div class="show-entries">
+                    Hiển thị
+                    <select>
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                    </select>
+                    mục
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                </div>
+
+                <button class="btn-export"><i class="fa-solid fa-file-export"></i> Xuất</button>
+            </div>
+
+            <table class="product-table">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Sản Phẩm</th>
+                    <th>Danh Mục</th>
+                    <th>Ngày Thêm</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Trạng Thái</th>
+                    <th>Thao Tác</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="product-info">
+                        <img src="https://i.imgur.com/w1X3YzT.png" alt="product">
+                        <span>Máy Giặt</span>
+                    </td>
+                    <td>Thiết Bị Gia Dụng</td>
+                    <td>01/8/2023</td>
+                    <td>6,500,000 VND</td>
+                    <td>25</td>
+                    <td><span class="status active">Hoạt Động</span></td>
+                    <td>
+                        <button class="btn-action"><i class="fa-solid fa-pen"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="product-info">
+                        <img src="https://i.imgur.com/w1X3YzT.png" alt="product">
+                        <span>Tủ Lạnh</span>
+                    </td>
+                    <td>Thiết Bị Nhà Bếp</td>
+                    <td>02/8/2023</td>
+                    <td>10,500,000 VND</td>
+                    <td>15</td>
+                    <td><span class="status inactive">Không Hoạt Động</span></td>
+                    <td>
+                        <button class="btn-action"><i class="fa-solid fa-pen"></i></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>
