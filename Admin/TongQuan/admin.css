@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: #2f4026;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: width 0.3s ease;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* Logo */
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar .logo img {
+    width: 80px;
+}
+
+/* Menu */
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+/* Icon */
+.sidebar .menu li i {
+    font-size: 18px;
+    width: 25px;
+    text-align: center;
+}
+
+/* Khi hover hoặc active */
+.sidebar .menu li:hover,
+.sidebar .menu li.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #a8e063; /* accent xanh lá nhạt */
+    transform: none; /* bỏ hiệu ứng lệch */
+}
+
+/* Khi thu gọn */
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .menu li {
+    justify-content: center;
+    padding: 14px 0;
+}
+
+.sidebar.collapsed .menu li span {
+    display: none;
+}
+
+/* Giúp toàn bộ item luôn đều và nằm gọn trong sidebar */
+.sidebar .menu li span {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Menu */
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+/* Icon */
+.sidebar .menu li i {
+    font-size: 18px;
+    width: 25px;
+    text-align: center;
+}
+
+/* Khi hover hoặc active */
+.sidebar .menu li:hover,
+.sidebar .menu li.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #a8e063; /* accent xanh lá nhạt */
+    transform: none; /* bỏ hiệu ứng lệch */
+}
+
+/* Khi thu gọn */
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .menu li {
+    justify-content: center;
+    padding: 14px 0;
+}
+
+.sidebar.collapsed .menu li span {
+    display: none;
+}
+
+/* Giúp toàn bộ item luôn đều và nằm gọn trong sidebar */
+.sidebar .menu li span {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #0ea5e9;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #0284c7;
+}
+
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    border: 2px solid #0ea5e9;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 30px;
+}
+
+.dashboard h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0ea5e9, #0284c7);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #666;
+}
+
+.card .value {
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.up {
+    color: #22c55e;
+}
+
+.status.down {
+    color: #ef4444;
+}
+
+/* Table */
+.product-table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-table th,
+.product-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.product-table th {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    font-weight: 600;
+    color: #333;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+.product-table tbody tr:hover {
+    background: #e2e8f0;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.trend.up {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.trend.down {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        z-index: 100;
+        transform: translateX(-100%);
+    }
+    .sidebar.collapsed {
+        width: 70px;
+        transform: translateX(0);
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .search-box {
+        width: 200px; /* Giữ 200px trên mobile */
+        max-width: 100%; /* Fit nếu cần */
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

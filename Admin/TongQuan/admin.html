@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li class="active"><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
+            <li><i class="fa-solid fa-box"></i> Sản phẩm</li>
+            <li><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
+            <li><i class="fa-solid fa-users"></i> Khách hàng</li>
+            <li><i class="fa-solid fa-user-gear"></i> Hồ sơ</li>
+            <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <main class="dashboard">
+            <h2>Tổng quan tháng 11</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Doanh thu</h3>
+                    <p class="value">720,700,000 VND</p>
+                    <span class="status up"><i class="fa-solid fa-arrow-up"></i> +2.2%</span>
+                </div>
+
+                <div class="card">
+                    <h3>Lượt truy cập</h3>
+                    <p class="value">320</p>
+                    <span class="status down"><i class="fa-solid fa-arrow-down"></i> -8.2%</span>
+                </div>
+
+                <div class="card">
+                    <h3>Đơn hàng</h3>
+                    <p class="value">57</p>
+                    <span class="status up"><i class="fa-solid fa-arrow-up"></i> +4.5%</span>
+                </div>
+
+                <div class="card">
+                    <h3>Khách hàng mới</h3>
+                    <p class="value">231</p>
+                    <span class="status up"><i class="fa-solid fa-arrow-up"></i> +10%</span>
+                </div>
+            </div>
+
+            <table class="product-table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Sản phẩm</th>
+                    <th>Lượt mua</th>
+                    <th>Còn lại</th>
+                    <th>Lượt xem</th>
+                    <th>Đánh giá</th>
+                    <th>Xu hướng</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tủ Lạnh 4 Cửa RF48A4000B4</td>
+                    <td>20</td>
+                    <td>200</td>
+                    <td>5034</td>
+                    <td>4.8 ⭐</td>
+                    <td class="trend up">+4.5%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tủ Lạnh 4 Cửa RF48A4000B4</td>
+                    <td>43</td>
+                    <td>147</td>
+                    <td>4934</td>
+                    <td>4.3 ⭐</td>
+                    <td class="trend down">-0.9%</td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>
