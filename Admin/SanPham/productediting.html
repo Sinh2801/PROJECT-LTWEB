@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="productediting.css">
+
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
+            <li class="active"><i class="fa-solid fa-box"></i> Sản phẩm</li>
+            <li><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
+            <li><i class="fa-solid fa-users"></i> Khách hàng</li>
+            <li><i class="fa-solid fa-user-gear"></i> Hồ sơ</li>
+            <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <main class="dashboard add-product-page">
+            <div class="chinhsua">
+                <nav class="quaylai">
+                    <a href="product.html">
+                        <i class="fa-solid fa-arrow-left"></i></a>
+                </nav>
+                <h2>Chỉnh sửa sản phẩm</h2>
+            </div>
+
+            <div class="product-container">
+
+                <!-- Thông tin sản phẩm -->
+                <section class="box info-box">
+                    <h3>Thông tin sản phẩm</h3>
+
+                    <div class="form-group">
+                        <label>Tên</label>
+                        <input type="text" value="Móc khóa gỗ khắc tên">
+                    </div>
+
+                    <div class="form-2col">
+                        <div class="form-group">
+                            <label>Mã SKU</label>
+                            <input type="text" VALUE="MK-GLN-001">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Danh mục</label>
+                            <input type="text" VALUE="Quà lưu niệm">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Mô tả</label>
+                        <textarea id="description" placeholder="Nhập mô tả của bạn..." rows="8">
+    Móc khóa gỗ khắc tên – Quà lưu niệm độc đáo
+    - Chất liệu: Gỗ tự nhiên cao cấp, bền đẹp, thân thiện môi trường.
+    - Kích thước: 5cm x 3cm (có thể tùy chỉnh theo yêu cầu).
+    - Thiết kế: Khắc tên cá nhân, chữ sắc nét, tinh tế.
+    - Màu sắc: Tự nhiên của gỗ, có thể kết hợp màu sơn nhẹ theo yêu cầu.
+    - Phù hợp làm quà tặng sinh nhật, kỷ niệm hoặc quà doanh nghiệp.
+    - Nhẹ, tiện lợi để treo chìa khóa, balo hoặc túi xách.
+    - Mỗi sản phẩm được khắc thủ công, đảm bảo độc đáo.
+    </textarea>
+                    </div>
+
+
+                    <section class="box image-box">
+                        <h3>Hình ảnh</h3>
+                        <div class="upload-area">
+
+                            <img src="/image/Logo.png" alt="">
+                            <button class=" thaydoi">
+                                <a href="">
+                                    Thay đổi
+                                </a>
+                            </button>
+                        </div>
+                    </section>
+
+
+                </section>
+
+                <!-- Chi tiết -->
+                <section class="box detail-box">
+                    <div class="form-2col">
+                        <div class="form-group">
+                            <label>Giá</label>
+                            <input type="text" value="630.000" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số lượng</label>
+                            <input type="text" value="72" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thuộc tính</label>
+
+                        <div class="form-2col">
+
+                            <input type="text" value="Màu sắc" disabled>
+
+                            <select>
+                                <option value="xanh-la">Xanh lá</option>
+                                <option value="xanh-duong">Xanh dương</option>
+                                <option value="do">Đỏ</option>
+                                <option value="do-dam">Đỏ đậm</option>
+                                <option value="vang">Vàng</option>
+                                <option value="cam">Cam</option>
+                                <option value="hong">Hồng</option>
+                                <option value="tim">Tím</option>
+                                <option value="den">Đen</option>
+                                <option value="trang">Trắng</option>
+                                <option value="xam">Xám</option>
+                                <option value="nau">Nâu</option>
+                                <option value="xanh-nuoc-bien">Xanh nước biển</option>
+                                <option value="be">Be</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-2col">
+
+
+                            <input type="text" value="Chất liệu" disabled>
+                            <select>
+                                <option value="go">Gỗ</option>
+                                <option value="kim-loai">Kim loại</option>
+                                <option value="da">Da</option>
+                                <option value="vai">Vải</option>
+                                <option value="nhua">Nhựa</option>
+                                <option value="thuoc">Thủy tinh</option>
+                                <option value="gach">Gạch</option>
+                                <option value="da-nhan-tao">Da nhân tạo</option>
+                                <option value="gom-su">Gốm sứ</option>
+                                <option value="cao-su">Cao su</option>
+                            </select>
+
+
+                        </div>
+
+
+                        <button class="add-btn">+ Thêm thuộc tính</button>
+                    </div>
+
+                    <h3>Tổ chức</h3>
+                    <div class="form-group">
+                        <label>Nhà cung cấp</label>
+                        <input type="text" VALUE="HandMade" >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bộ sưu tập</label>
+                        <input type="text" value="Móc khoá" >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thẻ</label>
+                        <input type="text" value="Móc khóa, quà tặng, gỗ, khắc tên">
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-save">Lưu sản phẩm</button>
+                        <button class="btn btn-delete">Xóa sản phẩm</button>
+                    </div>
+
+                </section>
+
+
+            </div>
+        </main>
+
+    </div>
+</div>
+
+</body>
+</html>
