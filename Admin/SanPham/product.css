@@ -56,6 +56,14 @@ body {
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
 }
+.sidebar .menu li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
 
 /* Icon */
 .sidebar .menu li i {
@@ -214,10 +222,18 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
+    display: inline;
 }
 
 .btn-add:hover {
     background: #16a34a;
+}
+.btn-add a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
 }
 
 .toolbar {

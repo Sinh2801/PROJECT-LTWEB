@@ -17,12 +17,41 @@
             <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
         </nav>
         <ul class="menu">
-            <li><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
-            <li class="active"><i class="fa-solid fa-box"></i> Sản phẩm</li>
-            <li><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
-            <li><i class="fa-solid fa-users"></i> Khách hàng</li>
-            <li><i class="fa-solid fa-user-gear"></i> Hồ sơ</li>
-            <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+            <li>
+                <a href="../TongQuan/admin.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+
+
+            <li class="active">
+
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng
+                </a>
+            </li>
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
         </ul>
     </aside>
 
@@ -44,7 +73,11 @@
         <main class="product-page">
             <div class="page-header">
                 <h2>Quản lý sản phẩm</h2>
-                <button class="btn-add"><i class="fa-solid fa-plus"></i> Thêm Sản Phẩm</button>
+                <button class="btn-add">
+                    <a href="addproduct.html">
+                    <i class="fa-solid fa-plus"></i> Thêm Sản Phẩm
+                    </a>
+                </button>
             </div>
 
             <div class="toolbar">
@@ -92,7 +125,10 @@
                     <td>25</td>
                     <td><span class="status active">Hoạt Động</span></td>
                     <td>
-                        <button class="btn-action"><i class="fa-solid fa-pen"></i></button>
+                        <button class="btn-action">
+                            <a href="../SanPham/productediting.html">
+                                <i class="fa-solid fa-pen"></i></a>
+                        </button>
                     </td>
                 </tr>
 
@@ -108,7 +144,10 @@
                     <td>15</td>
                     <td><span class="status inactive">Không Hoạt Động</span></td>
                     <td>
-                        <button class="btn-action"><i class="fa-solid fa-pen"></i></button>
+                        <button class="btn-action">
+                            <a href="../SanPham/productediting.html">
+                            <i class="fa-solid fa-pen"></i></a>
+                        </button>
                     </td>
                 </tr>
                 </tbody>
