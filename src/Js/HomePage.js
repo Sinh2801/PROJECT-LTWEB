@@ -1,21 +1,62 @@
-/*event list header*/
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector('.menu-toggle');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
 
-    console.log('toggleButton:', toggleButton);
-    console.log('dropdownMenu:', dropdownMenu);
+// ---------------- Slideshow Banner ---------------- //
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const slideshow = document.getElementById("headerSlideshow");
 
-    toggleButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        dropdownMenu.classList.toggle('active');
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    // Hiển thị slide hiện tại
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? "block" : "none";
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    // Chuyển slide
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // Tự động chạy
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    // Gán sự kiện
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            currentIndex = index;
+            showSlide(currentIndex);
+        });
     });
 
-    document.addEventListener('click', (e) => {
-        if (!dropdownMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-            dropdownMenu.classList.remove('active');
-        }
-    });
+    slideshow.addEventListener("mouseenter", stopAutoPlay);
+    slideshow.addEventListener("mouseleave", startAutoPlay);
+
+    // Khởi tạo
+    showSlide(currentIndex);
+    startAutoPlay();
 });
 /*Slip action*/
 document.addEventListener("DOMContentLoaded", () => {
