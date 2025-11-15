@@ -113,29 +113,7 @@ body {
     color: #0284c7;
 }
 
-.search-box {
-    display: flex;
-    align-items: center;
-    background: #f1f5f9;
-    padding: 10px 15px;
-    border-radius: 25px;
-    max-width: 300px; /* Tối đa 300px */
-    width: 100%; /* Co giãn theo không gian */
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-}
 
-.search-box:hover {
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.search-box input {
-    border: none;
-    background: transparent;
-    outline: none;
-    margin-left: 10px;
-    flex: 1;
-}
 
 .user-info {
     display: flex;
