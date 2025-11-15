@@ -1,0 +1,80 @@
+/* -------- slider scoped to .horizontal-section -------- */
+.horizontal-section {
+    display: flex;
+    gap: 24px;
+    width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    align-items: center;
+}
+
+/* left */
+.horizontal-section .left-content {
+    flex: 1;
+}
+.horizontal-section .left-content h2 { color: #111; font-size: 1.8rem; margin: 0 0 16px; }
+.horizontal-section .see-more-btn { background:#000; color:#fff; border:none; padding:10px 22px; border-radius:20px; }
+
+/* right (slider) */
+.horizontal-section .right-content { flex: 3; position: relative; }
+
+/* Vùng hiển thị cố định */
+.horizontal-section .product-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* the track */
+.horizontal-section .product-slider {
+    display: flex;
+    gap: 16px;                /* gap between cards */
+    transition: transform 0.5s cubic-bezier(.22,.9,.33,1);
+    will-change: transform;
+}
+
+/* card */
+.horizontal-section .product-card {
+    flex: 0 0 calc(25% - 12px); /* 4 cards per view; adjust calc if you change gap */
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.horizontal-section .product-card img {
+    display:block;
+    width:100%;
+    height: 200px;
+    object-fit: cover; /* full cover without distortion */
+}
+.horizontal-section .product-card p {
+    margin: 0;
+    padding: 10px;
+    background: #f2f2f2;
+    color: #333; /* scoped color so other main text not affected */
+    font-weight: 500;
+}
+
+/* arrows */
+.horizontal-section .arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width:36px; height:36px; border-radius:50%;
+    border:none; background:rgba(255,255,255,0.95); cursor:pointer;
+    box-shadow:0 2px 6px rgba(0,0,0,0.12); z-index:6;
+}
+.horizontal-section .arrow.left { left: 6px; }
+.horizontal-section .arrow.right { right: 6px; }
+
+/* responsive */
+@media (max-width: 900px) {
+    .horizontal-section .product-card { flex: 0 0 calc(50% - 12px); } /* 2 per view */
+}
+@media (max-width: 480px) {
+    .horizontal-section { flex-direction: column; gap: 18px; }
+    .horizontal-section .product-card { flex: 0 0 100%; }
+    .horizontal-section .arrow { display: none; }
+}

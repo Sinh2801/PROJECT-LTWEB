@@ -5,11 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Thang-23130300">
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageAlter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageFooter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/HeaderAfter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/ghn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/ghtk.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/jnt.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/momo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/visa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/vnpay.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Css/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePageAfter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Css/HomePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Css/HomePageMain.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Css/HomePageSlip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/demo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/demo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/download.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +60,8 @@
       <list>
         <option value="Class" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -32,7 +71,7 @@
         <option value="Sinh2801 &lt;23130275@st.hcmuaf.edu.vn&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PROJECT-LTWEB" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -62,8 +101,11 @@
     "Application.Main.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "HomePage",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -80,6 +122,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\PROJECT-LTWEB\src\icons" />
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\PROJECT-LTWEB\src\Extension" />
       <recent name="C:\Users\PC\IdeaProjects\PROJECT-LTWEB\src\Css" />
       <recent name="C:\Users\PC\IdeaProjects\PROJECT-LTWEB\src\Images" />
     </key>
@@ -87,8 +131,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +149,8 @@
       <workItem from="1760180954991" duration="761000" />
       <workItem from="1760663218242" duration="77000" />
       <workItem from="1761760315757" duration="12129000" />
+      <workItem from="1763090663780" duration="4248000" />
+      <workItem from="1763182875784" duration="13760000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
