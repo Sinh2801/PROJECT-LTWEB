@@ -1,0 +1,257 @@
+/* ===== RESET CƠ BẢN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+/* Base container cho header và footer */
+.container {
+    width: 90%; /* Điều chỉnh từ 80% lên 90% */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.purple_bg {
+    background-color: #7f56da;
+    color: #fff;
+}
+
+.purple_bg:hover {
+    background-color: #6a46c2;
+}
+
+/* --- MAIN CONTANINER (Responsive) --- */
+.main_content {
+    display: flex;
+    /* Đảm bảo khối không bị quá dài và luôn được căn giữa */
+    min-height: calc(100vh - 71px - 80px);
+    width: 90%;
+    max-width: 900px; /* GIỚI HẠN KÍCH THƯỚC ĐỂ TRÔNG ĐẸP HƠN */
+    margin: 40px auto;
+
+    /* Tạo hình dáng và bóng đổ */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+.split_panel {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cột trái: Login Info (Xanh đậm) */
+.left_panel {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.left_panel h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.left_panel p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.login_button {
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.login_button:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+/* Cột phải: Signup Form (Trắng) */
+.right_panel {
+    background-color: #fff;
+}
+
+.right_panel h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Social Login */
+.social_login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social_icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 35px;
+    text-align: center;
+    transition: background-color 0.3s;
+    color: #555;
+}
+
+.separator {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Form Inputs (Kiểu nổi lên) */
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_group {
+    position: relative;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 15px 15px;
+    padding-right: 45px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input_group input:focus {
+    border-color: #7f56da;
+}
+
+/* Dùng label để tạo hiệu ứng Placeholder nổi */
+.input_group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+/* Hiệu ứng label nổi lên khi input có focus hoặc đã có nội dung */
+.input_group input:not(:placeholder-shown) + label,
+.input_group input:focus + label {
+    top: 0;
+    font-size: 12px;
+    transform: translateY(-50%);
+    color: #7f56da;
+    font-weight: 500;
+}
+
+.eye_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* FOOTER */
+.pixfort_footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    margin-top: 40px; /* Thêm margin top để tách footer ra */
+}
+
+.center_text {
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== MEDIA QUERY CHO MÀN HÌNH NHỎ (Responsive Fix) ===== */
+@media (max-width: 768px) {
+    .main_content {
+        flex-direction: column; /* Chuyển từ 2 cột sang 1 cột */
+        max-width: 400px; /* Giới hạn chiều rộng trên mobile */
+        min-height: auto; /* Chiều cao tự động */
+        margin: 20px auto;
+    }
+
+    .left_panel {
+        display: none; /* Ẩn cột quảng cáo/chào mừng trên mobile */
+    }
+
+    .split_panel {
+        padding: 30px; /* Giảm padding trên mobile */
+    }
+
+    .right_panel {
+        flex: 1 1 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+    }
+}
