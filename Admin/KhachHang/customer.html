@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonHang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li>
+                <a href="../TongQuan/admin.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-receipt"></i> Đơn hàng
+
+            </li>
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+        <!--Don Hang  Content-->
+        <main class="main-content-Donhang">
+
+            <div class="donhang-container">
+
+                <div class="donhang-header">
+                    <h2>Khách hàng</h2>
+                    <button class="export-btn">
+                        <i class="fa-solid fa-download"></i> Xuất
+                    </button>
+                </div>
+
+                <div class="donhang-top">
+                    <div class="searchBox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+
+                    <select class="filter-select">
+                        <option>Mặc Định</option>
+                        <option>Đơn hàng (A-Z)</option>
+                        <option>Ngày tạo mới</option>
+                    </select>
+                </div>
+
+                <!-- BẢNG ĐƠN HÀNG -->
+                <table class="order-table">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Khách hàng</th>
+                        <th>Số điện thoại</th>
+                        <th>Email</th>
+                        <th>Vị trí</th>
+                        <th>Ngày tạo</th>
+                        <th>Trạng Thái</th>
+                        <th>Hành Động</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nguyễn Thạch Bảo Khanh</td>
+                        <td>0383736322</td>
+                        <td>khanhxco102@gmail.com</td>
+                        <td>Kiên Giang</td>
+                        <td>1/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"> <i class="fa-solid fa-pen"></i></button>
+                            <button class="delete" ><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nguyễn Thị Minh Anh</td>
+                        <td>0987654321</td>
+                        <td>minhanh2004@gmail.com</td>
+                        <td>Hà Nội</td>
+                        <td>3/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Phạm Gia Bảo</td>
+                        <td>0912345678</td>
+                        <td>giabao.pham@gmail.com</td>
+                        <td>Đà Nẵng</td>
+                        <td>4/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Võ Tấn Tài</td>
+                        <td>0977332211</td>
+                        <td>tantai.v@gmail.com</td>
+                        <td>Cần Thơ</td>
+                        <td>5/1/2025</td>
+                        <td><span class="badge red">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Đinh Hữu Phúc</td>
+                        <td>0367894521</td>
+                        <td>huuphuc1999@gmail.com</td>
+                        <td>Nha Trang</td>
+                        <td>6/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Lê Thảo My</td>
+                        <td>0901345678</td>
+                        <td>thaomy.le@gmail.com</td>
+                        <td>Bình Dương</td>
+                        <td>7/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Hoàng Nhật Minh</td>
+                        <td>0382456677</td>
+                        <td>nhatminh09@gmail.com</td>
+                        <td>Huế</td>
+                        <td>8/1/2025</td>
+                        <td><span class="badge red"> Không hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Trương Mỹ Duyên</td>
+                        <td>0945588992</td>
+                        <td>myduyen.truong@gmail.com</td>
+                        <td>Vũng Tàu</td>
+                        <td>9/1/2025</td>
+                        <td><span class="badge red">Không hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            </button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Ngô Tuấn Kiệt</td>
+                        <td>0911223344</td>
+                        <td>tuan.kietngo@gmail.com</td>
+                        <td>Tiền Giang</td>
+                        <td>10/1/2025</td>
+                        <td><span class="badge red">Không hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Mai Thanh Tú</td>
+                        <td>0882343434</td>
+                        <td>thanhtu.2003@gmail.com</td>
+                        <td>An Giang</td>
+                        <td>11/1/2025</td>
+                        <td><span class="badge success">Đang hoạt động</span></td>
+                        <td class="actions">
+                            <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <!-- PHÂN TRANG -->
+                <div class="pagination">
+                    <button>Quay lại</button>
+                    <button class="page active">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button>Tiếp theo</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
