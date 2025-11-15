@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tài khoản của tôi - INOLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="hosonguoidung.css">
 
 </head>
@@ -22,140 +23,118 @@
         </div>
     </div>
 
-    <div class="pixfort_login_1 pix_builder_bg" id="section_login_1">
-        <div class="dashboard container">
-            <aside class="sidebar">
-                <h3>INOLA của tôi</h3>
-                <ul>
-                    <li class="active">Tài khoản của tôi</li>
+    <div class="account-container">
 
-                    <li>Đơn hàng</li>
+        <aside class="account-sidebar">
 
-                    <li>Sản phẩm chờ đánh giá</li>
+            <div class="sidebar-profile">
+                <div class="avatar-container">
+                    <i class="fa-solid fa-user-circle avatar-placeholder"></i>
+                </div>
+                <strong>Võ Sinh</strong>
+                <span>vosinh@gmail.com</span>
+                <button class="btn-change-avatar">Thay đổi ảnh</button>
+            </div>
 
-                    <li>Đánh giá của tôi</li>
+            <hr class="sidebar-divider">
 
-                    <li>Sản phẩm yêu thích</li>
+            <ul class="account-menu">
+                <li class="active">
+                    <a href="#profile">
+                        <i class="fa-solid fa-user-circle"></i> Hồ Sơ Của Tôi
+                    </a>
+                </li>
+                <li>
+                    <a href="#orders">
+                        <i class="fa-solid fa-receipt"></i> Đơn Hàng
+                    </a>
+                </li>
+                <li>
+                    <a href="#wishlist">
+                        <i class="fa-solid fa-heart"></i> Sản Phẩm Yêu Thích
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        <i class="fa-solid fa-star"></i> Đánh Giá Của Tôi
+                    </a>
+                </li>
+                <li>
+                    <a href="#password">
+                        <i class="fa-solid fa-key"></i> Đổi Mật Khẩu
+                    </a>
+                </li>
+                <li>
+                    <a href="#logout">
+                        <i class="fa-solid fa-sign-out-alt"></i> Đăng Xuất
+                    </a>
+                </li>
+            </ul>
+        </aside>
 
-                    <li>Các sản phẩm đã xem</li>
+        <main class="account-content">
 
-                    <li class="logout">Thoát</li>
-                </ul>
-            </aside>
+            <h1>Hồ Sơ Của Tôi</h1>
+            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
 
-            <main class="main-content">
-                <section class="card profile">
-                    <div class="profile-header">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Avatar"
-                             class="avatar">
-                        <div>
-                            <p class="hello">Xin chào</p>
-                            <h2>Sinh Võ</h2>
-                        </div>
+            <div class="profile-card">
+                <h2>Thông tin cá nhân</h2>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" value="Võ Sinh">
                     </div>
-                    <div class="profile-actions">
-                        <div>👤 Hồ sơ</div>
-                        <div>💳 Ngân hàng & Thẻ</div>
-                        <div>📍 Địa chỉ</div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="vosinh@gmail.com" disabled>
                     </div>
-                </section>
-
-                <section class="card orders">
-                    <h3>Đơn hàng</h3>
-                    <div class="order-status">
-                        <div> Đơn hàng mới</div>
-                        <div> Đang vận chuyển</div>
-                        <div> Đã giao</div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" value="0987654321">
                     </div>
-                </section>
+                    <div class="form-group radio-group">
+                        <label>Giới tính</label>
+                        <input type="radio" id="male" name="gender" checked> <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender"> <label for="female">Nữ</label>
 
-                <section class="card wishlist">
-                    <h3>Yêu thích</h3>
-                    <p>Sản phẩm yêu thích trống</p>
-                </section>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Ngày sinh</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <button type="submit" class="btn-save">Lưu thay đổi</button>
+                </form>
+            </div>
 
-                <section class="card viewed">
-                    <h3>Sản phẩm đã xem</h3>
-                    <p>_viewed_product_is_empty</p>
-                </section>
+            <div class="profile-card">
+                <div class="card-header">
+                    <h2>Địa chỉ</h2>
+                    <button class="btn-add"><i class="fa-solid fa-plus"></i> Thêm địa chỉ mới</button>
+                </div>
 
-                <section class="card reviews">
-                    <h3>Đánh giá</h3>
-                    <p>Đánh giá sản phẩm trống</p>
-                </section>
-            </main>
-        </div>
+                <div class="address-item">
+                    <div class="address-info">
+                        <strong>Võ Sinh</strong>
+                        <span class="default-badge">Mặc định</span>
+                        <p>0987654321</p>
+                        <p> Kiên Ngãi, Bình An, Gia Lai</p>
+                    </div>
+                    <div class="address-actions">
+                        <button class="btn-link">Chỉnh sửa</button>
+                        <button class="btn-link btn-delete">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-</div>
-<!-- FOOTER -->
-<div class="footer-wrapper">
-    <footer class="footer-container page-container">
-
-        <div class="footer-columns">
-
-            <!-- Cột 1 -->
-            <div class="footer-col">
-                <h3>WORK WITH US</h3>
-                <a href="#">Affiliate Program</a>
-                <a href="#">Partnerships</a>
-            </div>
-
-            <!-- Cột 2 -->
-            <div class="footer-col">
-                <h3>TEACH WITH US</h3>
-                <a href="#">Become a Teacher</a>
-                <a href="#">Teacher Help Center</a>
-                <a href="#">Teacher Rules</a>
-            </div>
-
-            <!-- Cột 3: Thanh toán + vận chuyển -->
-            <div class="footer-col">
-                <h3>Phương thức thanh toán</h3>
-
-                <div class="icon-row">
-                    <div class="icon-box"><img src="../icons/visa.jpg" alt="Visa"></div>
-                    <div class="icon-box"><img src="../icons/mastercard.png" alt="Mastercard"></div>
-                    <div class="icon-box"><img src="../icons/momo.webp" alt="Momo"></div>
-                    <div class="icon-box"><img src="../icons/vnpay.webp" alt="VNPAY"></div>
-                </div>
-
-                <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
-
-                <div class="icon-row"><div class="icon-box"><img src="../icons/ghtk.webp" alt="GHTK"></div>
-                    <div class="icon-box"><img src="../icons/ghn.png" alt="GHN"></div>
-                    <div class="icon-box"><img src="../icons/jnt.webp" alt="J&T"></div>
-                </div>
-            </div>
-
-            <!-- Cột 4: Kết nối với INOLA -->
-            <div class="footer-col">
-                <h3>Kết nối với INOLA</h3>
-
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-
-                <h3 style="margin-top:16px;">Nhận tin ưu đãi</h3>
-                <div class="subscribe-box">
-                    <input type="email" placeholder="Email của bạn" aria-label="Email">
-                    <button type="button">→</button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Footer bottom -->
-        <div class="footer-bottom">
-            <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
-            <p>Responsible for Content Management: Group 32</p>
-            <p>@ 2025 - Copyright belongs to Group 32</p>
-        </div>
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
+        <p>Responsible for Content Management: Group 32</p>
+        <p>@ 2025 - Copyright belongs to Group 32</p>
+    </div>
 
     </footer>
 </div>
-
 </body>
 </html>

@@ -65,16 +65,13 @@ margin: auto;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 10px;
-
     overflow: hidden;
 }
-
 /* ===== CỘT TRÁI ===== */
 .login_left {
     flex: 1;
     padding: 40px 50px;
 }
-
 .login_title {
     font-size: 28px;
     font-weight: 700;
@@ -98,7 +95,6 @@ margin: auto;
 .login_form {
     width: 100%;
 }
-
 .input_group {
     display: flex;
     align-items: center;
