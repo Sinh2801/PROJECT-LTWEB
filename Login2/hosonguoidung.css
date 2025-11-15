@@ -1,0 +1,378 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo_inola {
+    height: 40px;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.purple_bg {
+    background-color: #7f56da;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.purple_bg:hover {
+    background-color: #6a46c2;
+}
+
+#section_login_1 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+
+/* ===== DASHBOARD ===== */
+.dashboard.container {
+    display: flex;
+    gap: 20px;
+    margin: 30px auto 30px auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #d19a00;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+    transition: 0.2s;
+}
+
+.sidebar .active {
+    font-weight: 1000;
+}
+
+.sidebar li:hover {
+    color: #7f56da;
+}
+
+.sidebar .logout {
+    color: #e74c3c;
+    font-weight: bold;
+    border: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.hello {
+    color: #777;
+    font-size: 14px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Orders Card */
+.order-status {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Wishlist, Viewed, Reviews */
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* ======================= FOOTER WRAPPER – FULL WIDTH =========================== */
+.footer-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 40px 0;
+}
+
+/* ============================== FOOTER CONTAINER ===================== */
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+/* ============== GRID 4 CỘT ============= */
+.footer-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* ===================== TIÊU ĐỀ CỘT =================== */
+.footer-col h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+/* ==================== LINK & TEXT ====================== */
+.footer-col a,
+.footer-col p {
+    font-size: 14px;
+    color: #BBB9B6;
+    line-height: 1.7;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer-col a:hover {
+    color: #000;
+}
+
+/* ===============ICON PAYMENT & SHIPPING (HỢP VỚI HTML MỚI)================== */
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Hover icon */
+.icon-box:hover {
+    transform: scale(1.07);
+    background: #fff;
+    border-color: #ccc;
+}
+
+/* =============== SOCIAL ICONS – FONT AWESOME ================= */
+.social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 28px;
+    transition: 0.25s ease;
+}
+
+/* --- Màu thương hiệu --- */
+.social-icons a:nth-child(1) i { color: #1877F2; }
+.social-icons a:nth-child(2) i { color: #E4405F; }
+.social-icons a:nth-child(3) i { color: #000000; }
+.social-icons a:nth-child(4) i { color: #FF0000; }
+/* --- Hover --- */
+.social-icons i:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
+
+/* =========SUBSCRIBE BOX======== */
+.subscribe-box {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+    color: #000;
+}
+
+.subscribe-box input::placeholder {
+    color: #BBB9B6;
+}
+
+.subscribe-box button {
+    padding: 10px 16px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.subscribe-box button:hover {
+    background: #333;
+}
+
+/* ===================  FOOTER BOTTOM ===================== */
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #BBB9B6;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* ====================  RESPONSIVE =================== */
+@media (max-width: 1024px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .icon-row,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .subscribe-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-box input,
+    .subscribe-box button {
+        width: 100%;
+        border-radius: 6px;
+    }
+}
