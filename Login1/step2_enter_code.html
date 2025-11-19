@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="forgot_password.css">
+</head>
+<body>
+<div class="flow-container">
+    <div class="card step-2">
+        <div class="card-header">
+            <a href="step1_forgot_password.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="card-content">
+            <h2>Nhập mã xác nhận</h2>
+            <p class="description">Mã xác minh của bạn sẽ được gửi qua email.</p>
+            <form action="step3_new_password.html" method="get">
+                <div class="code-input-group">
+                    <input type="number" maxlength="1" class="code-box" required>
+                    <input type="number" maxlength="1" class="code-box" required>
+                    <input type="number" maxlength="1" class="code-box" required>
+                    <input type="number" maxlength="1" class="code-box" required>
+                    <input type="number" maxlength="1" class="code-box" required>
+                </div>
+                <p class="resend-timer">Vui lòng chờ 59 giây để gửi lại.</p>
+                <button type="submit" class="btn primary">Tiếp theo</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
