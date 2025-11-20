@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài Đặt Hệ Thống</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="../Shared/headerAndSidebar.css">
+
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../FRONTEND/Source/Image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><a href="../TongQuan/admin.html"><i class="fa-solid fa-chart-line"></i> Tổng quan</a></li>
+            <li><a href="../SanPham/product.html"><i class="fa-solid fa-box"></i> Sản phẩm</a></li>
+            <li><a href="../DonHang/donhang.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+            <li><a href="../KhachHang/customer.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user-gear"></i> Hồ sơ</a></li>
+
+            <li class="active">
+                <a href="setting.html"><i class="fa-solid fa-gear"></i> Cài đặt</a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="main-content-page">
+            <div class="content-container">
+
+                <div class="page-header-control">
+                    <h2>Cài Đặt Hệ Thống</h2>
+                    <button class="btn-save"><i class="fa-solid fa-check"></i> Lưu cấu hình</button>
+                </div>
+
+                <div class="settings-tabs">
+                    <a href="setting-chung.html" class="tab-btn active">Chung</a>
+                    <a href="setting-thanhtoan-vanchuyen.html" class="tab-btn">Thanh toán & Vận chuyển</a>
+                    <a href="setting-thongbao.html" class="tab-btn">Thông báo</a>
+                    <a href="setting-nhanvien.html" class="tab-btn">Nhân viên</a>
+                </div>
+
+
+                <div id="general" class="tab-content active">
+                    <div class="setting-section">
+                        <h3>Thông tin cửa hàng</h3>
+                        <div class="row-2">
+                            <div class="form-group">
+                                <label>Tên cửa hàng</label>
+                                <input type="text" value="Green Store">
+                            </div>
+                            <div class="form-group">
+                                <label>Hotline</label>
+                                <input type="text" value="1900 1234">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ kho hàng</label>
+                            <input type="text" value="123 Đường ABC, Quận 1, TP.HCM">
+                        </div>
+                        <div class="form-group">
+                            <label>Email liên hệ</label>
+                            <input type="email" value="contact@greenstore.com">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</div>
+
+
+</body>
+</html>

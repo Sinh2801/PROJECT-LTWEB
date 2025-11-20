@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tài khoản của tôi - INOLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="hosonguoidung.css">
+
+</head>
+<body>
+<!--HEARDER-->
+<div id="page" class="page">
+    <div class="page_login" id="section_header_1">
+        <div class="container">
+            <div>
+                <img src="../FRONTEND/Source/Image/Logo.png" alt="Logo INOLA" style="height:36px; width:auto;">
+            </div>
+            <div>
+                <a href="#" class="pix_button small_button purple_bg">
+                    <span>Trung tâm trợ giúp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="account-container">
+
+        <aside class="account-sidebar">
+
+            <div class="sidebar-profile">
+                <div class="avatar-container">
+                    <i class="fa-solid fa-user-circle avatar-placeholder"></i>
+                </div>
+                <strong>Võ Sinh</strong>
+                <span>vosinh@gmail.com</span>
+                <button class="btn-change-avatar">Thay đổi ảnh</button>
+            </div>
+
+            <hr class="sidebar-divider">
+
+            <ul class="account-menu">
+                <li class="active">
+                    <a href="#profile">
+                        <i class="fa-solid fa-user-circle"></i> Hồ Sơ Của Tôi
+                    </a>
+                </li>
+                <li>
+                    <a href="#orders">
+                        <i class="fa-solid fa-receipt"></i> Đơn Hàng
+                    </a>
+                </li>
+                <li>
+                    <a href="#wishlist">
+                        <i class="fa-solid fa-heart"></i> Sản Phẩm Yêu Thích
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        <i class="fa-solid fa-star"></i> Đánh Giá Của Tôi
+                    </a>
+                </li>
+                <li>
+                    <a href="#password">
+                        <i class="fa-solid fa-key"></i> Đổi Mật Khẩu
+                    </a>
+                </li>
+                <li>
+                    <a href="#logout">
+                        <i class="fa-solid fa-sign-out-alt"></i> Đăng Xuất
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="account-content">
+
+            <h1>Hồ Sơ Của Tôi</h1>
+            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+
+            <div class="profile-card">
+                <h2>Thông tin cá nhân</h2>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" value="Võ Sinh">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="vosinh@gmail.com" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" value="0987654321">
+                    </div>
+                    <div class="form-group radio-group">
+                        <label>Giới tính</label>
+                        <input type="radio" id="male" name="gender" checked> <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender"> <label for="female">Nữ</label>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Ngày sinh</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <button type="submit" class="btn-save">Lưu thay đổi</button>
+                </form>
+            </div>
+
+            <div class="profile-card">
+                <div class="card-header">
+                    <h2>Địa chỉ</h2>
+                    <button class="btn-add"><i class="fa-solid fa-plus"></i> Thêm địa chỉ mới</button>
+                </div>
+
+                <div class="address-item">
+                    <div class="address-info">
+                        <strong>Võ Sinh</strong>
+                        <span class="default-badge">Mặc định</span>
+                        <p>0987654321</p>
+                        <p> Kiên Ngãi, Bình An, Gia Lai</p>
+                    </div>
+                    <div class="address-actions">
+                        <button class="btn-link">Chỉnh sửa</button>
+                        <button class="btn-link btn-delete">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
+        <p>Responsible for Content Management: Group 32</p>
+        <p>@ 2025 - Copyright belongs to Group 32</p>
+    </div>
+
+    </footer>
+</div>
+</body>
+</html>
