@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="HoSo.css">
+    <link rel="stylesheet" href="../Shared/headerAndSidebar.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><a href="../TongQuan/admin.html"><i class="fa-solid fa-chart-line"></i> Tổng quan</a></li>
+            <li><a href="../SanPham/product.html"><i class="fa-solid fa-box"></i> Sản phẩm</a></li>
+            <li><a href="../DonHang/donhang.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+            <li><a href="../KhachHang/customer.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
+
+            <li class="active">
+                <a href="profile.html"><i class="fa-solid fa-user-gear"></i> Hồ sơ</a>
+            </li>
+
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="main-content-page">
+            <div class="content-container">
+
+                <div class="page-header-control">
+                    <h2>Hồ Sơ Cá Nhân</h2>
+                    <button class="btn-save"><i class="fa-solid fa-save"></i> Lưu thay đổi</button>
+                </div>
+
+                <div class="profile-layout">
+
+                    <div class="profile-sidebar">
+                        <div class="avatar-card">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150" alt="Admin Avatar">
+                                <div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
+                            </div>
+                            <h3>Nguyễn Admin</h3>
+                            <p class="role">Quản trị viên cấp cao</p>
+                        </div>
+
+                        <div class="security-card">
+                            <h4>Bảo mật</h4>
+                            <div class="form-group">
+                                <label>Mật khẩu hiện tại</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu mới</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                            <div class="form-group">
+                                <label>Nhập lại mật khẩu</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-main">
+                        <div class="info-card">
+                            <div class="section-title">Thông tin chung</div>
+
+                            <div class="row-2">
+                                <div class="form-group">
+                                    <label>Họ</label>
+                                    <input type="text" value="Nguyễn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tên</label>
+                                    <input type="text" value="Admin">
+                                </div>
+                            </div>
+
+                            <div class="row-2">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" value="admin@website.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Số điện thoại</label>
+                                    <input type="text" value="0909 123 456">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Địa chỉ</label>
+                                <input type="text" value="TP. Hồ Chí Minh, Việt Nam">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Giới thiệu ngắn</label>
+                                <textarea rows="5">Quản lý hệ thống bán hàng chính.</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

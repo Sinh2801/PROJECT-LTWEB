@@ -1,0 +1,310 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+
+}
+
+/* Container chính */
+.cart-container {
+    max-width: 1360px;
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.cart-quantity-controls button, input {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.cart-quantity-controls .trash {
+    margin-left: 20px;
+    border: none
+}
+
+
+.cart-row {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.cart-products {
+    flex: 1;
+
+}
+
+
+.cart-title {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+/* Cart Item */
+.cart-item {
+    background-color: #e7f0fd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart-item-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.cart-checkbox {
+    margin-right: 15px;
+}
+
+.cart-item-img {
+    width: 120px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-color {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.cart-item-status {
+    background-color: #28a745;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.875rem;
+}
+
+.cart-item-actions {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cart-item-price {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.btn-quantity {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.875rem;
+}
+
+.btn-quantity:hover {
+    background-color: #e9ecef;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+
+
+
+.summary-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-section {
+    margin-bottom: 20px;
+}
+
+.voucher-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.voucher-input-group {
+    display: flex;
+}
+
+.voucher-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.btn-apply {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-apply:hover {
+    background-color: #0056b3;
+}
+
+.summary-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.summary-divider {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #dee2e6;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.total-amount {
+    color: #007bff;
+}
+
+.btn-checkout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.btn-checkout:hover {
+    background-color: #0056b3;
+}
+
+.summary-benefits {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.summary-benefits li {
+    margin-bottom: 10px;
+}
+
+.summary-benefits i {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.header-bar {
+
+    height: 70px;
+
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1360px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+
+}
+
+.login-signin {
+
+    margin-right: 20px;
+
+}
+
+.login-signin .btn {
+    margin-right: 10px;
+    padding: 5px;
+    border: white;
+}
+
+.login-signin ul {
+    display: flex;
+    list-style: none;
+}
+
+.login-signin ul li a i {
+    color: #007bff;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-icons img {
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.cart-summary {
+    flex-basis: 500px;
+    flex-shrink: 0;   /* Đảm bảo nó không bị co lại */
+
+}
+.summary-box{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonHang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="customerDetails.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li>
+                <a href="../TongQuan/admin.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+
+            <li >
+                <a href="../DonHang/DonHang.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng</a>
+
+            </li>
+            <li class="active">
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+
+            <li>
+                <a href="../SanPham/product.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+        <!--Don Hang  Content-->
+        <main class="main-content profile-page">
+
+            <div class="profile-container">
+
+                <aside class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Avatar" class="profile-avatar">
+                    <h3 class="profile-name">Võ Sinh</h3>
+                    <p class="profile-email">vosinh@gmail.com</p>
+                    <p class="profile-phone">012399999</p>
+                    <div>
+                        <button class="btn btn-secondary">Xóa</button>
+                        <button class="btn btn-primary-outline">Chỉnh sửa</button>
+                    </div>
+                    <hr class="profile-divider">
+
+                    <ul class="profile-info-list">
+                        <li>
+                            <span>Đơn hàng gần nhất:</span>
+                            <strong><a href="#">#80294</a></strong>
+                        </li>
+                        <li>
+                            <span>Đơn hàng trung bình:</span>
+                            <strong>574.000 VND</strong>
+                        </li>
+                        <li>
+                            <span>Đăng ký:</span>
+                            <strong>2 tháng trước</strong>
+                        </li>
+                        <li>
+                            <span>Email Marketing:</span>
+                            <strong>Đã đăng ký</strong>
+                        </li>
+                    </ul>
+
+
+                </aside>
+
+                <div class="profile-main">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Địa chỉ</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="address-block">
+                                <h5>151 Đông Hòa, Dĩ An, Bình Dương</h5>
+                                <div class="edit-address">
+                                <button class="edit"> <i class="fa-solid fa-pen"></i></button>
+                                <button class="delete" ><i class="fa-solid fa-trash"></i></button></div>
+
+                            </div>
+                            <div class="address-block">
+                                <h5>Khu phố 33, Phường Linh Xuân, Thành phố Thủ Đức, TP. Hồ Chí Minh </h5>
+                                <div class="edit-address">
+                                    <button class="edit"> <i class="fa-solid fa-pen"></i></button>
+                                    <button class="delete" ><i class="fa-solid fa-trash"></i></button></div>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fa-solid fa-plus"></i>
+                                Thêm Địa Chỉ Mới
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Đơn hàng</h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="profile-order-table">
+                                <thead>
+                                <tr>
+                                    <th>Đơn hàng</th>
+                                    <th>Ngày</th>
+                                    <th>Tình trạng</th>
+                                    <th>Số mặt hàng</th>
+                                    <th>Tổng cộng</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="#">#80294</a></td>
+                                    <td>Hôm nay lúc 6:10 PM</td>
+                                    <td>Chờ xử lý</td>
+                                    <td>4</td>
+                                    <td>$320.00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">#63736</a></td>
+                                    <td>15 Tháng 5, 2019</td>
+                                    <td>Hoàn thành</td>
+                                    <td>7</td>
+                                    <td>$2,574.31</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">#63501</a></td>
+                                    <td>7 Tháng 1, 2019</td>
+                                    <td>Hoàn thành</td>
+                                    <td>1</td>
+                                    <td>$34.00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">#40278</a></td>
+                                    <td>19 Tháng 10, 2018</td>
+                                    <td>Hoàn thành</td>
+                                    <td>2</td>
+                                    <td>$704.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="view-all-link">Xem tất cả 7 đơn hàng</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
