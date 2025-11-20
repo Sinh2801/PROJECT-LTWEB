@@ -48,6 +48,14 @@ a:hover {
     text-decoration: none; /* Bỏ gạch chân khi hover cho gọn */
 }
 
+a {
+    text-decoration: none;
+    color: #0ea5e9;
+}
+a:hover {
+    text-decoration: none; /* Bỏ gạch chân khi hover cho gọn */
+}
+
 /* === BỐ CỤC TRANG TÀI KHOẢN === */
 .account-container {
     display: flex;
@@ -139,8 +147,9 @@ a:hover {
     background: #f4f4f4;
 }
 .account-menu li.active a {
-    background: #e0f2fe; /* Màu xanh nhạt khi active */
-    color: #0c4a6e; /* Màu xanh đậm */
+background: #e0f2fe;
+    /* Màu xanh nhạt khi active */
+color: #0c4a6e; /* Màu xanh đậm */
 }
 .account-menu li.active a i {
     color: #0c4a6e;
@@ -154,125 +163,69 @@ a:hover {
 .account-content h1 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
-/* === CSS MỚI CHO TRANG ĐÁNH GIÁ === */
-
-/* Tabs (Gần giống .order-tabs) */
-.review-tabs {
-    display: flex;
-    background: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    padding: 5px;
+.account-content p {
+    font-size: 15px;
+    color: #666;
     margin-bottom: 30px;
 }
 
-.review-tabs .tab-item {
-    flex: 1; /* Chia đều 2 tab */
-    text-align: center;
-    padding: 12px 15px;
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-    font-size: 15px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
+/* === CSS MỚI CHO TRANG ĐỔI MẬT KHẨU === */
+/* (Tái sử dụng style từ trang Hồ Sơ) */
 
-.review-tabs .tab-item:hover {
-    background: #f4f4f4;
-}
-
-.review-tabs .tab-item.active {
-    background: #0ea5e9; /* Màu xanh dương */
-    color: #fff;
-}
-
-/* Danh sách đánh giá */
-.review-list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Khoảng cách giữa các card đánh giá */
-}
-
-/* Card Đánh giá */
-.review-card {
+.profile-card {
     background: #ffffff;
     border-radius: 10px;
+    padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    padding: 25px;
+    margin-bottom: 30px; /* Khoảng cách giữa các card */
 }
 
-.review-product-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.review-product-info img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    object-fit: cover;
-    border: 1px solid #f0f0f0;
-}
-.review-product-info .product-details strong {
-    display: block;
-    font-size: 16px;
+.profile-card h2 {
+    font-size: 20px;
     font-weight: 600;
-}
-.review-product-info .product-details p {
-    font-size: 14px;
-    color: #888;
-    margin: 0;
+    margin-bottom: 25px;
 }
 
-hr.review-divider {
-    border: none;
-    border-top: 1px dashed #e5e5e5;
-    margin: 20px 0;
+/* Form đổi mật khẩu */
+.password-form {
+    max-width: 500px; /* Giới hạn chiều rộng của form */
 }
 
-.review-content .review-rating {
-    margin-bottom: 10px;
-    color: #f59e0b; /* Màu vàng sao */
-    font-size: 16px;
-}
-
-.review-content .review-date {
-    display: block;
-    font-size: 13px;
-    color: #999;
-    margin-bottom: 10px;
-}
-
-.review-content .review-comment {
-    font-size: 15px;
-    color: #333;
-    line-height: 1.7;
-    margin: 0;
-}
-
-/* CSS cho Thẻ thông báo "trống" (Nếu cần) */
-.empty-state-card {
-    text-align: center;
-    padding: 80px 40px;
-    color: #999;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.empty-state-card i {
-    font-size: 60px;
-    color: #e0e0e0;
+.form-group {
     margin-bottom: 20px;
 }
 
-.empty-state-card p {
-    font-size: 16px;
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: 500;
-    color: #777;
-    margin: 0;
+    font-size: 14px;
+}
+
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Quan trọng */
+    font-size: 15px;
+}
+
+.btn-save {
+    background: #0ea5e9; /* Màu xanh dương */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-save:hover {
+    background: #0284c7; /* Đậm hơn khi hover */
 }
