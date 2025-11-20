@@ -205,7 +205,7 @@ body{
     margin-top: 6px;
 }
 
-/* Rating (viền đen theo yêu cầu) */
+/* Rating  */
 .product-sold .rating {
     display: flex;
     align-items: center;

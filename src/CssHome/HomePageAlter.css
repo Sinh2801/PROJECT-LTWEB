@@ -30,25 +30,67 @@
 header, header * {
     font-weight: bold;
 }
-
-/* Dòng 1 - Đăng nhập / Đăng ký */
-.user-bar {
-    background-color: #fff;
-    text-align: right;
+/* === User Menu === */
+.user-header {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    padding: 4px 40px;
-    font-size: 16px;
-    box-sizing: border-box;
 }
-
-.user-bar a {
-    text-decoration: none;
-    margin: 0 5px;
+.user-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+}
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
     color: #888695;
     font-weight: bold;
 }
-.user-bar a:hover {
-    color : purple;
+
+.user-trigger:hover {
+    color: purple;
+}
+
+/* Dropdown */
+.user-dropdown {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    display: none;
+    z-index: 5000;
+}
+
+.user-dropdown li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-dropdown li a:hover {
+    background: #f3f3f3;
+}
+
+/* Divider */
+.user-dropdown hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 6px 0;
+}
+
+.logout {
+    color: red !important;
 }
 
 /* Dòng 2 - Logo, Tìm kiếm, Giỏ hàng */
@@ -104,6 +146,7 @@ header, header * {
     color: #333;
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
+    font-size: 16px;
 }
 
 .dropdown-menu a:hover {
