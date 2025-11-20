@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="productediting.css">
+    <link rel="stylesheet" href="ProductAddStyle.css">
     <link rel="stylesheet" href="../Shared/headerAndSidebar.css">
 
 </head>
@@ -19,7 +18,7 @@
             <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
         </nav>
         <ul class="menu">
-            <li><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
+            <li ><i class="fa-solid fa-chart-line"></i> Tổng quan</li>
             <li class="active"><i class="fa-solid fa-box"></i> Sản phẩm</li>
             <li><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
             <li><i class="fa-solid fa-users"></i> Khách hàng</li>
@@ -44,14 +43,13 @@
 
         <!-- Dashboard -->
         <main class="dashboard add-product-page">
-            <div class="chinhsua">
+            <div class="themsanpham">
                 <nav class="quaylai">
-                    <a href="product.html">
-                        <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="Product.html">
+                    <i class="fa-solid fa-arrow-left"></i></a>
                 </nav>
-                <h2>Chỉnh sửa sản phẩm</h2>
+                <h2>Thêm sản phẩm</h2>
             </div>
-
             <div class="product-container">
 
                 <!-- Thông tin sản phẩm -->
@@ -60,46 +58,32 @@
 
                     <div class="form-group">
                         <label>Tên</label>
-                        <input type="text" value="Móc khóa gỗ khắc tên">
+                        <input type="text" placeholder="Tủ lạnh, máy giặt, ext...">
                     </div>
 
                     <div class="form-2col">
                         <div class="form-group">
                             <label>Mã SKU</label>
-                            <input type="text" VALUE="MK-GLN-001">
+                            <input type="text" placeholder="Ví dụ: 384512302">
                         </div>
 
                         <div class="form-group">
                             <label>Danh mục</label>
-                            <input type="text" VALUE="Quà lưu niệm">
+                            <input type="text" placeholder="Tủ lạnh">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="description">Mô tả</label>
-                        <textarea id="description" placeholder="Nhập mô tả của bạn..." rows="8">
-    Móc khóa gỗ khắc tên – Quà lưu niệm độc đáo
-    - Chất liệu: Gỗ tự nhiên cao cấp, bền đẹp, thân thiện môi trường.
-    - Kích thước: 5cm x 3cm (có thể tùy chỉnh theo yêu cầu).
-    - Thiết kế: Khắc tên cá nhân, chữ sắc nét, tinh tế.
-    - Màu sắc: Tự nhiên của gỗ, có thể kết hợp màu sơn nhẹ theo yêu cầu.
-    - Phù hợp làm quà tặng sinh nhật, kỷ niệm hoặc quà doanh nghiệp.
-    - Nhẹ, tiện lợi để treo chìa khóa, balo hoặc túi xách.
-    - Mỗi sản phẩm được khắc thủ công, đảm bảo độc đáo.
-    </textarea>
+                        <label>Mô tả</label>
+                        <textarea placeholder="Nhập mô tả của bạn..."></textarea>
                     </div>
-
 
                     <section class="box image-box">
                         <h3>Hình ảnh</h3>
                         <div class="upload-area">
-
-                            <img src="/image/Logo.png" alt="">
-                            <button class=" thaydoi">
-                                <a href="">
-                                    Thay đổi
-                                </a>
-                            </button>
+                            <img src="https://cdn-icons-png.flaticon.com/512/401/401061.png" class="upload-icon">
+                            <p>Kéo và thả tệp của bạn vào đây<br>hoặc</p>
+                            <button class="upload-btn">Tải ảnh lên</button>
                         </div>
                     </section>
 
@@ -111,12 +95,12 @@
                     <div class="form-2col">
                         <div class="form-group">
                             <label>Giá</label>
-                            <input type="text" value="630.000" min="0">
+                            <input type="text" placeholder="0" min="0">
                         </div>
 
                         <div class="form-group">
                             <label>Số lượng</label>
-                            <input type="text" value="72" min="0">
+                            <input type="text" placeholder="0" min="0">
                         </div>
                     </div>
 
@@ -148,8 +132,10 @@
 
                         <div class="form-2col">
 
-
+                            <!-- Input hiển thị "Chất liệu", không thể chỉnh sửa -->
                             <input type="text" value="Chất liệu" disabled>
+
+                            <!-- Select cho người dùng chọn chất liệu -->
                             <select>
                                 <option value="go">Gỗ</option>
                                 <option value="kim-loai">Kim loại</option>
@@ -170,29 +156,27 @@
                         <button class="add-btn">+ Thêm thuộc tính</button>
                     </div>
 
+
                     <h3>Tổ chức</h3>
                     <div class="form-group">
                         <label>Nhà cung cấp</label>
-                        <input type="text" VALUE="HandMade" >
+                        <input type="text" placeholder="Ví dụ: Nike">
                     </div>
 
                     <div class="form-group">
                         <label>Bộ sưu tập</label>
-                        <input type="text" value="Móc khoá" >
+                        <input type="text" placeholder="Nhà bếp">
                     </div>
 
                     <div class="form-group">
                         <label>Thẻ</label>
-                        <input type="text" value="Móc khóa, quà tặng, gỗ, khắc tên">
+                        <input type="text" placeholder="Nhập thẻ tại đây">
                     </div>
 
-                    <div class="form-actions">
-                        <button class="btn btn-save">Lưu sản phẩm</button>
-                        <button class="btn btn-delete">Xóa sản phẩm</button>
-                    </div>
-
+                    <button class="save-btn">Lưu</button>
                 </section>
 
+                <!-- Hình ảnh -->
 
             </div>
         </main>

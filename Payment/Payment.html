@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="PaymentStyle.css">
+</head>
+<body>
+
+<div class="master-container">
+
+    <div class="page-header">
+        <a href="trang-gio-hang.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Quay lại giỏ hàng</a>
+        <h1>Thanh toán & Đặt hàng</h1>
+    </div>
+
+    <div class="layout-grid">
+
+        <div class="column-left">
+
+            <div class="section-card address-section">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="fa-solid fa-map-location-dot"></i> Địa chỉ nhận hàng</h3>
+                    <button class="btn-edit">Thay đổi</button>
+                </div>
+                <div class="address-content">
+                    <div class="name-row">
+                        <span class="name">Võ Sinh</span>
+                        <span class="phone">| (+84) 0383 736 322</span>
+                    </div>
+                    <div class="address-text">151, Tô Vĩnh Diện, Đông Hòa, Dĩ An, Bình Dương</div>
+                    <span class="tag-home">Nhà riêng</span>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h3 class="card-title">Kiểm tra sản phẩm (4)</h3>
+                <div class="checkout-items">
+                    <div class="item-mini">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/698e41ae0196408eb16aa7fb008046ad_9366/Giay_Superstar_trang_FV3284_01_standard.jpg" alt="Shoes">
+                        <div class="info">
+                            <h4>Adidas Superstar Original</h4>
+                            <p>Size: 42 - Màu: Trắng</p>
+                            <div class="qty-price">x1 <span>2.500.000 ₫</span></div>
+                        </div>
+                    </div>
+                    <div class="item-mini">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c6f9c5b5427b4d0a8071a887013a4635_9366/Giay_Stan_Smith_trang_M20324_01_standard.jpg" alt="Shoes">
+                        <div class="info">
+                            <h4>Adidas Stan Smith Green</h4>
+                            <p>Size: 40 - Màu: Xanh</p>
+                            <div class="qty-price">x2 <span>4.600.000 ₫</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h3 class="card-title">Chọn phương thức thanh toán</h3>
+
+                <div class="payment-grid">
+
+                    <label class="payment-card-item">
+                        <input type="radio" name="payment" checked>
+                        <div class="card-box">
+                            <div class="card-icon cod-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <div class="card-info">
+                                <span class="method-name">Thanh toán khi nhận hàng</span>
+                                <span class="method-desc">COD</span>
+                            </div>
+                            <i class="fa-solid fa-circle-check check-mark"></i>
+                        </div>
+                    </label>
+
+                    <label class="payment-card-item">
+                        <input type="radio" name="payment">
+                        <div class="card-box">
+                            <div class="card-icon visa-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                            <div class="card-info">
+                                <span class="method-name">VISA **** 5634</span>
+                                <span class="method-desc">Hết hạn 12/28</span>
+                            </div>
+                            <i class="fa-solid fa-circle-check check-mark"></i>
+                        </div>
+                    </label>
+
+                    <label class="payment-card-item">
+                        <input type="radio" name="payment">
+                        <div class="card-box">
+                            <div class="card-icon jcb-icon"><i class="fa-brands fa-cc-jcb"></i></div>
+                            <div class="card-info">
+                                <span class="method-name">JCB **** 4212</span>
+                                <span class="method-desc">Techcombank</span>
+                            </div>
+                            <i class="fa-solid fa-circle-check check-mark"></i>
+                        </div>
+                    </label>
+
+                    <label class="payment-card-item">
+                        <input type="radio" name="payment">
+                        <div class="card-box">
+                            <div class="card-icon momo-icon"><i class="fa-solid fa-wallet"></i></div>
+                            <div class="card-info">
+                                <span class="method-name">Ví MoMo</span>
+                                <span class="method-desc">0383***322</span>
+                            </div>
+                            <i class="fa-solid fa-circle-check check-mark"></i>
+                        </div>
+                    </label>
+
+                    <div class="add-new-card">
+                        <div class="card-box-add">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Thêm thẻ mới</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column-right">
+            <div class="summary-box">
+                <h3>Chi tiết thanh toán</h3>
+
+                <div class="voucher-box">
+                    <input type="text" placeholder="Nhập mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+
+                <div class="line-items">
+                    <div class="row">
+                        <span>Tổng tiền hàng</span>
+                        <span>95.775.561 ₫</span>
+                    </div>
+                    <div class="row">
+                        <span>Phí vận chuyển</span>
+                        <span class="text-green">Miễn phí</span>
+                    </div>
+                    <div class="row">
+                        <span>VAT (10%)</span>
+                        <span>9.577.556 ₫</span>
+                    </div>
+                </div>
+
+                <div class="total-price-row">
+                    <span>Tổng thanh toán</span>
+                    <span class="price-big">105.353.117 ₫</span>
+                </div>
+
+                <button class="btn-confirm">ĐẶT HÀNG NGAY</button>
+
+                <p class="note-secure"><i class="fa-solid fa-lock"></i> Thông tin được bảo mật tuyệt đối</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
