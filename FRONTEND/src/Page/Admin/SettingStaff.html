@@ -6,9 +6,8 @@
     <title>Cài Đặt Hệ Thống</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-    <link rel="stylesheet" href="../../Style/Admin/setting.css">
-    <link rel="stylesheet" href="../../Style/Admin/headerAndSidebar.css">
+    <link rel="stylesheet" href="../../Style/Admin/SettingStyle.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
 </head>
 <body>
 <div class="container">
@@ -49,47 +48,45 @@
                 <div class="settings-tabs">
                     <a href="setting-chung.html" class="tab-btn ">Chung</a>
                     <a href="setting-thanhtoan-vanchuyen.html" class="tab-btn ">Thanh toán & Vận chuyển</a>
-                    <a href="setting-thongbao.html" class="tab-btn active" >Thông báo</a>
-                    <a href="setting-nhanvien.html" class="tab-btn">Nhân viên</a>
+                    <a href="setting-thongbao.html" class="tab-btn">Thông báo</a>
+                    <a href="setting-nhanvien.html" class="tab-btn  active">Nhân viên</a>
                 </div>
 
 
-                <div id="notification" class="tab-content">
+                <div id="staff" class="tab-content">
                     <div class="setting-section">
-                        <h3>Cấu hình Email</h3>
-
-                        <div class="toggle-row">
-                            <div class="toggle-info">
-                                <h4>Thông báo đơn hàng mới</h4>
-                                <p>Gửi email khi có khách đặt hàng</p>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
+                        <div class="flex-between">
+                            <h3>Danh sách tài khoản</h3>
+                            <button class="btn-small"><i class="fa-solid fa-plus"></i> Thêm NV</button>
                         </div>
 
-                        <div class="toggle-row">
-                            <div class="toggle-info">
-                                <h4>Cảnh báo hết hàng</h4>
-                                <p>Thông báo khi sản phẩm còn dưới 5 item</p>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-
-                        <div class="toggle-row">
-                            <div class="toggle-info">
-                                <h4>Email quảng cáo</h4>
-                                <p>Tự động gửi mail khuyến mãi hàng tháng</p>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
+                        <table class="setting-table">
+                            <thead>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Vai trò</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Nguyễn Văn A</td>
+                                <td>admin@shop.com</td>
+                                <td><span class="badge-role admin">Admin</span></td>
+                                <td>Hoạt động</td>
+                                <td><i class="fa-solid fa-trash text-red"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Trần Thị B</td>
+                                <td>staff@shop.com</td>
+                                <td><span class="badge-role editor">Biên tập</span></td>
+                                <td>Hoạt động</td>
+                                <td><i class="fa-solid fa-trash text-red"></i></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 

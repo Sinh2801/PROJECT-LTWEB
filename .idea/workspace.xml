@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8187d2a-1ae5-4042-921a-452a7a398bb0" name="Changes" comment="thay doi ten">
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/ChiTietDonHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/OrderDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/DonHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/Order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/HoSo.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/ProfileAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/addproduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/ProductAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/OverView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/Customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/customerDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/CustomerDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/productediting.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/ProductEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/settingNhanvien.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/SettingStaff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/settingchung.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/SettingGeneral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/settingpayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/SettingPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/settingthongbao.html" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Page/Admin/SettingNotification .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/DonHang.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/OrderStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/HoSo.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/ProfileAdmin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/addproduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/ProductAdd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/customerDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/CustomerDetailsStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/headerAndSidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/HeaderAndSidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/Product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/productediting.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/ProductEdit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/setting.css" beforeDir="false" afterPath="$PROJECT_DIR$/FRONTEND/src/Style/Admin/SettingStyle.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;23130150-khanh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Sinh2801/PROJECT-LTWEB.git&quot;,
+    &quot;accountId&quot;: &quot;96db3e11-3e26-4e44-973d-559869664f58&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="35jpKDWDz928LKBCZ8T4kuLF3se" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "test-branch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Minh Anh PC\WebstormProjects\PROJECT-LTWEB\FRONTEND\src\Style\Admin" />
+      <recent name="C:\Users\Minh Anh PC\WebstormProjects\PROJECT-LTWEB\FRONTEND\src\Page\Admin" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8187d2a-1ae5-4042-921a-452a7a398bb0" name="Changes" comment="" />
+      <created>1763633272046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763633272046</updated>
+      <workItem from="1763633272983" duration="1056000" />
+      <workItem from="1763635540816" duration="654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1faf2847-2ee7-4f78-a25e-4298d5e9d155" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1faf2847-2ee7-4f78-a25e-4298d5e9d155">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="thay doi ten" />
+    <option name="LAST_COMMIT_MESSAGE" value="thay doi ten" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+</project>
