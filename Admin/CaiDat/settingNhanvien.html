@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài Đặt Hệ Thống</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../Shared/headerAndSidebar.css">
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><a href="../TongQuan/admin.html"><i class="fa-solid fa-chart-line"></i> Tổng quan</a></li>
+            <li><a href="../SanPham/product.html"><i class="fa-solid fa-box"></i> Sản phẩm</a></li>
+            <li><a href="../DonHang/donhang.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+            <li><a href="../KhachHang/customer.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user-gear"></i> Hồ sơ</a></li>
+
+            <li class="active">
+                <a href="setting.html"><i class="fa-solid fa-gear"></i> Cài đặt</a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="main-content-page">
+            <div class="content-container">
+
+                <div class="page-header-control">
+                    <h2>Cài Đặt Hệ Thống</h2>
+                    <button class="btn-save"><i class="fa-solid fa-check"></i> Lưu cấu hình</button>
+                </div>
+
+                <div class="settings-tabs">
+                    <a href="setting-chung.html" class="tab-btn ">Chung</a>
+                    <a href="setting-thanhtoan-vanchuyen.html" class="tab-btn ">Thanh toán & Vận chuyển</a>
+                    <a href="setting-thongbao.html" class="tab-btn">Thông báo</a>
+                    <a href="setting-nhanvien.html" class="tab-btn  active">Nhân viên</a>
+                </div>
+
+
+                <div id="staff" class="tab-content">
+                    <div class="setting-section">
+                        <div class="flex-between">
+                            <h3>Danh sách tài khoản</h3>
+                            <button class="btn-small"><i class="fa-solid fa-plus"></i> Thêm NV</button>
+                        </div>
+
+                        <table class="setting-table">
+                            <thead>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Vai trò</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Nguyễn Văn A</td>
+                                <td>admin@shop.com</td>
+                                <td><span class="badge-role admin">Admin</span></td>
+                                <td>Hoạt động</td>
+                                <td><i class="fa-solid fa-trash text-red"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Trần Thị B</td>
+                                <td>staff@shop.com</td>
+                                <td><span class="badge-role editor">Biên tập</span></td>
+                                <td>Hoạt động</td>
+                                <td><i class="fa-solid fa-trash text-red"></i></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+</body>
+</html>
