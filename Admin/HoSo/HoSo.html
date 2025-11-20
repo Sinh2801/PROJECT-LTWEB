@@ -1,121 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>HO-SO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="HoSo.css">
+    <link rel="stylesheet" href="../Shared/headerAndSidebar.css">
 </head>
 <body>
-
 <div class="container">
-    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <nav class="logo">
-
             <img src="../../image/Logo-removebg-preview.png" alt="logo" width="100">
         </nav>
         <ul class="menu">
-            <li>
-                <a href="../TongQuan/admin.html">
-                    <i class="fa-solid fa-chart-line"></i> Tổng quan
-                </a>
-            </li>
-
-            <li>
-                <a href="../SanPham/product.html">
-                    <i class="fa-solid fa-box"></i> Sản phẩm
-                </a>
-            </li>
+            <li><a href="../TongQuan/admin.html"><i class="fa-solid fa-chart-line"></i> Tổng quan</a></li>
+            <li><a href="../SanPham/product.html"><i class="fa-solid fa-box"></i> Sản phẩm</a></li>
+            <li><a href="../DonHang/donhang.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+            <li><a href="../KhachHang/customer.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
 
             <li class="active">
-                <i class="fa-solid fa-receipt"></i> Đơn hàng
-
-            </li>
-            <li>
-                <a href="../SanPham/product.html">
-                    <i class="fa-solid fa-users"></i> Khách hàng
-                </a>
+                <a href="profile.html"><i class="fa-solid fa-user-gear"></i> Hồ sơ</a>
             </li>
 
-            <li>
-                <a href="../SanPham/product.html">
-                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
-                </a>
-            </li>
-
-            <li>
-                <a href="../SanPham/product.html">
-                    <i class="fa-solid fa-gear"></i> Cài đặt
-                </a>
-            </li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt</a></li>
         </ul>
     </aside>
-<!-- Main Content -->
-    <!-- Main Content -->
+
     <div class="main-content">
-        <!-- Header -->
         <header class="header">
             <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
             <div class="user-info">
                 <i class="fa-solid fa-bell"></i>
-                <img src="https://i.pravatar.cc/40" alt="user" />
+                <img src="https://i.pravatar.cc/40" alt="user">
             </div>
         </header>
 
+        <main class="main-content-page">
+            <div class="content-container">
 
-        <!-- Cover Image -->
-        <div class="cover">
-            <img src="https://images.pexels.com/photos/6489081/pexels-photo-6489081.jpeg" alt="cover" />
-            <button class="change-cover"><i class="fa-solid fa-camera"></i> Thay đổi ảnh bìa</button>
-        </div>
-
-
-        <!-- Profile Info -->
-        <section class="profile-info">
-            <div class="avatar-box">
-                <img src="https://i.pravatar.cc/120" alt="avatar" />
-                <button class="edit-avatar"><i class="fa-solid fa-pen"></i></button>
-            </div>
-            <h2 class="name">Bé Kiệt Cute <i class="fa-solid fa-circle-check verified"></i></h2>
-            <div class="details">
-                <span><i class="fa-solid fa-location-dot"></i> Bến Tre</span>
-                <span><i class="fa-solid fa-earth-asia"></i> Việt Nam</span>
-                <span><i class="fa-solid fa-calendar"></i> Tham gia tháng 3 năm 2013</span>
-            </div>
-            <button class="edit-profile">Chỉnh sửa hồ sơ</button>
-        </section>
-
-
-        <div class="content-row">
-            <!-- Left: Intro -->
-            <div class="intro-box">
-                <h3>Giới Thiệu</h3>
-                <p><strong>Tiểu sử</strong><br />Bạn cần những vật dụng cần thiết cho ngôi nhà. Bạn muốn ngôi nhà trở nên thông minh và hiện đại. Bạn tìm đúng nơi rồi đấy!</p>
-                <p><strong>Vị trí</strong><br />Doanh nhân bán đồ gia dụng</p>
-                <p><strong>Điện thoại</strong><br />+32112345689</p>
-                <p><strong>Ngày sinh</strong><br />01.10.2004</p>
-                <p><strong>Email</strong><br />kiet2211@gmail.com</p>
-                <p><strong>Địa điểm</strong><br />Quận 2, Thủ Đức</p>
-            </div>
-
-
-            <!-- Right: Share -->
-            <div class="share-box">
-                <h3>Chia sẻ hồ sơ của bạn</h3>
-                <p>Hãy chia sẻ hồ sơ của bạn để bắt đầu tạo khách hàng tiềm năng.</p>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://larkon-mileage.com" class="qr" />
-                <div class="icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                <div class="page-header-control">
+                    <h2>Hồ Sơ Cá Nhân</h2>
+                    <button class="btn-save"><i class="fa-solid fa-save"></i> Lưu thay đổi</button>
                 </div>
-                <div class="copy-box">
-                    <input type="text" value="https://larkon-mileage.com" readonly />
-                    <button><i class="fa-solid fa-copy"></i></button>
-                </div>
-            </div>
-        </div>
+
+                <div class="profile-layout">
+
+                    <div class="profile-sidebar">
+                        <div class="avatar-card">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150" alt="Admin Avatar">
+                                <div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
+                            </div>
+                            <h3>Nguyễn Admin</h3>
+                            <p class="role">Quản trị viên cấp cao</p>
+                        </div>
+
+                        <div class="security-card">
+                            <h4>Bảo mật</h4>
+                            <div class="form-group">
+                                <label>Mật khẩu hiện tại</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu mới</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                            <div class="form-group">
+                                <label>Nhập lại mật khẩu</label>
+                                <input type="password" placeholder="********">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-main">
+                        <div class="info-card">
+                            <div class="section-title">Thông tin chung</div>
+
+                            <div class="row-2">
+                                <div class="form-group">
+                                    <label>Họ</label>
+                                    <input type="text" value="Nguyễn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tên</label>
+                                    <input type="text" value="Admin">
+                                </div>
+                            </div>
+
+                            <div class="row-2">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" value="admin@website.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Số điện thoại</label>
+                                    <input type="text" value="0909 123 456">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Địa chỉ</label>
+                                <input type="text" value="TP. Hồ Chí Minh, Việt Nam">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Giới thiệu ngắn</label>
+                                <textarea rows="5">Quản lý hệ thống bán hàng chính.</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> </div>
+        </main>
     </div>
 </div>
 </body>
