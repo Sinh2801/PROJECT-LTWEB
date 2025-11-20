@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Don Hang </title>
+    <link rel="stylesheet" href="donhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<!-- ========== HEADER ========== -->
+<div class="page_login" id="section_header_1">
+    <div class="container">
+        <img src="../image/Logo.png" alt="Logo INOLA" style="height:36px; width:auto;">
+        <a href="#" class="pix_button small_button purple_bg">
+            <span>Trung tâm trợ giúp</span>
+        </a>
+    </div>
+<!--==== MAIN ACCOUNT CONTAINER -->
+    <div class="account-container">
+        <aside class="account-sidebar">
+            <div class="sidebar-profile">
+                <div class="avatar-container">
+                    <i class="fa-solid fa-user-circle avatar-placeholder"></i>
+                </div>
+                <strong>Võ Sinh</strong>
+                <span>vosinh@gmail.com</span>
+                <button class="btn-change-avatar">Thay đổi ảnh</button>
+            </div>
+            <hr class="sidebar-divider">
+            <ul class="account-menu">
+                <li>
+                    <a href="#profile">
+                        <i class="fa-solid fa-user-circle"></i> Hồ Sơ Của Tôi
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#orders">
+                        <i class="fa-solid fa-receipt"></i> Đơn Hàng
+                    </a>
+                </li>
+                <li>
+                    <a href="#wishlist">
+                        <i class="fa-solid fa-heart"></i> Sản Phẩm Yêu Thích
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        <i class="fa-solid fa-star"></i> Đánh Giá Của Tôi
+                    </a>
+                </li>
+                <li>
+                    <a href="#password">
+                        <i class="fa-solid fa-key"></i> Đổi Mật Khẩu
+                    </a>
+                </li>
+                <li>
+                    <a href="#logout">
+                        <i class="fa-solid fa-sign-out-alt"></i> Đăng Xuất
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="account-content">
+            <h1>Đơn Hàng Của Tôi</h1>
+            <nav class="order-tabs">
+                <a href="#" class="tab-item active">Tất cả</a>
+                <a href="#" class="tab-item">Chờ xác nhận</a>
+                <a href="#" class="tab-item">Chờ lấy hàng</a>
+                <a href="#" class="tab-item">Đang giao</a>
+                <a href="#" class="tab-item">Đã giao</a>
+                <a href="#" class="tab-item">Đã Hủy</a>
+            </nav>
+            <div class="order-content">
+                <div class="table-responsive">
+                    <table class="order-list-table">
+                        <thead>
+                        <tr>
+                            <th>Mã Đơn Hàng</th>
+                            <th>Sản phẩm</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a href="#">#DH12345</a></td>
+                            <td>
+                                <div class="product-cell">
+                                    <img src="https://via.placeholder.com/60" alt="Sản phẩm">
+                                    <div class="product-info">
+                                        <strong>Bó Hoa Cẩm Tú Cầu</strong>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>15/11/2025</td>
+                            <td>350.000 VND</td>
+                            <td><span class="badge success">Đã giao</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">#DH12344</a></td>
+                            <td>
+                                <div class="product-cell">
+                                    <img src="https://via.placeholder.com/60" alt="Sản phẩm">
+                                    <div class="product-info">
+                                        <strong>Nến Thơm Cao Cấp</strong>
+                                        <span>x2</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>14/11/2025</td>
+                            <td>520.000 VND</td>
+                            <td><span class="badge blue">Đang giao</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">#DH12343</a></td>
+                            <td>
+                                <div class="product-cell">
+                                    <img src="https://via.placeholder.com/60" alt="Sản phẩm">
+                                    <div class="product-info">
+                                        <strong>Bộ Ấm Trà Gốm Sứ</strong>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>14/11/2025</td>
+                            <td>890.000 VND</td>
+                            <td><span class="badge orange">Chờ lấy hàng</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">#DH12342</a></td>
+                            <td>
+                                <div class="product-cell">
+                                    <img src="https://via.placeholder.com/60" alt="Sản phẩm">
+                                    <div class="product-info">
+                                        <strong>Khăn Lụa Tơ Tằm</strong>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>13/11/2025</td>
+                            <td>410.000 VND</td>
+                            <td><span class="badge gray">Chờ xác nhận</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">#DH12341</a></td>
+                            <td>
+                                <div class="product-cell">
+                                    <img src="https://via.placeholder.com/60" alt="Sản phẩm">
+                                    <div class="product-info">
+                                        <strong>Tranh Treo Tường</strong>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>12/11/2025</td>
+                            <td>600.000 VND</td>
+                            <td><span class="badge red">Đã Hủy</span></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+</body>
+</html>

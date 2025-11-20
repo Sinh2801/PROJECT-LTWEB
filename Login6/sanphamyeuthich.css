@@ -1,0 +1,293 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* ========== HEADER ========== */
+#section_header_1 {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pix_button {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.purple_bg {
+    background-color: #7c4dff;
+}
+
+.purple_bg:hover {
+    background-color: #5e35b1;
+}
+
+a {
+    text-decoration: none;
+    color: #0ea5e9;
+}
+a:hover {
+    text-decoration: none; /* Bỏ gạch chân khi hover cho gọn */
+}
+
+a {
+    text-decoration: none;
+    color: #0ea5e9;
+}
+a:hover {
+    text-decoration: none; /* Bỏ gạch chân khi hover cho gọn */
+}
+
+/* === BỐ CỤC TRANG TÀI KHOẢN === */
+.account-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto; /* Căn giữa và tạo khoảng cách */
+    gap: 30px; /* Khoảng cách giữa sidebar và nội dung */
+    padding: 0 20px;
+}
+
+/* === SIDEBAR (MENU BÊN TRÁI) === */
+.account-sidebar {
+    flex: 0 0 260px; /* Cố định chiều rộng sidebar */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content; /* Chỉ cao bằng nội dung */
+}
+
+/* CSS CHO PROFILE SIDEBAR */
+.sidebar-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+.avatar-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+.avatar-placeholder {
+    font-size: 80px;
+    color: #e0e0e0;
+}
+.sidebar-profile strong {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+.sidebar-profile span {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.btn-change-avatar {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-change-avatar:hover {
+    background: #f4f4f4;
+}
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 0 0 15px 0;
+}
+
+.account-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.account-menu li a i {
+    width: 20px;
+    text-align: center;
+    color: #555;
+}
+.account-menu li a:hover {
+    background: #f4f4f4;
+}
+.account-menu li.active a {
+    background: #e0f2fe; /* Màu xanh nhạt khi active */
+    color: #0c4a6e; /* Màu xanh đậm */
+}
+.account-menu li.active a i {
+    color: #0c4a6e;
+}
+
+/* === NỘI DUNG CHÍNH (BÊN PHẢI) === */
+.account-content {
+    flex: 1; /* Lấp đầy không gian còn lại */
+}
+
+.account-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* === CSS MỚI CHO LƯỚI SẢN PHẨM === */
+.product-grid-container {
+    display: grid;
+    /* Hiển thị 3 cột, tự động điều chỉnh */
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #ffffff;
+    /* Ảnh không có border-radius, nên card không cần */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+    transition: box-shadow 0.2s ease;
+}
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-image-wrapper {
+    position: relative;
+    background: #f9f9f9;
+}
+.product-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1 / 1.3; /* Tỉ lệ ảnh cao (giống ảnh mẫu) */
+    object-fit: cover;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #eee;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.favorite-btn i {
+    font-size: 16px;
+    color: #999; /* Mặc định màu xám */
+}
+.favorite-btn.active i {
+    color: #dc2626; /* Màu đỏ khi active */
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.color-swatches {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    /* Giới hạn 2 dòng */
+    height: 42px;
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* === CSS MỚI CHO PHÂN TRANG === */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.page-link, .page-dots {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.page-link:hover {
+    background: #f4f4f4;
+    color: #000;
+}
+.page-link.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+.page-link.prev, .page-link.next {
+    padding: 8px 10px;
+}
+.page-dots {
+    border: none;
+    background: none;
+    padding: 8px 0;
+}

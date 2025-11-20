@@ -1,0 +1,359 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo_inola {
+    height: 40px;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.purple_bg {
+    background-color: #7f56da;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.purple_bg:hover {
+    background-color: #6a46c2;
+}
+
+#section_login_1 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+
+body {
+    background: #f5f7fa; /* Nền xám nhạt cho dễ nhìn */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === BỐ CỤC TRANG TÀI KHOẢN === */
+.account-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto; /* Căn giữa và tạo khoảng cách */
+    gap: 30px; /* Khoảng cách giữa sidebar và nội dung */
+    padding: 0 20px;
+}
+
+/* === SIDEBAR (MENU BÊN TRÁI) === */
+.account-sidebar {
+    flex: 0 0 260px; /* Cố định chiều rộng sidebar */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content; /* Chỉ cao bằng nội dung */
+}
+
+/* === CSS MỚI CHO PROFILE SIDEBAR === */
+.sidebar-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.avatar-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.avatar-placeholder {
+    font-size: 80px;
+    color: #e0e0e0;
+}
+
+.profile-avatar { /* Dùng nếu bạn thay bằng thẻ <img> */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-profile strong {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sidebar-profile span {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn-change-avatar {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-change-avatar:hover {
+    background: #f4f4f4;
+}
+
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 0 0 15px 0;
+}
+
+/* === KẾT THÚC CSS MỚI === */
+
+
+.account-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.account-menu li a i {
+    width: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.account-menu li a:hover {
+    background: #f4f4f4;
+}
+
+.account-menu li.active a {
+    background: #e0f2fe; /* Màu xanh nhạt khi active */
+    color: #0c4a6e; /* Màu xanh đậm */
+}
+
+.account-menu li.active a i {
+    color: #0c4a6e;
+}
+
+/* === NỘI DUNG CHÍNH (BÊN PHẢI) === */
+.account-content {
+    flex: 1; /* Lấp đầy không gian còn lại */
+}
+
+.account-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.account-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* === THẺ PROFILE (CARD) === */
+.profile-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px; /* Khoảng cách giữa các card */
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* === FORM CHUNG === */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Quan trọng */
+    font-size: 15px;
+}
+
+.form-group input[type="email"][disabled] {
+    background: #f9f9f9;
+    color: #888;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn-save {
+    background: #0ea5e9; /* Màu xanh dương */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-save:hover {
+    background: #0284c7; /* Đậm hơn khi hover */
+}
+
+/* === CARD ĐỊA CHỈ === */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-header h2 {
+    margin-bottom: 0;
+}
+
+.btn-add {
+    background: #e0f2fe;
+    color: #0c4a6e;
+    border: 1px solid #b6e0fe;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.btn-add i {
+    margin-right: 5px;
+}
+
+.btn-add:hover {
+    background: #b6e0fe;
+}
+
+.address-item {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address-item strong {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.address-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.default-badge {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.address-actions {
+    display: flex;
+    flex-direction: column; /* Nút xếp dọc */
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #0ea5e9;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-link.btn-delete {
+    color: #ef4444; /* Màu đỏ cho nút xóa */
+}

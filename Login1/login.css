@@ -1,0 +1,236 @@
+/* ===== RESET CƠ BẢN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+
+}
+
+/* ===== HEADER ===== */
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* giới hạn tối đa */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_inola {
+    height: 40px;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.purple_bg {
+    background-color: #7f56da;
+    color: #fff;
+}
+
+.purple_bg:hover {
+    background-color: #6a46c2;
+}
+
+/* ===== LOGIN WRAPPER ===== */
+.pixfort_login_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.login_wrapper {
+margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+/* ===== CỘT TRÁI ===== */
+.login_left {
+    flex: 1;
+    padding: 40px 50px;
+}
+
+.login_title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4b1fcf;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login_illustration {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login_illustration img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* ===== FORM ===== */
+.login_form {
+    width: 100%;
+}
+
+.input_group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.input_group i {
+    color: #7f56da;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.input_group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    background: transparent;
+}
+
+/* ===== NÚT ===== */
+.btn_login,
+.btn_google,
+.btn_register {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn_login {
+    background-color: #7f56da;
+    color: #fff;
+}
+
+.btn_login:hover {
+    background-color: #6a46c2;
+}
+
+.light_bg {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.light_bg:hover {
+    background-color: #e0e0e0;
+}
+
+/* ===== LIÊN KẾT ===== */
+.forgot_pass {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.forgot_pass a {
+    color: #7f56da;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot_pass a:hover {
+    text-decoration: underline;
+}
+
+.terms_text {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.terms_text a {
+    color: #7f56da;
+    text-decoration: none;
+}
+
+.terms_text a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CỘT PHẢI ===== */
+.login_right {
+    flex: 1;
+    background: #f7f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login_right img {
+    width: 200px;
+    height: auto;
+}
+
+/* ===== FOOTER ===== */
+.pixfort_footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .login_wrapper {
+        flex-direction: column;
+    }
+
+    .login_right {
+        display: none;
+    }
+
+    .login_left {
+        padding: 30px;
+    }
+}
