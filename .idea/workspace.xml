@@ -4,51 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Thang-23130300">
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Banner/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageAlter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageFooter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Extension/ex8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/Qua5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/HeaderAfter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/ghn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/ghtk.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/jnt.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/momo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/visa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/icons/vnpay.webp" afterDir="false" />
+    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit Cap Nhap Product Type">
+      <change afterPath="$PROJECT_DIR$/src/CssProduct/ProductMain.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Html/Product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Html/ProductAfter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/Qua1.1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/Qua1.2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/box.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Js/Thumbnail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePageAfter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Css/HomePageMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-LTWEB/src/Js/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT-LTWEB/src/Images/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/HomePage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/HomePageMain.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/HomePageSlip.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/demo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/demo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssProduct/PAlterHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProductT/PAlterHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssProduct/PHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProductT/PHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssProduct/PTypeMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProductT/PTypeMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/ProductT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/ProductTAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductTAfter.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +28,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
@@ -66,12 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Sinh2801 &lt;23130275@st.hcmuaf.edu.vn&gt;" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PROJECT-LTWEB" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -86,9 +50,9 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="33VnBHFxUUB7tAgNxXwjxrKPqxV" />
+  <component name="ProjectId" id="35joai1YaUTvuyT3EpAnaiUK3D7" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -98,34 +62,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "HomePage",
-    "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/HOCTAP/Nam 3-1/OnTap-CTDL-GT/Demo/src/Main.java",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\PROJECT-LTWEB\src\icons" />
-      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\PROJECT-LTWEB\src\Extension" />
-      <recent name="C:\Users\PC\IdeaProjects\PROJECT-LTWEB\src\Css" />
-      <recent name="C:\Users\PC\IdeaProjects\PROJECT-LTWEB\src\Images" />
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\src\Images" />
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\src\icons" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -135,75 +93,19 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="" />
-      <created>1759410971211</created>
+      <changelist id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit Cap Nhap Product Type" />
+      <created>1763632922250</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759410971211</updated>
-      <workItem from="1759410972297" duration="2000" />
-      <workItem from="1759815285479" duration="721000" />
-      <workItem from="1760064048459" duration="172000" />
-      <workItem from="1760180954991" duration="761000" />
-      <workItem from="1760663218242" duration="77000" />
-      <workItem from="1761760315757" duration="12129000" />
-      <workItem from="1763090663780" duration="4248000" />
-      <workItem from="1763182875784" duration="13760000" />
+      <updated>1763632922250</updated>
+      <workItem from="1763632924508" duration="11125000" />
+      <workItem from="1763692833449" duration="2804000" />
     </task>
-    <task id="LOCAL-00001" summary="init commit">
-      <option name="closed" value="true" />
-      <created>1759815366954</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1759815366954</updated>
-    </task>
-    <task id="LOCAL-00002" summary="init commit">
-      <option name="closed" value="true" />
-      <created>1759815575024</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1759815575024</updated>
-    </task>
-    <task id="LOCAL-00003" summary="init commit">
-      <option name="closed" value="true" />
-      <created>1759815913345</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1759815913345</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Thang">
-      <option name="closed" value="true" />
-      <created>1760181272051</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1760181272051</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Thang-23130300">
-      <option name="closed" value="true" />
-      <created>1761817127081</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1761817127081</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="tao da commit" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="init commit" />
-    <MESSAGE value="Thang" />
-    <MESSAGE value="Thang-23130300" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thang-23130300" />
   </component>
 </project>
