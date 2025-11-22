@@ -1,188 +1,231 @@
+/* --- GENERAL SETTINGS --- */
+body {
+    background-color: #f1f2f4; /* Màu nền xám nhạt hiện đại */
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
 
-
-/* --- ADD PRODUCT PAGE --- */
 .dashboard {
-    padding: 20px;
-    margin-left: 20px;
+    padding: 20px 30px 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-.dashboard .chinhsua {
+/* --- PAGE HEADER --- */
+.page-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
+.page-header .left h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 5px 0 0 0;
+}
 
-.product-container {
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.back-btn:hover { color: #000; }
+
+.page-header .right {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #108a00; /* Xanh lá đậm chuyên nghiệp */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-primary:hover { background-color: #0c6b00; }
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-secondary:hover { background-color: #f5f5f5; }
+
+/* --- GRID LAYOUT (2 CỘT) --- */
+.product-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr; /* Cột trái lớn gấp đôi cột phải */
     gap: 25px;
 }
 
-.box {
+/* --- CARD COMPONENT --- */
+.card {
     background: #fff;
-    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    border: 1px solid #e5e7eb;
 }
 
-.box h3 {
-    margin-bottom: 15px;
-    font-size: 18px;
+.card h3 {
+    font-size: 16px;
     font-weight: 600;
+    margin-bottom: 15px;
+    color: #111;
 }
 
-/* Form */
+/* --- FORM ELEMENTS --- */
 .form-group {
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
 }
 
 .form-group label {
+    display: block;
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
+    color: #444;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
-    padding: 10px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-
-.form-2col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-/* Upload area */
-.image-box .upload-area {
-    border: 2px dashed #cbd5e1;
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    background: #f8fafc;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.image-box .upload-area img {
-    border: 2px dashed #cbd5e1;
-    width: 480px;
-}
-
-
-/* Buttons */
-.thaydoi {
-    width: 100px    ;
-    margin-top: 10px;
-    background: #16a34a;
-    border: 1px solid #94a3b8;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #16a34a;
-}
-.thaydoi {
-    text-decoration: none;
-}
-.thaydoi a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.thaydoi:hover {
-    background: #15803d;
-}
-
-.form-actions {
-    display: flex;
-    flex-direction: column; /* Xếp các nút theo chiều dọc (trên-xuống) */
-    gap: 15px; /* Khoảng cách giữa 2 nút */
-    margin-top: 20px;
-}
-
-/* Textarea đẹp cho mô tả */
-textarea#description {
+.form-control {
     width: 100%;
-    min-height: 180px; /* đủ hiển thị nhiều dòng */
-    padding: 15px 20px;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fdfdfd;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
-    resize: vertical; /* chỉ kéo dọc */
-    text-align: left;
-    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-}
-
-textarea#description:focus {
-    outline: none;
-    border-color: #16a34a; /* xanh lá nổi bật khi focus */
-    box-shadow: 0 0 8px rgba(22,163,74,0.3);
+    padding: 10px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s;
     background-color: #fff;
 }
 
+.form-control:focus {
+    border-color: #108a00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 138, 0, 0.1);
+}
 
+textarea.form-control {
+    resize: vertical;
+    line-height: 1.5;
+}
 
-.btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Checkbox style */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 25px; /* Căn chỉnh với input bên cạnh */
+}
+.checkbox-wrapper input { margin: 0; width: 16px; height: 16px; cursor: pointer; }
+.checkbox-wrapper label { margin: 0; cursor: pointer; }
+
+/* --- MEDIA UPLOAD --- */
+.media-upload-area {
+    border: 2px dashed #e0e0e0;
     border-radius: 8px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    background: #fafafa;
+    margin-bottom: 15px;
 }
-.add-btn {
-    margin-top: 10px;
-    background: none;
-    border: 1px solid #94a3b8;
-    padding: 8px 12px;
+
+.main-preview img {
+    max-height: 250px;
+    width: auto;
     border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
     cursor: pointer;
-    color: #475569;
+    font-weight: 500;
+}
+.btn-upload:hover { background: #f0f0f0; }
+
+.media-thumbnails {
+    display: flex;
+    gap: 10px;
 }
 
-.add-btn:hover {
-    background: #e2e8f0;
+.thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.thumb.active { border: 2px solid #108a00; }
+
+.thumb-add {
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    cursor: pointer;
+}
+.thumb-add:hover { border-color: #108a00; color: #108a00; }
+
+/* --- RIGHT COLUMN SPECIFICS --- */
+.status-select {
+    font-weight: 500;
+}
+.status-select.active { border-color: #108a00; color: #108a00; }
+
+.delete-section {
+    text-align: center;
+    margin-top: 20px;
 }
 
+.btn-delete-text {
+    background: red;
+    border-radius: 15px;
+    color: white ;
+    border: none;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-delete-text:hover { color: #b91c1c; }
 
-/* Nút Lưu */
-.btn-save {
-    background: #16a34a; /* Màu xanh */
-    color: white;
-}
-.btn-save:hover {
-    background: #15803d;
-}
-
-/* Nút Xóa */
-.btn-delete {
-    background: #ef4444; /* Màu đỏ */
-    color: white;
-}
-.btn-delete:hover {
-    background: #dc2626;
-}

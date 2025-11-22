@@ -18,14 +18,16 @@ body {
 
 /* --- SIDEBAR (Dùng chung) --- */
 .sidebar {
-    width: 280px;
-    background: #2f4026;
+    width: 300px;
+    background: #1f2937;
     color: #fff;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     transition: width 0.3s ease;
+    position: fixed;
+    height: 100%;
 }
 
 .sidebar .logo {
@@ -75,9 +77,8 @@ body {
 
 /* --- HEADER & MAIN --- */
 .main-content {
-    flex: 1;
-    transition: all 0.3s ease;
-    flex-direction: column;
+    margin-left: 300px; /* bằng đúng width sidebar */
+    width: calc(100% - 300px);
 }
 
 .header {
@@ -109,5 +110,9 @@ body {
     border: 2px solid #0ea5e9;
     width: 40px;
     height: 40px;
+}
+.btn-logout{
+    padding: 20px !important;
+    color: red;
 }
 

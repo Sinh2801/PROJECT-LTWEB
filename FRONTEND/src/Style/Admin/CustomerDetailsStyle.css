@@ -1,3 +1,5 @@
+
+/* ===== PROFILE PAGE ===== */
 .main-content .profile-page {
     padding: 32px;
 }
@@ -222,6 +224,3 @@
 .address-block button.delete:hover {
     color: #dc2626; /* đỏ khi hover */
 }
-
-
-
