@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hộp Quà Tặng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../../Style/User/PTypeMain.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
+    <link rel="stylesheet" href="../../Style/User/PHeader.css">
+
+
+</head>
+<body>
+<div class="page-container">
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <header class="header-container page-container">
+            <!-- Dòng 1: Đăng nhập / Đăng ký -->
+            <div class="user-bar">
+                <div class="right">
+                    <a href="#" class="login">Đăng nhập</a>
+                    <span>|</span>
+                    <a href="#" class="register">Đăng ký</a>
+                </div>
+            </div>
+            <!-- Dòng logo – tìm kiếm – giỏ hàng -->
+            <div class="main-header">
+                <div class="left">
+                    <!-- nút menu: khi click sẽ mở dropdownMenu -->
+                    <button id="menuBtn" class="menu-toggle" aria-label="Mở menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- dropdown menu ẩn (mở/đóng bởi JS) -->
+                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                        <a href="ProductT.html">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="ProductT.html">Hộp Quà Tặng</a>
+                        <a href="ProductT.html">Chus Exclusive</a>
+                        <a href="ProductT.html">Quà Doanh Nghiệp</a>
+                        <a href="ProductT.html">Quà Lưu Niệm</a>
+                    </div>
+                    <!-- Overlay làm mờ nền khi mở menu -->
+                    <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+                    <div class="logo">
+                        <a href="HomePage.html">
+                            <img src="../Images/Logo.png" alt="Logo" height="36">
+                        </a>
+                    </div>
+                </div>
+                <div class="center">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="right">
+                    <div class="cart">
+                        <a href="cart.html" aria-label="Giỏ hàng">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="HomePageAfter.html">Trang chủ</a>
+                <span> / </span>
+                <a href="#" class="current">Hộp Quà Tặng</a>
+            </div>
+        </header>
+    </div>
+    <!-- MAIN -->
+    <main class="product-page">
+        <div class="main-container">
+            <div class="product-top">
+                <aside class="filter-sidebar">
+                    <h2 class="filter-main-title">BỘ LỌC</h2>
+                    <hr class="filter-divider">
+                    <div class="filter-group">
+                        <h3>Hộp Quà Tặng</h3>
+                        <label><input type="checkbox"> Set Quà Thực Phẩm</label>
+                        <label><input type="checkbox"> Set Quà Tinh Dầu</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Lựa Chọn</h3>
+                        <label><input type="checkbox"> Giao hàng trong ngày</label>
+                        <label><input type="checkbox"> Điểm nhận</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Phân Loại</h3>
+                        <label><input type="checkbox"> Hộp quà cá thể</label>
+                        <label><input type="checkbox"> Hộp quà trà</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Quà Tặng Dành Cho</h3>
+                        <label><input type="checkbox"> Nam</label>
+                        <label><input type="checkbox"> Nữ</label>
+                        <label><input type="checkbox"> Người nước ngoài</label>
+                        <label><input type="checkbox"> Doanh nghiệp</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Giá</h3>
+                        <label><input type="checkbox"> Từ 200k đến 500k</label>
+                        <label><input type="checkbox"> Từ 500k đến 1tr</label>
+                        <label><input type="checkbox"> Trên 1tr</label>
+                        <div class="filter-price-input">
+                            <input type="number" placeholder="50,000">
+                            <span>-</span>
+                            <input type="number" placeholder="3,500,000">
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="product-right">
+                    <div class="product-banner">
+                        <img src="../../../Source/Image/Banner/BannerT.png" alt="BannerT"/>
+                    </div>
+                    <div class="product-header">
+                        <p class="product-title">
+                            Tất cả sản phẩm
+                            <span class="count-badge">25 Sản phẩm</span>
+                        </p>
+                        <div class="sort-box">
+                            <button class="sort-btn">
+                                Xếp theo giá: Thấp đến Cao
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="sort-dropdown">
+                                <li>Phổ biến</li>
+                                <li>Mục mới nhất đầu tiên</li>
+                                <li>Xếp theo giá: Cao đến Thấp</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Hộp Quà "Magic Care", Yêu Thương Qua Từng Giây Phút, Set Quà Thủ Công Độc Quyền Với Bộ Sản Phẩm Chăm Sóc Cơ Thể, Quà Sinh Nhật Độc Đáo, Quà Tặng Người Yêu</p>
+                            <p class="product-price">390,000 ₫</p>
+                            <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgtra.png" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</p>
+                            <p class="product-price">450,000 ₫</p>
+                            <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh Tế.</p>
+                            <p class="product-price">780,000 ₫</p>
+                            <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                            <p class="product-price">262,800 ₫</p>
+                            <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Hộp Quà "Magic Care", Yêu Thương Qua Từng Giây Phút, Set Quà Thủ Công Độc Quyền Với Bộ Sản Phẩm Chăm Sóc Cơ Thể, Quà Sinh Nhật Độc Đáo, Quà Tặng Người Yêu</p>
+                            <p class="product-price">390,000 ₫</p>
+                            <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgtra.png" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</p>
+                            <p class="product-price">450,000 ₫</p>
+                            <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh Tế.</p>
+                            <p class="product-price">780,000 ₫</p>
+                            <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                            <p class="product-price">262,800 ₫</p>
+                            <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Hộp Quà "Magic Care", Yêu Thương Qua Từng Giây Phút, Set Quà Thủ Công Độc Quyền Với Bộ Sản Phẩm Chăm Sóc Cơ Thể, Quà Sinh Nhật Độc Đáo, Quà Tặng Người Yêu</p>
+                            <p class="product-price">390,000 ₫</p>
+                            <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgtra.png" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</p>
+                            <p class="product-price">450,000 ₫</p>
+                            <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh Tế.</p>
+                            <p class="product-price">780,000 ₫</p>
+                            <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                            <p class="product-price">262,800 ₫</p>
+                            <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Hộp Quà "Magic Care", Yêu Thương Qua Từng Giây Phút, Set Quà Thủ Công Độc Quyền Với Bộ Sản Phẩm Chăm Sóc Cơ Thể, Quà Sinh Nhật Độc Đáo, Quà Tặng Người Yêu</p>
+                            <p class="product-price">390,000 ₫</p>
+                            <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgtra.png" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</p>
+                            <p class="product-price">450,000 ₫</p>
+                            <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh Tế.</p>
+                            <p class="product-price">780,000 ₫</p>
+                            <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="img-box">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                            </div>
+                            <p class="product-name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                            <p class="product-price">262,800 ₫</p>
+                            <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="related-products">
+
+            <h2 class="related-title">Sản phẩm liên quan</h2>
+
+            <div class="related-grid">
+
+
+                <div class="related-card">
+                    <img src="../../../Source/Image/Product/Cá%20nhân%20hóa/imgdatset.jpg" alt="Sản phẩm">
+                    <p class="name">Tranh Đất Sét Theo Yêu Cầu, Cỡ Nhỏ, Người & Thông Điệp Tự Chọn, Tối Đa 4 Người, Tranh Đất Sét Cá Nhân Hóa, Quà Tặng 20/10, Quà Tặng Cá Nhân Hóa, Quà Cưới</p>
+                    <p class="price">390,000 ₫</p>
+                    <p class="sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                </div>
+
+                <div class="related-card">
+                    <img src="../../../Source/Image/Product/Đồ%20trang%20trí%20và%20thủ%20công/img1.jpg" alt="Sản phẩm">
+                    <p class="name">Bình Hoa Gốm Thủ Công Men Rạn Cổ Điển, Họa Tiết Vẽ Tay Độc Bản, Điểm Nhấn Nghệ Thuật Cho Phòng Khách.</p>
+                    <p class="price">450,000 ₫</p>
+                    <p class="sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                </div>
+
+                <div class="related-card">
+                    <img src="../../../Source/Image/Product/Đồ%20trang%20trí%20và%20thủ%20công/img2.jpg" alt="Sản phẩm">
+                    <p class="name">Đèn Ngủ Gỗ 3D Hiệu Ứng Ánh Sáng Ấm, Tác Phẩm Điêu Khắc Decor, Quà Tặng Tân Gia Ý Nghĩa.</p>
+                    <p class="price">780,000 ₫</p>
+                    <p class="sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                </div>
+
+                <div class="related-card">
+                    <img src="../../../Source/Image/Product/Đồ%20trang%20trí%20và%20thủ%20công/img3.jpg" alt="Sản phẩm">
+                    <p class="name">Mô Hình Thuyền Buồm Gỗ Cẩm Lai Cao Cấp, Biểu Tượng "Thuận Buồm Xuôi Gió", Vật Phẩm Phong Thủy Bàn Làm Việc.</p>
+                    <p class="price">262,800 ₫</p>
+                    <p class="sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                </div>
+                <div class="related-card">
+                    <img src="../../../Source/Image/Product/Đồ%20trang%20trí%20và%20thủ%20công/img4.jpg" alt="Sản phẩm">
+                    <p class="name">Tranh Treo Tường Macrame Đan Sợi Cotton Tinh Tế, Phong Cách Boho Vintage, Tô Điểm Không Gian Sống Chill.</p>
+                    <p class="price">285,000 ₫</p>
+                    <p class="sold">Đã bán 23 <span class="rating">★5.0</span></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <footer class="footer-container page-container">
+
+            <div class="footer-columns">
+
+                <!-- Cột 1 -->
+                <div class="footer-col">
+                    <h3>WORK WITH US</h3>
+                    <a href="#">Affiliate Program</a>
+                    <a href="#">Partnerships</a>
+                </div>
+
+                <!-- Cột 2 -->
+                <div class="footer-col">
+                    <h3>TEACH WITH US</h3>
+                    <a href="#">Become a Teacher</a>
+                    <a href="#">Teacher Help Center</a>
+                    <a href="#">Teacher Rules</a>
+                </div>
+
+                <!-- Cột 3: Thanh toán + vận chuyển -->
+                <div class="footer-col">
+                    <h3>Phương thức thanh toán</h3>
+
+
+                    <div class="icon-row">
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg"alt="Visa"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/momo.webp" alt="Momo"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/vnpay.webp" alt="VNPAY"></div>
+                    </div>
+
+                    <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
+
+
+                    <div class="icon-row"><div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Transport/ghn.png" alt="GHN"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Transport/jnt.webp" alt="J&T"></div>
+                    </div>
+                </div>
+
+                <!-- Cột 4: Kết nối với INOLA -->
+                <div class="footer-col">
+                    <h3>Kết nối với INOLA</h3>
+
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <h3 style="margin-top:16px;">Nhận tin ưu đãi</h3>
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Email của bạn" aria-label="Email">
+                        <button type="button">→</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
+                <p>Responsible for Content Management: Group 32</p>
+                <p>@ 2025 - Copyright belongs to Group 32</p>
+            </div>
+
+        </footer>
+    </div>
+    <script src="../Js/HeaderAfter.js"></script>
+    <script src="../Js/Header.js"></script>
+</div>
+</body>
+</html>

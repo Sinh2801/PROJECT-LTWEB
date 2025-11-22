@@ -104,6 +104,7 @@ header, header * {
     color: #333;
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
+    font-size: 16px;
 }
 
 .dropdown-menu a:hover {

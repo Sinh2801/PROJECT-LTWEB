@@ -30,67 +30,25 @@
 header, header * {
     font-weight: bold;
 }
-/* === User Menu === */
-.user-header {
-    display: flex;
-    justify-content: flex-end;
+
+/* Dòng 1 - Đăng nhập / Đăng ký */
+.user-bar {
+    background-color: #fff;
+    text-align: right;
     width: 100%;
+    padding: 4px 40px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
-.user-menu {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: auto;
-}
-.user-trigger {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 8px;
+
+.user-bar a {
+    text-decoration: none;
+    margin: 0 5px;
     color: #888695;
     font-weight: bold;
 }
-
-.user-trigger:hover {
-    color: purple;
-}
-
-/* Dropdown */
-.user-dropdown {
-    position: absolute;
-    top: 32px;
-    right: 0;
-    width: 200px;
-    background: #fff;
-    border: 1px solid #ddd;
-    list-style: none;
-    padding: 6px 0;
-    margin: 0;
-    display: none;
-    z-index: 5000;
-}
-
-.user-dropdown li a {
-    display: block;
-    padding: 10px 14px;
-    font-size: 15px;
-    color: #333;
-    text-decoration: none;
-}
-
-.user-dropdown li a:hover {
-    background: #f3f3f3;
-}
-
-/* Divider */
-.user-dropdown hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 6px 0;
-}
-
-.logout {
-    color: red !important;
+.user-bar a:hover {
+    color : purple;
 }
 
 /* Dòng 2 - Logo, Tìm kiếm, Giỏ hàng */
@@ -220,24 +178,31 @@ header, header * {
     padding: 2px 6px;
     border-radius: 50%;
 }
-
-/* Dòng 3 - Menu điều hướng */
-.menu-bar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 8px 0;
-    font-size: 1em;
+/* Dòng 3 Breadcrumb */
+.breadcrumb {
+    width: 93%;
+    align-items: center;
+    padding: 5px 0 20px;
+    gap: 6px;
+    font-size: 16px;
 }
 
-.menu-bar a {
-    color: #888695;
+.breadcrumb a {
+    color: #000;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+
+}
+.breadcrumb .current {
+    font-weight: 500;
+    color: #000;
 }
 
-.menu-bar a:hover {
-    color: purple;
+.breadcrumb span {
+    color: #000;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
 }
 
 

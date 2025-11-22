@@ -471,14 +471,15 @@ button {
     color: #666;
     margin-bottom: 10px;
 }
-.payment-icons i {
-    font-size: 30px;
-    color: #666;
-    margin: 0 8px;
-    transition: color 0.2s ease;
-}
+
 .payment-icons i:hover {
     color: #007bff;
+}
+.payment-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .customer-benefits-card ul li {
@@ -498,98 +499,3 @@ button {
     flex-shrink: 0;
 }
 
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 1024px) {
-    .cart-layout {
-        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
-    }
-    .order-summary-section {
-        position: static; /* Không dính nữa */
-        top: auto;
-    }
-    .main-nav {
-        display: none; /* Ẩn menu nav trên tablet */
-    }
-    .header-content {
-        justify-content: center; /* Căn giữa logo và actions */
-        gap: 20px;
-    }
-    .brand-logo { margin-right: auto; } /* đẩy logo sang trái */
-    .header-actions { margin-left: auto; } /* đẩy actions sang phải */
-}
-
-@media (max-width: 768px) {
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    .cart-item-card {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .item-image {
-        width: 80px;
-        height: 80px;
-    }
-    .item-details {
-        flex-basis: calc(100% - 120px); /* Cho item details chiếm phần lớn */
-        margin-right: 0;
-    }
-    .item-price-quantity {
-        width: 100%; /* Đẩy giá và số lượng xuống hàng mới */
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px solid #eee;
-    }
-    .item-price { margin-bottom: 0; }
-    .remove-item-btn {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content, .page-wrapper {
-        padding: 0 15px;
-    }
-    .section-title {
-        font-size: 22px;
-    }
-    .cart-item-card {
-        padding: 10px;
-    }
-    .item-image {
-        width: 70px;
-        height: 70px;
-    }
-    .item-title {
-        font-size: 15px;
-    }
-    .item-price {
-        font-size: 18px;
-    }
-    .qty-btn, .qty-input {
-        width: 30px;
-        height: 30px;
-    }
-    .summary-card, .customer-benefits-card {
-        padding: 20px;
-    }
-    .summary-card-title {
-        font-size: 20px;
-    }
-    .final-total {
-        font-size: 22px;
-    }
-    .checkout-btn {
-        font-size: 16px;
-        padding: 12px 15px;
-    }
-}
