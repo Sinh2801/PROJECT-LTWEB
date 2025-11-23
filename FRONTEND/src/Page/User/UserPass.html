@@ -6,22 +6,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../../Style/User/User.css">
     <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageAlter.css">
 </head>
 <body>
 <!-- ========== HEADER ========== -->
-<div class="page_login" id="section_header_1">
-    <div class="container">
-        <img src="../FRONTEND/Source/Image/Logo.png" alt="Logo INOLA" style="height:36px; width:auto;">
-        <a href="#" class="pix_button small_button purple_bg">
-            <span>Trung tâm trợ giúp</span>
-        </a>
+
+<div class="page-container">
+    <div class="header-wrapper">
+        <header class="header-container page-container">
+            <div class="right user-header">
+                <div class="user-menu">
+                    <div class="user-trigger">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="username"> Phan Nguyễn Minh Thắng</span>
+                    </div>
+                    <ul class="user-dropdown">
+                        <li><a href="UserProfile.html">Hồ sơ của tôi</a></li>
+                        <li><a href="UserOrder.html">Đơn hàng</a></li>
+                        <li><a href="UserFavourite.html">Sản phẩm yêu thích</a></li>
+                        <li><a href="UserReview.html">Đánh giá của tôi</a></li>
+                        <li><a href="UserPass.html">Đổi mật khẩu</a></li>
+                        <hr>
+                        <li><a href="HomePage.html" class="logout">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Dòng 2: List (menu button) - Logo – Tìm kiếm – Giỏ hàng -->
+            <div class="main-header">
+                <div class="left">
+                    <!-- nút menu: khi click sẽ mở dropdownMenu -->
+                    <button id="menuBtn" class="menu-toggle" aria-label="Mở menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- dropdown menu ẩn (mở/đóng bởi JS) -->
+                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                        <a href="#Loai1">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="#Loai2">Hộp Quà Tặng</a>
+                        <a href="#Loai3">Trang Sức Và Phụ Kiện </a>
+                        <a href="#Loai4">Trang Trí Và Thủ Công </a>
+                        <a href="#Loai5">Quà Lưu Niệm Nhỏ Gọn </a>
+                    </div>
+
+                    <div class="logo">
+                        <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
+                    </div>
+                </div>
+
+                <div class="center">
+                    <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fa fa-search"></i></button>
+                </div>
+
+                <div class="right">
+                    <div class="cart">
+                        <a href="ShoppingCart.html" class="cart-link" aria-label="Giỏ hàng">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dòng 3: Menu điều hướng -->
+            <nav class="menu-bar">
+                <a href="#Loai1" class="menu-link">Quà Tặng Cá Nhân Hóa</a>
+                <a href="#Loai2" class="menu-link">Hộp Quà Tặng</a>
+                <a href="#Loai3" class="menu-link">Trang Sức Và Phụ Kiện </a>
+                <a href="#Loai4" class="menu-link">Đồ Trang Trí Và Thủ Công</a>
+                <a href="#Loai5" class="menu-link">Quà Lưu Niệm Nhỏ Gọn</a>
+                <a href="#extension" class="menu-link">Mọi Người Đang Mua Gì</a>
+            </nav>
+            <!-- Overlay làm mờ nền khi mở menu -->
+            <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+        </header>
     </div>
-</div>
 
+<!--MAIN-->
 <div class="account-container">
-
     <aside class="account-sidebar">
-
         <div class="sidebar-profile">
             <div class="avatar-container">
                 <i class="fa-solid fa-user-circle avatar-placeholder"></i>
@@ -34,7 +96,7 @@
         <hr class="sidebar-divider">
 
         <ul class="account-menu">
-            <li >
+            <li>
                 <a href="UserProfile.html">
                     <i class="fa-solid fa-user-circle"></i> Hồ Sơ Của Tôi
                 </a>
@@ -68,10 +130,6 @@
     </aside>
 
     <main class="account-content">
-
-        <h1>Đổi Mật Khẩu</h1>
-        <p>Để bảo mật tài khoản, vui lòng không chia sẻ mật khẩu cho người khác.</p>
-
         <div class="profile-card">
             <h2>Thay đổi mật khẩu</h2>
 
@@ -122,8 +180,9 @@
 
 
                 <div class="icon-row">
-                    <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg"alt="Visa"></div>
-                    <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg" alt="Visa"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard">
+                    </div>
                     <div class="icon-box"><img src="../../../Source/Image/Payment/momo.webp" alt="Momo"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Payment/vnpay.webp" alt="VNPAY"></div>
                 </div>
@@ -131,7 +190,8 @@
                 <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
 
 
-                <div class="icon-row"><div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
+                <div class="icon-row">
+                    <div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Transport/ghn.png" alt="GHN"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Transport/jnt.webp" alt="J&T"></div>
                 </div>

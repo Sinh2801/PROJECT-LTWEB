@@ -8,13 +8,83 @@
 
     <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
     <link rel="stylesheet" href="../../Style/User/User.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageAlter.css">
 </head>
 <body>
+<!--HEADRER-->
+<div class="page-container">
+    <div class="header-wrapper">
+        <header class="header-container page-container">
+            <div class="right user-header">
+                <div class="user-menu">
+                    <div class="user-trigger">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="username"> Phan Nguyễn Minh Thắng</span>
+                    </div>
+                    <ul class="user-dropdown">
+                        <li><a href="UserProfile.html">Hồ sơ của tôi</a></li>
+                        <li><a href="UserOrder.html">Đơn hàng</a></li>
+                        <li><a href="UserFavourite.html">Sản phẩm yêu thích</a></li>
+                        <li><a href="UserReview.html">Đánh giá của tôi</a></li>
+                        <li><a href="UserPass.html">Đổi mật khẩu</a></li>
+                        <hr>
+                        <li><a href="HomePage.html" class="logout">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Dòng 2: List (menu button) - Logo – Tìm kiếm – Giỏ hàng -->
+            <div class="main-header">
+                <div class="left">
+                    <!-- nút menu: khi click sẽ mở dropdownMenu -->
+                    <button id="menuBtn" class="menu-toggle" aria-label="Mở menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- dropdown menu ẩn (mở/đóng bởi JS) -->
+                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                        <a href="#Loai1">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="#Loai2">Hộp Quà Tặng</a>
+                        <a href="#Loai3">Trang Sức Và Phụ Kiện </a>
+                        <a href="#Loai4">Trang Trí Và Thủ Công </a>
+                        <a href="#Loai5">Quà Lưu Niệm Nhỏ Gọn </a>
+                    </div>
 
+                    <div class="logo">
+                        <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
+                    </div>
+                </div>
+
+                <div class="center">
+                    <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fa fa-search"></i></button>
+                </div>
+
+                <div class="right">
+                    <div class="cart">
+                        <a href="ShoppingCart.html" class="cart-link" aria-label="Giỏ hàng">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dòng 3: Menu điều hướng -->
+            <nav class="menu-bar">
+                <a href="#Loai1" class="menu-link">Quà Tặng Cá Nhân Hóa</a>
+                <a href="#Loai2" class="menu-link">Hộp Quà Tặng</a>
+                <a href="#Loai3" class="menu-link">Trang Sức Và Phụ Kiện </a>
+                <a href="#Loai4" class="menu-link">Đồ Trang Trí Và Thủ Công</a>
+                <a href="#Loai5" class="menu-link">Quà Lưu Niệm Nhỏ Gọn</a>
+                <a href="#extension" class="menu-link">Mọi Người Đang Mua Gì</a>
+            </nav>
+            <!-- Overlay làm mờ nền khi mở menu -->
+            <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+        </header>
+    </div>
+
+<!--MAIN-->
 <div class="account-container">
-
     <aside class="account-sidebar">
-
         <div class="sidebar-profile">
             <div class="avatar-container">
                 <i class="fa-solid fa-user-circle avatar-placeholder"></i>
@@ -23,11 +93,9 @@
             <span>vosinh@gmail.com</span>
             <button class="btn-change-avatar">Thay đổi ảnh</button>
         </div>
-
         <hr class="sidebar-divider">
-
         <ul class="account-menu">
-            <li >
+            <li>
                 <a href="UserProfile.html">
                     <i class="fa-solid fa-user-circle"></i> Hồ Sơ Của Tôi
                 </a>
@@ -52,7 +120,7 @@
                     <i class="fa-solid fa-key"></i> Đổi Mật Khẩu
                 </a>
             </li>
-            <li class = "btn-logout">
+            <li class="btn-logout">
                 <a href="HomePage.html">
                     <i class="fa-solid fa-sign-out-alt"></i> Đăng Xuất
                 </a>
@@ -61,9 +129,6 @@
     </aside>
 
     <main class="account-content">
-
-        <h1>Đánh Giá Của Tôi</h1>
-
         <nav class="review-tabs">
             <a href="#" class="tab-item active">Tất cả</a>
             <a href="#" class="tab-item">Chưa đánh giá</a>
@@ -75,7 +140,8 @@
                 <div class="review-product-info">
                     <img src="../../../Source/Image/Product/Hộp quà tặng/imgtra.png" alt="Sản phẩm">
                     <div class="product-details">
-                        <strong>Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</strong>
+                        <strong>Mộc Trà Dưỡng Thân, Trà Gạo Lứt Thảo Mộc Cơ Thể, Thanh Lọc Cơ Thể, Duy Trì Vóc Dáng, Quà
+                            Tặng Trà, Hộp Quà 20/10 Tốt Cho Sức Khỏe, Quà Cho Gia Đình</strong>
                         <p>Phân loại: 10 gói</p>
                     </div>
                 </div>
@@ -90,18 +156,19 @@
                     </div>
                     <span class="review-date">Đánh giá ngày 16/11/2025</span>
                     <p class="review-comment">
-                       Trà rất ngon và thơm, gói hàng cẩn thận. Giao hàng cũng nhanh nữa. Sẽ tiếp tục ủng hộ shop!
+                        Trà rất ngon và thơm, gói hàng cẩn thận. Giao hàng cũng nhanh nữa. Sẽ tiếp tục ủng hộ shop!
                     </p>
                 </div>
             </div>
-
 
 
             <div class="review-card">
                 <div class="review-product-info">
                     <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" alt="Sản phẩm">
                     <div class="product-details">
-                        <strong>Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh Tế.</strong>
+                        <strong>Nến Thơm Vintage, Hộp Quà Spa Thư Giãn Tại Nhà, Quà Tặng Sinh Nhật Bạn Gái, Chăm Sóc Cơ
+                            Thể Lành Tính, Set Quà Thủ Công Mộc Mạc, Liệu Pháp Hương Thơm Từ Thiên Nhiên, Quà 8/3 Tinh
+                            Tế.</strong>
                         <p>Phân loại: Mùi Gỗ Thông</p>
                     </div>
                 </div>
@@ -112,7 +179,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i> </div>
+                        <i class="fa-regular fa-star"></i></div>
                     <span class="review-date">Đánh giá ngày 15/11/2025</span>
                     <p class="review-comment">
                         Mùi thơm dễ chịu, nhưng nến cháy hơi nhanh. Hộp đựng đẹp, có thể dùng làm quà tặng.
@@ -150,8 +217,9 @@
 
 
                 <div class="icon-row">
-                    <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg"alt="Visa"></div>
-                    <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg" alt="Visa"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard">
+                    </div>
                     <div class="icon-box"><img src="../../../Source/Image/Payment/momo.webp" alt="Momo"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Payment/vnpay.webp" alt="VNPAY"></div>
                 </div>
@@ -159,7 +227,8 @@
                 <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
 
 
-                <div class="icon-row"><div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
+                <div class="icon-row">
+                    <div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Transport/ghn.png" alt="GHN"></div>
                     <div class="icon-box"><img src="../../../Source/Image/Transport/jnt.webp" alt="J&T"></div>
                 </div>

@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Mã Xác Thực - INOLA</title>
+    <!-- Các liên kết CSS đã được cung cấp từ các file gốc -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Đường dẫn CSS giả định cho Login và Footer -->
+    <link rel="stylesheet" href="../../Style/User/Login.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
     <link rel="stylesheet" href="../../Style/User/forgot_password.css">
+
 </head>
+
 <body>
+
+<!-- HEADER -->
+<div class="page_login">
+    <div class="container">
+        <!-- Đường dẫn hình ảnh logo cần được điều chỉnh cho đúng -->
+        <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="Logo INOLA"
+             style="height:36px; width:auto;">
+        <a href="#" class="pix_button small_button purple_bg">
+            <span>Trung tâm trợ giúp</span>
+        </a>
+    </div>
+</div>
+
+<!-- VERIFICATION SECTION -->
 <div class="flow-container">
-    <div class="card step-2">
+        <div class="card step-2">
         <div class="card-header">
+            <!-- Sử dụng Font Awesome icon -->
             <a href="step1_forgot_password.html"><i class="fas fa-arrow-left"></i></a>
         </div>
         <div class="card-content">
@@ -16,17 +39,101 @@
             <p class="description">Mã xác minh của bạn sẽ được gửi qua email.</p>
             <form action="step3_new_password.html" method="get">
                 <div class="code-input-group">
+                    <!-- Tạo 5 ô nhập liệu riêng biệt như trong mẫu bạn cung cấp -->
                     <input type="number" maxlength="1" class="code-box" required>
                     <input type="number" maxlength="1" class="code-box" required>
                     <input type="number" maxlength="1" class="code-box" required>
                     <input type="number" maxlength="1" class="code-box" required>
+                    <input type="number" maxlength="1" class="code-box" required>
+                    <!-- Thêm ô thứ 6 để mã xác thực khớp với 6 chữ số thường thấy -->
                     <input type="number" maxlength="1" class="code-box" required>
                 </div>
-                <p class="resend-timer">Vui lòng chờ 59 giây để gửi lại.</p>
+                <!-- Sửa lại thông báo để thêm nút Gửi lại khi hết thời gian -->
+                <p class="resend-timer">
+                    Vui lòng chờ 59 giây để gửi lại.
+                    <!-- Nếu thời gian hết, liên kết Gửi lại sẽ hiện ra -->
+                    <!-- <a href="#" style="display:none;" onclick="event.preventDefault(); alert('Đã gửi lại mã xác nhận!');">Gửi lại mã</a> -->
+                </p>
                 <button type="submit" class="btn primary">Tiếp theo</button>
             </form>
         </div>
     </div>
 </div>
+
+<!-- FOOTER -->
+<div class="footer-wrapper">
+    <footer class="footer-container page-container">
+
+        <div class="footer-columns">
+
+            <!-- Cột 1 -->
+            <div class="footer-col">
+                <h3>WORK WITH US</h3>
+                <a href="#">Affiliate Program</a>
+                <a href="#">Partnerships</a>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>TEACH WITH US</h3>
+                <a href="#">Become a Teacher</a>
+                <a href="#">Teacher Help Center</a>
+                <a href="#">Teacher Rules</a>
+            </div>
+
+            <!-- Cột 3: Thanh toán + vận chuyển -->
+            <div class="footer-col">
+                <h3>Phương thức thanh toán</h3>
+
+
+                <div class="icon-row">
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg" alt="Visa"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard">
+                    </div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/momo.webp" alt="Momo"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Payment/vnpay.webp" alt="VNPAY"></div>
+                </div>
+
+                <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
+
+
+                <div class="icon-row">
+                    <div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Transport/ghn.png" alt="GHN"></div>
+                    <div class="icon-box"><img src="../../../Source/Image/Transport/jnt.webp" alt="J&T"></div>
+                </div>
+            </div>
+
+            <!-- Cột 4: Kết nối với INOLA -->
+            <div class="footer-col">
+                <h3>Kết nối với INOLA</h3>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <h3 style="margin-top:16px;">Nhận tin ưu đãi</h3>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Email của bạn" aria-label="Email">
+                    <button type="button">→</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
+            <p>Responsible for Content Management: Group 32</p>
+            <p>@ 2025 - Copyright belongs to Group 32</p>
+        </div>
+
+    </footer>
+</div>
+
+
 </body>
 </html>

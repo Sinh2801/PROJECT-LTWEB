@@ -30,6 +30,7 @@ body {
 
 }
 
+
 .logo_inola {
     height: 40px;
 }
@@ -44,12 +45,12 @@ body {
 }
 
 .purple_bg {
-    background-color: #7f56da;
+    background-color: #800080;
     color: #fff;
 }
 
 .purple_bg:hover {
-    background-color: #6a46c2;
+    background-color: #800080;
 }
 
 /* ===== LOGIN WRAPPER ===== */
@@ -81,7 +82,7 @@ margin: auto;
 .login_title {
     font-size: 28px;
     font-weight: 700;
-    color: #4b1fcf;
+    color:#800080;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -113,7 +114,7 @@ margin: auto;
 }
 
 .input_group i {
-    color: #7f56da;
+    color: #800080;
     margin-right: 10px;
     font-size: 16px;
 }
@@ -143,12 +144,12 @@ margin: auto;
 }
 
 .btn_login {
-    background-color: #7f56da;
+    background-color: #800080;
     color: #fff;
 }
 
 .btn_login:hover {
-    background-color: #6a46c2;
+    background-color: #800080;
 }
 
 .light_bg {
@@ -167,7 +168,7 @@ margin: auto;
 }
 
 .forgot_pass a {
-    color: #7f56da;
+    color:#800080;
     text-decoration: none;
     font-size: 14px;
 }
@@ -184,7 +185,7 @@ margin: auto;
 }
 
 .terms_text a {
-    color: #7f56da;
+    color: #800080;
     text-decoration: none;
 }
 
@@ -195,7 +196,7 @@ margin: auto;
 /* ===== CỘT PHẢI ===== */
 .login_right {
     flex: 1;
-    background: #f7f4ff;
+    background-image: url("../../../Source/Image/Product/Cá nhân hóa/imgbut.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,30 +208,3 @@ margin: auto;
     height: auto;
 }
 
-/* ===== FOOTER ===== */
-.pixfort_footer {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.footer_text {
-    font-size: 14px;
-    color: #777;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .login_wrapper {
-        flex-direction: column;
-    }
-
-    .login_right {
-        display: none;
-    }
-
-    .login_left {
-        padding: 30px;
-    }
-}

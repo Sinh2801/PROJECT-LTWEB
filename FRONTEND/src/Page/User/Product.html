@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="../../Style/User/PHeader.css">
     <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
     <link rel="stylesheet" href="../../Style/User/ProductMain.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageAlter.css">
 
 </head>
 <body>
 <div class="page-container">
-    <!-- HEADER -->
     <div class="header-wrapper">
         <header class="header-container page-container">
-            <!-- Dòng 1: Đăng nhập / Đăng ký -->
-            <div class="user-bar">
-                <div class="right">
-                    <a href="#" class="login">Đăng nhập</a>
-                    <span>|</span>
-                    <a href="#" class="register">Đăng ký</a>
+            <div class="right user-header">
+                <div class="user-menu">
+                    <div class="user-trigger">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="username"> Phan Nguyễn Minh Thắng</span>
+                    </div>
+                    <ul class="user-dropdown">
+                        <li><a href="UserProfile.html">Hồ sơ của tôi</a></li>
+                        <li><a href="UserOrder.html">Đơn hàng</a></li>
+                        <li><a href="UserFavourite.html">Sản phẩm yêu thích</a></li>
+                        <li><a href="UserReview.html">Đánh giá của tôi</a></li>
+                        <li><a href="UserPass.html">Đổi mật khẩu</a></li>
+                        <hr>
+                        <li><a href="HomePage.html" class="logout">Đăng xuất</a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Dòng logo – tìm kiếm – giỏ hàng -->
+            <!-- Dòng 2: List (menu button) - Logo – Tìm kiếm – Giỏ hàng -->
             <div class="main-header">
                 <div class="left">
                     <!-- nút menu: khi click sẽ mở dropdownMenu -->
@@ -32,43 +41,47 @@
                     </button>
                     <!-- dropdown menu ẩn (mở/đóng bởi JS) -->
                     <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
-                        <a href="ProductT.html">Quà Tặng Cá Nhân Hóa</a>
-                        <a href="ProductT.html">Hộp Quà Tặng</a>
-                        <a href="ProductT.html">Chus Exclusive</a>
-                        <a href="ProductT.html">Quà Doanh Nghiệp</a>
-                        <a href="ProductT.html">Quà Lưu Niệm</a>
+                        <a href="#Loai1">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="#Loai2">Hộp Quà Tặng</a>
+                        <a href="#Loai3">Trang Sức Và Phụ Kiện </a>
+                        <a href="#Loai4">Trang Trí Và Thủ Công </a>
+                        <a href="#Loai5">Quà Lưu Niệm Nhỏ Gọn </a>
                     </div>
-                    <!-- Overlay làm mờ nền khi mở menu -->
-                    <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+
                     <div class="logo">
-                        <a href="HomePage.html">
-                            <img src="../Images/Logo.png" alt="Logo" height="36">
-                        </a>
+                        <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
                     </div>
                 </div>
+
                 <div class="center">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
-                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fa fa-search"></i></button>
                 </div>
+
                 <div class="right">
                     <div class="cart">
-                        <a href="cart.html" aria-label="Giỏ hàng">
+                        <a href="ShoppingCart.html" class="cart-link" aria-label="Giỏ hàng">
                             <i class="fa fa-shopping-cart"></i>
                             <span class="cart-count">0</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- Breadcrumb -->
-            <div class="breadcrumb">
-                <a href="HomePage.html">Trang chủ</a>
-                <span> / </span>
-                <a href="ProductT.html" class="current">Hộp Quà Tặng</a>
-                <span> / </span>
-                <a href="#" class="current">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</a>
-            </div>
+
+            <!-- Dòng 3: Menu điều hướng -->
+            <nav class="menu-bar">
+                <a href="#Loai1" class="menu-link">Quà Tặng Cá Nhân Hóa</a>
+                <a href="#Loai2" class="menu-link">Hộp Quà Tặng</a>
+                <a href="#Loai3" class="menu-link">Trang Sức Và Phụ Kiện </a>
+                <a href="#Loai4" class="menu-link">Đồ Trang Trí Và Thủ Công</a>
+                <a href="#Loai5" class="menu-link">Quà Lưu Niệm Nhỏ Gọn</a>
+                <a href="#extension" class="menu-link">Mọi Người Đang Mua Gì</a>
+            </nav>
+            <!-- Overlay làm mờ nền khi mở menu -->
+            <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
         </header>
     </div>
+
     <!-- MAIN -->
     <main class="product-page">
         <div class="main-container">
