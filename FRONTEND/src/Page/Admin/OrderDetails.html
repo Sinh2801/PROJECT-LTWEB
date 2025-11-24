@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi-Tiet-Don-Hang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
+    <link rel="stylesheet" href="../../Style/Admin/OrderDetailsStyle.css">
+
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li >
+                <a href="OverView.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+            <li>
+                <a href="Product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+            <li class="active">
+                <a href="Order.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng
+                </a>
+            </li>
+            <li >
+                <a href="Customer.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+            <li >
+                <a href="ProfileAdmin.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+           <li>
+                <a href="SettingGeneral.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+
+            <li class = "btn-logout">
+                <a href="../User/Login.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+        <main>
+            <div class="main-content-detail">
+                <div class="detail-container">
+                    <div class="detail-header">
+                        <h2>Chi Tiết Đơn Hàng</h2>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <div class="progress-step completed">
+                            <div class="progress-dot"></div>
+                            <span>Đơn Hàng Đã Đặt</span>
+                        </div>
+                        <div class="progress-step active">
+                            <div class="progress-dot"></div>
+                            <span>Đã Đóng Gói</span>
+                        </div>
+                        <div class="progress-step">
+                            <div class="progress-dot"></div>
+                            <span>Đã Giao Hàng</span>
+                        </div>
+                        <div class="progress-step">
+                            <div class="progress-dot"></div>
+                            <span>Đã Giao Thành Công</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-body">
+                        <div class="detail-main">
+                            <div class="order-info">
+                                <p>Mã Đơn Hàng: **DU00017**</p>
+                                <p>Ngày Đặt Hàng: **13/6/2024 - 14:50** <span class="order-status">Đã Thanh Toán</span>
+                                </p>
+                            </div>
+
+                            <table class="product-table">
+                                <thead>
+                                <tr>
+                                    <th>Sản Phẩm</th>
+                                    <th>Số Lượng</th>
+                                    <th>Số Tiền</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Giày Nữ <span style="color:#999; font-size: 13px;">Mã SP: 1</span></td>
+                                    <td>1</td>
+                                    <td>1,533,315 VND</td>
+                                </tr>
+                                <tr>
+                                    <td>Kính Mát Tròn <span style="color:#999; font-size: 13px;">Mã SP: 1</span></td>
+                                    <td>1</td>
+                                    <td>375,965 VND</td>
+                                </tr>
+                                <tr>
+                                    <td>Túi Đeo Vai <span style="color:#999; font-size: 13px;">Mã SP: 1</span></td>
+                                    <td>1</td>
+                                    <td>1,533,315 VND</td>
+                                </tr>
+                                <tr>
+                                    <td>Nước Hoa Cổ Điển <span style="color:#999; font-size: 13px;">Mã SP: 1</span></td>
+                                    <td>1</td>
+                                    <td>1,063,315 VND</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button class="export-order-btn">
+                                <i class="fa-solid fa-file-export"></i> Xuất Đơn
+                            </button>
+                        </div>
+
+                        <div class="detail-summary">
+                            <div class="summary-box">
+                                <h3>Tóm Tắt Đơn Hàng</h3>
+                                <div class="summary-row">
+                                    <span>Tổng Phụ:</span>
+                                    <span>7,990,000 VND</span>
+                                </div>
+                                <div class="summary-row" style="color: #dc2626;">
+                                    <span>Giảm Giá (DIS15%):</span>
+                                    <span>-1,198,500 VND</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Phí Vận Chuyển:</span>
+                                    <span>352,500 VND</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Thuế VAT 19% (đã bao gồm):</span>
+                                    <span>1,504,000 VND</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Tổng Số Tiền:</span>
+                                    <span class="value">8,644,000 VND</span>
+                                </div>
+                            </div>
+
+                            <div class="summary-box payment-details">
+                                <h3>Chi Tiết Thanh Toán</h3>
+                                <div class="payment-row">
+                                    <span class="label">Giao Dịch:</span>
+                                    <span class="value">#DU444TO10000</span>
+                                </div>
+                                <div class="payment-row">
+                                    <span class="label">Phương Thức Thanh Toán:</span>
+                                    <span class="value">Thẻ Tín Dụng</span>
+                                </div>
+                                <div class="payment-row">
+                                    <span class="label">Chủ Thẻ:</span>
+                                    <span class="value">Tên: Harold Gonzalez</span>
+                                </div>
+                                <div class="payment-row">
+                                    <span class="label">Số Thẻ:</span>
+                                    <span class="value">xxxx xxxx xxxx 6779</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Tổng Số Tiền:</span>
+                                    <span class="value">8,644,000 VND</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../../Style/Admin/ProductStyle.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li >
+                <a href="OverView.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+            <li class="active">
+                <a href="Product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+            <li >
+                <a href="Order.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng
+                </a>
+            </li>
+            <li >
+                <a href="Customer.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+            <li >
+                <a href="ProfileAdmin.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+            <li>
+                <a href="SettingGeneral.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+
+            <li class = "btn-logout">
+                <a href="../User/Login.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="main-content-Donhang">
+            <div class="donhang-container">
+
+                <div class="donhang-header">
+                    <h2>Quản Lý Sản Phẩm</h2>
+                    <div class="header-actions">
+                        <a href="ProductAdd.html" class="btn-add-new">
+                            <i class="fa-solid fa-plus"></i> Thêm Mới
+                        </a>
+                        <button class="export-btn">
+                            <i class="fa-solid fa-download"></i> Xuất
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donhang-top">
+                    <div class="searchBox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+
+                    <div class="filters-group">
+                        <select class="filter-select">
+                            <option>Tất cả danh mục</option>
+                            <option>Trang sức</option>
+                            <option>Quà tặng</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>Sắp xếp: Mới nhất</option>
+                            <option>Giá: Thấp - Cao</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="order-table product-table-content">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Sản Phẩm</th> <th>Danh Mục</th>
+                        <th>Ngày Thêm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Trạng Thái</th>
+                        <th>Hành Động</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="product-info-cell">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" alt="product">
+                            <div class="name-col">
+                                <span>Set Quà Tặng Hương Thơm</span>
+                                <small>#SP001</small>
+                            </div>
+                        </td>
+                        <td>Hộp Quà Tặng</td>
+                        <td>01/11/2025</td>
+                        <td style="font-weight: bold;">262,800 ₫</td>
+                        <td>50</td>
+                        <td><div class="badge success">Hoạt Động</div></td>
+                        <td>
+                            <a href="ProductEdit.html" class="action-btn"><i class="fa-solid fa-pen"></i></a>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="product-info-cell">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgtra.png" alt="product">
+                            <div class="name-col">
+                                <span>Mộc Trà Dưỡng Thân</span>
+                                <small>#SP002</small>
+                            </div>
+                        </td>
+                        <td>Hộp Quà Tặng</td>
+                        <td>02/11/2025</td>
+                        <td style="font-weight: bold;">450,000 ₫</td>
+                        <td>32</td>
+                        <td><div class="badge success">Hoạt Động</div></td>
+                        <td>
+                            <a href="ProductEdit.html" class="action-btn"><i class="fa-solid fa-pen"></i></a>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="product-info-cell">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" alt="product">
+                            <div class="name-col">
+                                <span>Nến Thơm Vintage</span>
+                                <small>#SP003</small>
+                            </div>
+                        </td>
+                        <td>Hộp Quà Tặng</td>
+                        <td>05/11/2025</td>
+                        <td style="font-weight: bold;">780,000 ₫</td>
+                        <td>110</td>
+                        <td><div class="badge success">Hoạt Động</div></td>
+                        <td>
+                            <a href="ProductEdit.html" class="action-btn"><i class="fa-solid fa-pen"></i></a>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="product-info-cell">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" alt="product">
+                            <div class="name-col">
+                                <span>Hộp Quà "Magic Care"</span>
+                                <small>#SP004</small>
+                            </div>
+                        </td>
+                        <td>Hộp Quà Tặng</td>
+                        <td>10/11/2025</td>
+                        <td style="font-weight: bold;">390,000 ₫</td>
+                        <td>15</td>
+                        <td><div class="badge red">Sắp hết</div></td>
+                        <td>
+                            <a href="ProductEdit.html" class="action-btn"><i class="fa-solid fa-pen"></i></a>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="product-info-cell">
+                            <img src="../../../Source/Image/Product/Trang%20sức%20và%20phụ%20kiện/img1.jpg" alt="product">
+                            <div class="name-col">
+                                <span>Vòng Tay Trầm Hương</span>
+                                <small>#SP005</small>
+                            </div>
+                        </td>
+                        <td>Trang Sức</td>
+                        <td>12/11/2025</td>
+                        <td style="font-weight: bold;">780,000 ₫</td>
+                        <td>08</td>
+                        <td><div class="badge red">Sắp Hết</div></td>
+                        <td>
+                            <a href="ProductEdit.html" class="action-btn"><i class="fa-solid fa-pen"></i></a>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <button>Quay lại</button>
+                    <button class="page active">1</button>
+                    <button class="page">2</button>
+                    <button class="page">3</button>
+                    <button>Tiếp theo</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

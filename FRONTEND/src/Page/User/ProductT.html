@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hộp Quà Tặng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/User/PHeader.css">
+    <link rel="stylesheet" href="../../Style/User/PTypeMain.css">
+    <link rel="stylesheet" href="../../Style/User/HomePageFooter.css">
+    <link rel="stylesheet" href="../../Style/User/STT.css">
+</head>
+<body>
+<div class="page-container">
+    <div class="header-wrapper">
+        <header class="header-container page-container">
+            <!-- Dòng 1: Đăng nhập / Đăng ký -->
+            <div class="user-bar">
+                <div class="right">
+                    <a href="#" class="login">Đăng nhập</a>
+                    <span>|</span>
+                    <a href="#" class="register">Đăng ký</a>
+                </div>
+            </div>
+            <!-- Dòng logo – tìm kiếm – giỏ hàng -->
+            <div class="main-header">
+                <div class="left">
+                    <button id="menuBtn" class="menu-toggle" aria-label="Mở menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                        <a href="ProductT.html">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="ProductT.html">Hộp Quà Tặng</a>
+                        <a href="ProductT.html">Chus Exclusive</a>
+                        <a href="ProductT.html">Quà Doanh Nghiệp</a>
+                        <a href="ProductT.html">Quà Lưu Niệm</a>
+                    </div>
+                    <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+                    <div class="logo">
+                        <a href="HomePage.html">
+                            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="Logo" height="36">
+                        </a>
+                    </div>
+                </div>
+                <div class="center">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="right">
+                    <div class="cart">
+                        <a href="cart.html" aria-label="Giỏ hàng">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb">
+                <a href="HomePageAfter.html">Trang chủ</a>
+                <span> / </span>
+                <a href="#" class="current">Hộp Quà Tặng</a>
+            </div>
+        </header>
+    </div>
+    <main class="product-page">
+        <div class="main-container">
+            <div class="product-top">
+                <aside class="filter-sidebar">
+                    <h2 class="filter-main-title">BỘ LỌC</h2>
+                    <hr class="filter-divider">
+                    <div class="filter-group">
+                        <h3>Hộp Quà Tặng</h3>
+                        <label><input type="checkbox"> Set Quà Thực Phẩm</label>
+                        <label><input type="checkbox"> Set Quà Tinh Dầu</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Lựa Chọn</h3>
+                        <label><input type="checkbox"> Giao hàng trong ngày</label>
+                        <label><input type="checkbox"> Điểm nhận</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Phân Loại</h3>
+                        <label><input type="checkbox"> Hộp quà cá thể</label>
+                        <label><input type="checkbox"> Hộp quà trà</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Quà Tặng Dành Cho</h3>
+                        <label><input type="checkbox"> Nam</label>
+                        <label><input type="checkbox"> Nữ</label>
+                        <label><input type="checkbox"> Người nước ngoài</label>
+                        <label><input type="checkbox"> Doanh nghiệp</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Giá</h3>
+                        <label><input type="checkbox"> Từ 200k đến 500k</label>
+                        <label><input type="checkbox"> Từ 500k đến 1tr</label>
+                        <label><input type="checkbox"> Trên 1tr</label>
+                        <div class="filter-price-input">
+                            <input type="number" placeholder="50,000">
+                            <span>-</span>
+                            <input type="number" placeholder="3,500,000">
+                        </div>
+                    </div>
+                </aside>
+                <section class="product-right">
+                    <div class="product-banner">
+                        <img src="../../../Source/Image/Banner/BannerT.png" alt="BannerT"/>
+                    </div>
+                    <div class="product-header">
+                        <p class="product-title">
+                            Tất cả sản phẩm
+                            <span class="count-badge">25 Sản phẩm</span>
+                        </p>
+                        <div class="sort-box">
+                            <button class="sort-btn">
+                                Xếp theo giá: Thấp đến Cao
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="sort-dropdown">
+                                <li>Phổ biến</li>
+                                <li>Mục mới nhất đầu tiên</li>
+                                <li>Xếp theo giá: Cao đến Thấp</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Tranh Đất Sét Theo Yêu Cầu, Cỡ Nhỏ, Người & Thông Điệp Tự Chọn, Tối Đa 4 Người, Tranh Đất Sét Cá Nhân Hóa, Quà Tặng 20/10, Quà Tặng Cá Nhân Hóa, Quà Cưới</p>
+                                <p class="product-price">390,000 ₫</p>
+                                <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Túi Vải Linen Phiên Bản Giới Hạn, Phong Cách Hàn Quốc, Túi Vải Vintage, Phụ Kiện Không Thể Thiếu Cho Tín Đồ Thời Trang Bền Vững</p>
+                                <p class="product-price">450,000 ₫</p>
+                                <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bật Lửa Cổ Điển Bọc Da Thiết Kế Theo Yêu Cầu, Tôn Vinh Những Dấu Ấn Lịch Lãm, Hộp Quẹt Sang Trọng, Bật Lửa Khắc Tên, Quà Tặng Cá Nhân Hóa, Quà Cho Nam</p>
+                                <p class="product-price">780,000 ₫</p>
+                                <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Tranh Đất Sét Theo Yêu Cầu, Cỡ Nhỏ, Người & Thông Điệp Tự Chọn, Tối Đa 4 Người, Tranh Đất Sét Cá Nhân Hóa, Quà Tặng 20/10, Quà Tặng Cá Nhân Hóa, Quà Cưới</p>
+                                <p class="product-price">390,000 ₫</p>
+                                <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Túi Vải Linen Phiên Bản Giới Hạn, Phong Cách Hàn Quốc, Túi Vải Vintage, Phụ Kiện Không Thể Thiếu Cho Tín Đồ Thời Trang Bền Vững</p>
+                                <p class="product-price">450,000 ₫</p>
+                                <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bật Lửa Cổ Điển Bọc Da Thiết Kế Theo Yêu Cầu, Tôn Vinh Những Dấu Ấn Lịch Lãm, Hộp Quẹt Sang Trọng, Bật Lửa Khắc Tên, Quà Tặng Cá Nhân Hóa, Quà Cho Nam</p>
+                                <p class="product-price">780,000 ₫</p>
+                                <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Tranh Đất Sét Theo Yêu Cầu, Cỡ Nhỏ, Người & Thông Điệp Tự Chọn, Tối Đa 4 Người, Tranh Đất Sét Cá Nhân Hóa, Quà Tặng 20/10, Quà Tặng Cá Nhân Hóa, Quà Cưới</p>
+                                <p class="product-price">390,000 ₫</p>
+                                <p class="product-sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Túi Vải Linen Phiên Bản Giới Hạn, Phong Cách Hàn Quốc, Túi Vải Vintage, Phụ Kiện Không Thể Thiếu Cho Tín Đồ Thời Trang Bền Vững</p>
+                                <p class="product-price">450,000 ₫</p>
+                                <p class="product-sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bật Lửa Cổ Điển Bọc Da Thiết Kế Theo Yêu Cầu, Tôn Vinh Những Dấu Ấn Lịch Lãm, Hộp Quẹt Sang Trọng, Bật Lửa Khắc Tên, Quà Tặng Cá Nhân Hóa, Quà Cho Nam</p>
+                                <p class="product-price">780,000 ₫</p>
+                                <p class="product-sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                                <p class="product-price">285,000 ₫</p>
+                                <p class="product-sold">Đã bán 23 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+                        <div class="product-card">
+                            <a href="Product.html">
+                                <div class="img-box">
+                                    <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" height="300" width="300" alt="Sản phẩm" class="product-ing"/>
+                                </div>
+                                <p class="product-name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                                <p class="product-price">262,800 ₫</p>
+                                <p class="product-sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="related-products">
+            <h2 class="related-title">Sản phẩm liên quan</h2>
+            <div class="related-grid">
+
+                <div class="related-card">
+                    <a href="Product.html">
+                        <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" alt="Sản phẩm">
+                        <p class="name">Tranh Đất Sét Theo Yêu Cầu, Cỡ Nhỏ, Người & Thông Điệp Tự Chọn, Tối Đa 4 Người, Tranh Đất Sét Cá Nhân Hóa, Quà Tặng 20/10, Quà Tặng Cá Nhân Hóa, Quà Cưới</p>
+                        <p class="price">390,000 ₫</p>
+                        <p class="sold">Đã bán 342 <span class="rating">★5.0</span></p>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="Product.html">
+                        <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" alt="Sản phẩm">
+                        <p class="name">Túi Vải Linen Phiên Bản Giới Hạn, Phong Cách Hàn Quốc, Túi Vải Vintage, Phụ Kiện Không Thể Thiếu Cho Tín Đồ Thời Trang Bền Vững</p>
+                        <p class="price">450,000 ₫</p>
+                        <p class="sold">Đã bán 401 <span class="rating">★5.0</span></p>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="Product.html">
+                        <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" alt="Sản phẩm">
+                        <p class="name">Bật Lửa Cổ Điển Bọc Da Thiết Kế Theo Yêu Cầu, Tôn Vinh Những Dấu Ấn Lịch Lãm, Hộp Quẹt Sang Trọng, Bật Lửa Khắc Tên, Quà Tặng Cá Nhân Hóa, Quà Cho Nam</p>
+                        <p class="price">780,000 ₫</p>
+                        <p class="sold">Đã bán 94 <span class="rating">★5.0</span></p>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="Product.html">
+                        <img src="../../../Source/Image/Product/Hộp quà tặng/imgtra.png" alt="Sản phẩm">
+                        <p class="name">Bút Gỗ Phong Khắc Tên Kèm Hộp, Thiết Kế Ấn Tượng, Chế Tác Tinh Xảo, Quà Tặng Cá Nhân Hóa, Quà Tặng Doanh Nghiệp</p>
+                        <p class="price">262,800 ₫</p>
+                        <p class="sold">Đã bán 4 <span class="rating">★5.0</span></p>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="Product.html">
+                        <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" alt="Sản phẩm">
+                        <p class="name">Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm, Xà Phòng Thủ Công Lành Tính, Nguyên Liệu Tự Nhiên, Quà 20/10, Hộp Quà Cho Nữ, Quà Thủ Công</p>
+                        <p class="price">285,000 ₫</p>
+                        <p class="sold">Đã bán 23 <span class="rating">★5.0</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="footer-wrapper">
+        <footer class="footer-container page-container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>WORK WITH US</h3>
+                    <a href="#">Affiliate Program</a>
+                    <a href="#">Partnerships</a>
+                </div>
+                <div class="footer-col">
+                    <h3>TEACH WITH US</h3>
+                    <a href="#">Become a Teacher</a>
+                    <a href="#">Teacher Help Center</a>
+                    <a href="#">Teacher Rules</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Phương thức thanh toán</h3>
+
+                    <div class="icon-row">
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/visa.jpg"alt="Visa"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/mastercard.png" alt="Mastercard"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/momo.webp" alt="Momo"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Payment/vnpay.webp" alt="VNPAY"></div>
+                    </div>
+
+                    <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
+
+                    <div class="icon-row">
+                        <div class="icon-box"><img src="../../../Source/Image/Transport/ghtk.webp" alt="GHTK"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Transport/ghn.png" alt="GHN"></div>
+                        <div class="icon-box"><img src="../../../Source/Image/Transport/jnt.webp" alt="J&T"></div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Kết nối với INOLA</h3>
+
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <h3 style="margin-top:16px;">Nhận tin ưu đãi</h3>
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Email của bạn" aria-label="Email">
+                        <button type="button">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Address: Đại Học Nông Lâm Thành Phố Hồ Chí Minh</p>
+                <p>Responsible for Content Management: Group 32</p>
+                <p>@ 2025 - Copyright belongs to Group 32</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../../Js/HeaderAfter.js"></script>
+    <script src="../../Js/Header.js"></script>
+    <a href="#">
+        <button id="scrollToTopBtn">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </a>
+</div>
+</body>
+</html>

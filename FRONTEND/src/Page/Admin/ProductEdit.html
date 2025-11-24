@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa sản phẩm - Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
+    <link rel="stylesheet" href="../../Style/Admin/ProductEditStyle.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li><a href="OverView.html"><i class="fa-solid fa-chart-line"></i> Tổng quan</a></li>
+            <li class="active"><a href="Product.html"><i class="fa-solid fa-box"></i> Sản phẩm</a></li>
+            <li><a href="Order.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+            <li><a href="Customer.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
+            <li><a href="ProfileAdmin.html"><i class="fa-solid fa-user-gear"></i> Hồ sơ</a></li>
+            <li><a href="SettingGeneral.html"><i class="fa-solid fa-gear"></i> Cài đặt</a></li>
+            <li class="btn-logout"><a href="../User/Login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="dashboard">
+
+            <div class="page-header">
+                <div class="left">
+                    <a href="Product.html" class="back-btn">
+                        <i class="fa-solid fa-arrow-left"></i> Quay lại danh sách sản phẩm
+                    </a>
+                    <h2>Chỉnh sửa sản phẩm</h2>
+                </div>
+                <div class="right">
+                    <button class="btn-secondary">Hủy</button>
+                    <button class="btn-primary">Cập nhật</button>
+                </div>
+            </div>
+
+            <form class="product-grid">
+
+                <div class="left-column">
+
+                    <section class="card">
+                        <h3>Thông tin chung</h3>
+                        <div class="form-group">
+                            <label>Tên sản phẩm</label>
+                            <input type="text" class="form-control" value="Set Quà Tặng Hương Thơm, Xà Phòng Cùng Sáp Thơm & Nến Thơm">
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả sản phẩm</label>
+                            <textarea class="form-control" rows="10">
+Set Quà Tặng Hương Thơm - Món Quà Thư Giãn Tuyệt Vời
+
+🎁 BỘ SẢN PHẨM BAO GỒM:
+- 01 Hũ nến thơm sáp đậu nành tự nhiên (100g): Hương thơm dịu nhẹ, không khói, giúp thư giãn tinh thần.
+- 01 Bánh xà phòng thủ công (Handmade Soap): Giàu dưỡng chất từ dầu dừa và oliu, mềm mịn da.
+- 01 Sáp thơm treo tủ quần áo/phòng ngủ: Trang trí hoa khô tinh tế, lưu hương lâu.
+
+🌿 ĐẶC ĐIỂM NỔI BẬT:
+- Nguyên liệu 100% thiên nhiên, lành tính và an toàn.
+- Thiết kế hộp quà Kraft vintage sang trọng, kèm nơ và thiệp.
+- Phù hợp làm quà tặng 20/10, 8/3, sinh nhật hoặc quà tặng doanh nghiệp.
+
+✨ HƯỚNG DẪN SỬ DỤNG:
+- Nến thơm: Cắt bấc nến còn 0.5cm trước khi đốt. Đốt ít nhất 1 giờ để sáp tan đều bề mặt.
+- Sáp treo: Treo ở nơi khô ráo, tránh ánh nắng trực tiếp.
+                            </textarea>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h3>Hình ảnh sản phẩm</h3>
+                        <div class="media-upload-area">
+                            <div class="main-preview">
+                                <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" alt="Main Image">
+                            </div>
+                            <div class="upload-actions">
+                                <label for="uploadFile" class="btn-upload">Thêm hình ảnh</label>
+                                <input type="file" id="uploadFile" hidden>
+                                <p class="hint">Chấp nhận định dạng: .jpg, .png, .jpeg</p>
+                            </div>
+                        </div>
+                        <div class="media-thumbnails">
+                            <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgset.jpg" class="thumb active">
+                            <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgnen.jpg" class="thumb">
+                            <img src="../../../Source/Image/Product/Hộp%20quà%20tặng/imgskin.jpg" class="thumb">
+                            <div class="thumb-add"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h3>Giá bán</h3>
+                        <div class="row-2">
+                            <div class="form-group">
+                                <label>Giá niêm yết (VNĐ)</label>
+                                <input type="text" class="form-control" value="400.800">
+                            </div>
+                            <div class="form-group">
+                                <label>Giá khuyến mãi (VNĐ)</label>
+                                <input type="text" class="form-control" value="262.800">
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <div class="form-group">
+                                <label>Giá vốn (Cost per item)</label>
+                                <input type="text" class="form-control" value="150.000">
+                                <p class="hint">Khách hàng sẽ không thấy giá này</p>
+                            </div>
+                            <div class="form-group checkbox-wrapper">
+                                <input type="checkbox" id="tax" checked>
+                                <label for="tax">Đã bao gồm thuế VAT</label>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+
+                    <section class="card">
+                        <h3>Trạng thái sản phẩm</h3>
+                        <div class="form-group">
+                            <select class="form-control status-select active">
+                                <option value="active" selected>Đang hoạt động</option>
+                                <option value="draft">Hết hàng</option>
+
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h3>Tổ chức</h3>
+                        <div class="form-group">
+                            <label>Danh mục sản phẩm</label>
+                            <select class="form-control">
+                                <option selected>Hộp Quà Tặng</option>
+                                <option>Quà Tặng Cá Nhân Hóa</option>
+                                <option>Đồ Trang Trí</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Loại sản phẩm</label>
+                            <input type="text" class="form-control" value="Set quà tặng">
+                        </div>
+                        <div class="form-group">
+                            <label>Nhà cung cấp</label>
+                            <input type="text" class="form-control" value="INOLA Handmade">
+                        </div>
+                        <div class="form-group">
+                            <label>Tags (Thẻ)</label>
+                            <input type="text" class="form-control" value="Quà 20/10, Nến thơm, Thủ công">
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h3>Kho hàng</h3>
+                        <div class="form-group">
+                            <label>Mã SKU (Mã kho)</label>
+                            <input type="text" class="form-control" value="SET-HUONG-THOM-01">
+                        </div>
+                        <div class="form-group">
+                            <label>Số lượng tồn kho</label>
+                            <input type="number" class="form-control" value="50">
+                        </div>
+                        <div class="form-group">
+                            <label>Cân nặng (kg)</label>
+                            <input type="text" class="form-control" value="0.5">
+                        </div>
+                    </section>
+
+                    <div class="delete-section">
+                        <button type="button" class="btn-delete-text">Xóa sản phẩm này</button>
+                    </div>
+
+                </div>
+            </form>
+        </main>
+    </div>
+</div>
+</body>
+</html>

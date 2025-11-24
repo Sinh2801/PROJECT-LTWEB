@@ -1,0 +1,412 @@
+/* --- 1. BASIC SETUP --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F4F8;
+    font-family: 'Manrope', sans-serif;
+    color: #1E293B;
+    padding-bottom: 60px;
+}
+
+.master-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header trang */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #64748B;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.page-header h1 {
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* GRID LAYOUT */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr; /* Cột trái to, phải nhỏ */
+    gap: 25px;
+    align-items: start;
+}
+
+/* CARD STYLE CHUNG */
+.section-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); /* Bóng mờ nhẹ */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- PHẦN ĐỊA CHỈ --- */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header .card-title {
+    margin-bottom: 0;
+}
+
+.btn-edit {
+    border: none;
+    background: none;
+    color: #3B82F6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.address-content {
+    padding-left: 15px;
+    border-left: 4px solid #3B82F6;
+}
+
+.name-row {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.name-row .phone {
+    color: #64748B;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.address-text {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.tag-home {
+    background: #EFF6FF;
+    color: #3B82F6;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* --- PHẦN SẢN PHẨM MINI --- */
+.item-mini {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.item-mini:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.item-mini img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.item-mini .info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.item-mini .info p {
+    font-size: 13px;
+    color: #64748B;
+    margin-bottom: 4px;
+}
+
+.item-mini .qty-price {
+    font-size: 14px;
+    color: #0F172A;
+}
+
+.item-mini .qty-price span {
+    font-weight: 700;
+    color: #3B82F6;
+    margin-left: 10px;
+}
+
+/* --- PHẦN THANH TOÁN (GRID THẺ) - QUAN TRỌNG --- */
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia 2 cột */
+    gap: 15px;
+}
+
+.payment-card-item {
+    cursor: pointer;
+}
+
+.payment-card-item input {
+    display: none;
+}
+
+/* Ẩn nút radio xấu xí */
+
+.card-box {
+    border: 2px solid #F1F5F9;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* Icon của từng loại thẻ */
+.card-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.cod-icon {
+    background: #F0FDF4;
+    color: #16A34A;
+}
+
+/* Màu xanh lá */
+.visa-icon {
+    background: #EFF6FF;
+    color: #1D4ED8;
+}
+
+/* Màu xanh dương VISA */
+.jcb-icon {
+    background: #FEF2F2;
+    color: #DC2626;
+}
+
+/* Màu đỏ JCB */
+.momo-icon {
+    background: #FDF2F8;
+    color: #DB2777;
+}
+
+/* Màu hồng MOMO */
+
+.card-info {
+    flex: 1;
+}
+
+.method-name {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E293B;
+}
+
+.method-desc {
+    display: block;
+    font-size: 12px;
+    color: #64748B;
+    margin-top: 2px;
+}
+
+.check-mark {
+    color: #3B82F6;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/* Hiệu ứng khi ĐƯỢC CHỌN */
+.payment-card-item input:checked + .card-box {
+    border-color: #3B82F6; /* Viền xanh */
+    background-color: #F0F9FF; /* Nền xanh nhạt */
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
+}
+
+.payment-card-item input:checked + .card-box .check-mark {
+    opacity: 1;
+}
+
+/* Nút thêm thẻ mới */
+.add-new-card {
+    grid-column: span 2;
+}
+
+/* Chiếm full 1 dòng */
+.card-box-add {
+    border: 2px dashed #CBD5E1;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    color: #64748B;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-box-add:hover {
+    border-color: #3B82F6;
+    color: #3B82F6;
+    background: white;
+}
+
+/* --- CỘT PHẢI (SUMMARY) --- */
+.column-right {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.summary-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.summary-box h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.voucher-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.voucher-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #F1F5F9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.voucher-box button {
+    background: #0F172A;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.line-items .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #475569;
+}
+
+.text-green {
+    color: #16A34A;
+    font-weight: 700;
+}
+
+.total-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px dashed #F1F5F9;
+    margin-bottom: 25px;
+}
+
+.total-price-row span:first-child {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.price-big {
+    font-size: 24px;
+    font-weight: 800;
+    color: #3B82F6;
+}
+
+.btn-confirm {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background: #3B82F6;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    transition: 0.2s;
+}
+
+.btn-confirm:hover {
+    transform: translateY(-2px);
+    background: #2563EB;
+}
+
+.note-secure {
+    text-align: center;
+    font-size: 12px;
+    color: #94A3B8;
+    margin-top: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile thì thẻ xếp dọc 1 cột */
+    .add-new-card {
+        grid-column: span 1;
+    }
+
+    .column-right {
+        position: static;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/Admin/ProductAddStyle.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
+
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li >
+                <a href="OverView.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+            <li class="active">
+                <a href="Product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+            <li>
+                <a href="Order.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng
+                </a>
+            </li>
+            <li >
+                <a href="Customer.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+            <li >
+                <a href="ProfileAdmin.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+           <li>
+                <a href="SettingGeneral.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+
+            <li class = "btn-logout">
+                <a href="../User/Login.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <main class="dashboard add-product-page">
+            <div class="themsanpham">
+                <nav class="quaylai">
+                    <a href="Product.html">
+                    <i class="fa-solid fa-arrow-left"></i></a>
+                </nav>
+                <h2>Thêm sản phẩm</h2>
+            </div>
+            <div class="product-container">
+
+                <!-- Thông tin sản phẩm -->
+                <section class="box info-box">
+                    <h3>Thông tin sản phẩm</h3>
+
+                    <div class="form-group">
+                        <label>Tên</label>
+                        <input type="text" placeholder="Tủ lạnh, máy giặt, ext...">
+                    </div>
+
+                    <div class="form-2col">
+                        <div class="form-group">
+                            <label>Mã SKU</label>
+                            <input type="text" placeholder="Ví dụ: 384512302">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Danh mục</label>
+                            <input type="text" placeholder="Tủ lạnh">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea placeholder="Nhập mô tả của bạn..."></textarea>
+                    </div>
+
+                    <section class="box image-box">
+                        <h3>Hình ảnh</h3>
+                        <div class="upload-area">
+                            <img src="https://cdn-icons-png.flaticon.com/512/401/401061.png" class="upload-icon">
+                            <p>Kéo và thả tệp của bạn vào đây<br>hoặc</p>
+                            <button class="upload-btn">Tải ảnh lên</button>
+                        </div>
+                    </section>
+
+
+                </section>
+
+                <!-- Chi tiết -->
+                <section class="box detail-box">
+                    <div class="form-2col">
+                        <div class="form-group">
+                            <label>Giá</label>
+                            <input type="text" placeholder="0" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số lượng</label>
+                            <input type="text" placeholder="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thuộc tính</label>
+
+                        <div class="form-2col">
+
+                            <input type="text" value="Màu sắc" disabled>
+
+                            <select>
+                                <option value="xanh-la">Xanh lá</option>
+                                <option value="xanh-duong">Xanh dương</option>
+                                <option value="do">Đỏ</option>
+                                <option value="do-dam">Đỏ đậm</option>
+                                <option value="vang">Vàng</option>
+                                <option value="cam">Cam</option>
+                                <option value="hong">Hồng</option>
+                                <option value="tim">Tím</option>
+                                <option value="den">Đen</option>
+                                <option value="trang">Trắng</option>
+                                <option value="xam">Xám</option>
+                                <option value="nau">Nâu</option>
+                                <option value="xanh-nuoc-bien">Xanh nước biển</option>
+                                <option value="be">Be</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-2col">
+
+                            <!-- Input hiển thị "Chất liệu", không thể chỉnh sửa -->
+                            <input type="text" value="Chất liệu" disabled>
+
+                            <!-- Select cho người dùng chọn chất liệu -->
+                            <select>
+                                <option value="go">Gỗ</option>
+                                <option value="kim-loai">Kim loại</option>
+                                <option value="da">Da</option>
+                                <option value="vai">Vải</option>
+                                <option value="nhua">Nhựa</option>
+                                <option value="thuoc">Thủy tinh</option>
+                                <option value="gach">Gạch</option>
+                                <option value="da-nhan-tao">Da nhân tạo</option>
+                                <option value="gom-su">Gốm sứ</option>
+                                <option value="cao-su">Cao su</option>
+                            </select>
+
+
+                        </div>
+
+
+                        <button class="add-btn">+ Thêm thuộc tính</button>
+                    </div>
+
+
+                    <h3>Tổ chức</h3>
+                    <div class="form-group">
+                        <label>Nhà cung cấp</label>
+                        <input type="text" placeholder="Ví dụ: Nike">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bộ sưu tập</label>
+                        <input type="text" placeholder="Nhà bếp">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thẻ</label>
+                        <input type="text" placeholder="Nhập thẻ tại đây">
+                    </div>
+
+                    <button class="save-btn">Lưu</button>
+                </section>
+
+                <!-- Hình ảnh -->
+
+            </div>
+        </main>
+
+    </div>
+</div>
+
+</body>
+</html>

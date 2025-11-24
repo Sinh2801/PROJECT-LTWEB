@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit Cap Nhap Product Type">
-      <change afterPath="$PROJECT_DIR$/src/STT.css" afterDir="false" />
+    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit hoan thien chi tiet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CssHome/HomePageMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssHome/HomePageMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CssProduct/ProductMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProduct/ProductMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CssProductT/PTypeMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProductT/PTypeMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/HomePageAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/HomePageAfter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/Product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/ProductAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductAfter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/ProductT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Html/ProductTAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductTAfter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Js/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Js/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,28 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HomePage&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\FRONTEND\Source\Image\Product\Hộp quà tặng" />
+      <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\FRONTEND\src\Style\User" />
       <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\src\Images" />
       <recent name="C:\Users\PC\WebstormProjects\PROJECT-LTWEB\src\icons" />
     </key>
@@ -105,11 +95,24 @@
       <updated>1763632922250</updated>
       <workItem from="1763632924508" duration="11125000" />
       <workItem from="1763692833449" duration="2804000" />
-      <workItem from="1763891792051" duration="5820000" />
+      <workItem from="1763891792051" duration="12910000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit hoan thien chi tiet">
+      <option name="closed" value="true" />
+      <created>1763953439939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763953439939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit hoan thien chi tiet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit hoan thien chi tiet" />
   </component>
 </project>

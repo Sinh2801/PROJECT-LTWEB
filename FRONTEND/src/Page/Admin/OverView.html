@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Quan - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Style/Admin/HeaderAndSidebar.css">
+    <link rel="stylesheet" href="../../Style/Admin/OverViewStyle.css">
+
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+        <nav class="logo">
+            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="logo" width="100">
+        </nav>
+        <ul class="menu">
+            <li class="active">
+                <a href="OverView.html">
+                    <i class="fa-solid fa-chart-line"></i> Tổng quan
+                </a>
+            </li>
+            <li>
+                <a href="Product.html">
+                    <i class="fa-solid fa-box"></i> Sản phẩm
+                </a>
+            </li>
+            <li >
+                <a href="Order.html">
+                    <i class="fa-solid fa-receipt"></i> Đơn hàng
+                </a>
+            </li>
+            <li >
+                <a href="Customer.html">
+                    <i class="fa-solid fa-users"></i> Khách hàng
+                </a>
+            </li>
+            <li >
+                <a href="ProfileAdmin.html">
+                    <i class="fa-solid fa-user-gear"></i> Hồ sơ
+                </a>
+            </li>
+           <li>
+                <a href="SettingGeneral.html">
+                    <i class="fa-solid fa-gear"></i> Cài đặt
+                </a>
+            </li>
+
+            <li class = "btn-logout">
+                <a href="../User/Login.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="user-info">
+                <i class="fa-solid fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <main class="main-content-page">
+            <div class="content-container">
+
+                <div class="page-header-control">
+                    <h2>Tổng quan tháng 11</h2>
+                    <div class="header-actions">
+                        <button class="export-btn">
+                            <i class="fa-solid fa-download"></i> Xuất báo cáo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon blue"><i class="fa-solid fa-wallet"></i></div>
+                        <div>
+                            <h3>Doanh thu</h3>
+                            <p class="value">720,700,000 ₫</p>
+                            <span class="status up"><i class="fa-solid fa-arrow-up"></i> +2.2%</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon orange"><i class="fa-solid fa-users-viewfinder"></i></div>
+                        <div>
+                            <h3>Lượt truy cập</h3>
+                            <p class="value">3,200</p>
+                            <span class="status down"><i class="fa-solid fa-arrow-down"></i> -8.2%</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon green"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div>
+                            <h3>Đơn hàng</h3>
+                            <p class="value">57</p>
+                            <span class="status up"><i class="fa-solid fa-arrow-up"></i> +4.5%</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon purple"><i class="fa-solid fa-user-plus"></i></div>
+                        <div>
+                            <h3>Khách hàng mới</h3>
+                            <p class="value">231</p>
+                            <span class="status up"><i class="fa-solid fa-arrow-up"></i> +10%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h3>Sản phẩm bán chạy</h3>
+                </div>
+
+                <div class="top-products-chart scroll-x">
+                    <div class="chart-column rank-1">
+                        <div class="crown-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="rank-badge">1</div>
+                        <div class="bar" style="height: 200px;">
+                            <span class="tooltip">120 Lượt mua</span>
+                        </div>
+
+                        <div class="product-info">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgset.jpg" alt="SP1">
+                            <p>Set Quà Tặng Hương Thơm</p>
+                            <span class="sales">120 Đã bán</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-column rank-2">
+                        <div class="rank-badge">2</div>
+                        <div class="bar" style="height: 160px;">
+                            <span class="tooltip">95 Lượt mua</span>
+                        </div>
+                        <div class="product-info">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgtra.png" alt="SP2">
+                            <p>Mộc Trà Dưỡng Thân</p>
+                            <span class="sales">95 Đã bán</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-column rank-3">
+                        <div class="rank-badge">3</div>
+                        <div class="bar" style="height: 130px;">
+                            <span class="tooltip">70 Lượt mua</span>
+                        </div>
+                        <div class="product-info">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgnen.jpg" alt="SP3">
+                            <p>Nến Thơm Vintage</p>
+                            <span class="sales">70 Đã bán</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-column normal-rank">
+                        <div class="rank-badge">4</div>
+                        <div class="bar" style="height: 100px;">
+                            <span class="tooltip">55 Lượt mua</span>
+                        </div>
+                        <div class="product-info">
+                            <img src="../../../Source/Image/Product/Hộp quà tặng/imgskin.jpg" alt="SP4">
+                            <p>Hộp Quà "Magic Care"</p>
+                            <span class="sales">55 Đã bán</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-column normal-rank">
+                        <div class="rank-badge">5</div>
+                        <div class="bar" style="height: 80px;">
+                            <span class="tooltip">42 Lượt mua</span>
+                        </div>
+                        <div class="product-info">
+                            <img src="../../../Source/Image/Product/Trang%20sức%20và%20phụ%20kiện/img1.jpg" alt="SP5">
+                            <p>Vòng Tay Trầm Hương</p>
+                            <span class="sales">42 Đã bán</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <table class="custom-table">
+                    <thead>
+                    <tr>
+                        <th>Top</th>
+                        <th style="text-align: left;">Sản phẩm</th>
+                        <th>Lượt mua</th>
+                        <th>Còn lại</th>
+                        <th>Lượt xem</th>
+                        <th>Đánh giá</th>
+                        <th>Xu hướng</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="badge gray">#1</span></td>
+                        <td style="text-align: left;">Set Quà Tặng Hương Thơm</td>
+                        <td>120</td>
+                        <td>50</td>
+                        <td>3,500</td>
+                        <td>4.9 <i class="fa-solid fa-star text-yellow"></i></td>
+                        <td class="trend up">+5.2%</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge gray">#2</span></td>
+                        <td style="text-align: left;">Mộc Trà Dưỡng Thân</td>
+                        <td>95</td>
+                        <td>32</td>
+                        <td>2,800</td>
+                        <td>4.8 <i class="fa-solid fa-star text-yellow"></i></td>
+                        <td class="trend up">+3.1%</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge gray">#3</span></td>
+                        <td style="text-align: left;">Nến Thơm Vintage</td>
+                        <td>70</td>
+                        <td>110</td>
+                        <td>2,100</td>
+                        <td>4.7 <i class="fa-solid fa-star text-yellow"></i></td>
+                        <td class="trend up">+1.5%</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge gray">#4</span></td>
+                        <td style="text-align: left;">Hộp Quà "Magic Care"</td>
+                        <td>55</td>
+                        <td>15</td>
+                        <td>1,200</td>
+                        <td>4.6 <i class="fa-solid fa-star text-yellow"></i></td>
+                        <td class="trend down">-0.5%</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge gray">#5</span></td>
+                        <td style="text-align: left;">Vòng Tay Trầm Hương</td>
+                        <td>42</td>
+                        <td>08</td>
+                        <td>950</td>
+                        <td>4.5 <i class="fa-solid fa-star text-yellow"></i></td>
+                        <td class="trend up">+2.0%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
