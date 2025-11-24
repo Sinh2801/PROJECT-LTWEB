@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit Cap Nhap Product Type" />
+    <list default="true" id="cc9ee106-917c-46c7-8d24-20f54e63df20" name="Changes" comment="Commit Cap Nhap Product Type">
+      <change afterPath="$PROJECT_DIR$/src/STT.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssHome/HomePageMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssHome/HomePageMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssProduct/ProductMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProduct/ProductMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CssProductT/PTypeMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CssProductT/PTypeMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/HomePageAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/HomePageAfter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/ProductAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductAfter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/ProductT.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html/ProductTAfter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html/ProductTAfter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Js/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Js/HomePage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -92,6 +105,7 @@
       <updated>1763632922250</updated>
       <workItem from="1763632924508" duration="11125000" />
       <workItem from="1763692833449" duration="2804000" />
+      <workItem from="1763891792051" duration="5820000" />
     </task>
     <servers />
   </component>

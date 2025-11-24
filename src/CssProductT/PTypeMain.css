@@ -184,6 +184,12 @@ main.product-page {
     background: #fff;
     transition: 0.25s ease;
 }
+.product-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
 
 .product-card:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
@@ -270,7 +276,12 @@ main.product-page {
     border: 1px solid #e8e8e8;
     transition: 0.25s ease;
 }
-
+.related-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
 .related-card:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transform: translateY(-3px);

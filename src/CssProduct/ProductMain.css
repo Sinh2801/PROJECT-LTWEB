@@ -585,7 +585,16 @@
     padding: 0 40px;
     box-sizing: border-box;
 }
-
+/* Thiết lập cho liên kết bên trong H2 */
+.related-products .related-title a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+/* Hiệu ứng khi di chuột (Hover) */
+.related-products .related-title a:hover {
+    color: #cc0000;
+}
 .related-grid {
     max-width: 1400px;
     margin: 0 auto;
@@ -603,7 +612,11 @@
     border: 1px solid #e8e8e8;
     transition: 0.25s ease;
 }
-
+.related-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 .related-card:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transform: translateY(-3px);

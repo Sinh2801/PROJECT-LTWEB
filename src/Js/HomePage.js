@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentIndex);
     startAutoPlay();
 });
+// ---------------- Nút "Xem thêm" Chuyển Hướng ---------------- //
+document.addEventListener("DOMContentLoaded", () => {
+    const seeMoreBtns = document.querySelectorAll('.see-more-btn');
+    seeMoreBtns.forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = 'ProductT.html';
+        });
+    });
+});
 /*Slip action*/
 document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector("#slider");
