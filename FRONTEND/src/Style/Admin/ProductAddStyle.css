@@ -1,252 +1,127 @@
-/* --- GENERAL SETUP --- */
-body {
-    background-color: #f3f4f6; /* Màu nền xám nhẹ dịu mắt */
-    color: #1f2937;
-    font-family: "Poppins", sans-serif;
+/* --- ADD PRODUCT PAGE --- */
+.dashboard {
+    padding: 20px;
+    margin-left: 20px;
 }
 
-.main-content {
-    padding-bottom: 40px;
-}
-
-/* --- PAGE HEADER --- */
-.page-header {
+.dashboard .themsanpham {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 20px;
     align-items: center;
-    margin: 20px 20px 25px 20px;
 }
 
-.page-header .left {
+
+.product-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.page-header h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #111827;
-    margin: 0;
-}
-
-.back-btn {
-    color: #6b7280;
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-.back-btn:hover { color: #111827; }
-
-.status-badge {
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-}
-.status-badge.active {
-    background-color: #dcfce7;
-    color: #166534;
-    border: 1px solid #bbf7d0;
-}
-
-/* --- GRID LAYOUT --- */
-.product-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Cột trái rộng gấp đôi cột phải */
-    gap: 25px;
-    padding: 0 20px;
-}
-
-/* --- CARD STYLE --- */
-.card {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    padding: 25px;
-    margin-bottom: 25px;
-    border: 1px solid #e5e7eb;
-}
-
-.card h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #f3f4f6;
-}
-
-/* --- FORM ELEMENTS --- */
-.form-group {
-    margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 14px;
     font-weight: 500;
-    color: #4b5563;
 }
 
-.form-control {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 14px;
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px;
     border: 1px solid #d1d5db;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    background-color: #f9fafb;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
-.form-control:focus {
-    outline: none;
-    border-color: #2563eb; /* Màu xanh highlight */
-    background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-textarea.form-control {
-    resize: vertical;
-    line-height: 1.6;
-}
-
-.row-2 {
+.form-2col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.check-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.check-group input { width: auto; margin: 0; cursor: pointer; }
-.check-group label { margin: 0; cursor: pointer; }
-
-/* --- MEDIA UPLOAD (Hình ảnh) --- */
-.media-upload-area {
-    border: 2px dashed #d1d5db;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9fafb;
-    transition: all 0.2s;
-    margin-bottom: 15px;
-}
-
-.media-upload-area:hover {
-    border-color: #2563eb;
-    background-color: #eff6ff;
-}
-
-.main-preview img {
-    max-height: 200px;
-    width: auto;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
-}
-
-.upload-actions p {
-    font-size: 13px;
-    color: #6b7280;
+    gap: 15px;
     margin-bottom: 10px;
 }
 
-.btn-upload {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #fff;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    color: #374151;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.btn-upload:hover { background-color: #f3f4f6; }
-
-.media-thumbnails {
-    display: flex;
-    gap: 10px;
+textarea {
+    height: 120px;
+    resize: vertical;
 }
 
-.thumb {
+/* Upload area */
+.image-box .upload-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.upload-icon {
     width: 60px;
-    height: 60px;
-    border-radius: 6px;
-    object-fit: cover;
-    border: 1px solid #e5e7eb;
-    cursor: pointer;
+    opacity: 0.5;
+    margin-bottom: 10px;
 }
 
-.thumb.active {
-    border: 2px solid #2563eb;
-}
-
-.thumb-add {
-    width: 60px;
-    height: 60px;
-    border: 1px dashed #d1d5db;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ca3af;
-    cursor: pointer;
-}
-.thumb-add:hover { border-color: #2563eb; color: #2563eb; }
-
-/* --- ACTION BUTTONS (Cột phải) --- */
-.action-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.upload-btn {
     margin-top: 10px;
-    position: sticky;
-    bottom: 20px;
+    padding: 10px 18px;
+    border: none;
+    background: #0ea5e9;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.btn {
+.upload-btn:hover {
+    background: #0284c7;
+}
+
+/* Buttons */
+.add-btn {
+    margin-top: 10px;
+    background: none;
+    border: 1px solid #94a3b8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #475569;
+}
+
+.add-btn:hover {
+    background: #e2e8f0;
+}
+
+.save-btn {
     width: 100%;
     padding: 12px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 14px;
+    background: #16a34a;
+    color: white;
     border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
     cursor: pointer;
-    transition: opacity 0.2s;
-}
-.btn:hover { opacity: 0.9; }
-
-.btn-save {
-    background-color: #2563eb; /* Xanh dương đậm chuyên nghiệp */
-    color: #fff;
-    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
 }
 
-.btn-delete {
-    background-color: #fee2e2;
-    color: #dc2626;
-    border: 1px solid #fecaca;
-}
-.btn-delete:hover {
-    background-color: #fecaca;
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: 1fr; /* Chuyển về 1 cột trên mobile */
-    }
-    .right-column {
-        order: -1; /* Đẩy cột trạng thái lên trên nếu cần, hoặc để dưới tùy ý */
-    }
+.save-btn:hover {
+    background: #15803d;
 }
