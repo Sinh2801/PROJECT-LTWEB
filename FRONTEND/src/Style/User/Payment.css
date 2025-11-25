@@ -22,6 +22,22 @@ body {
 .page-header {
     margin-bottom: 30px;
 }
+.page-header a{
+    font-weight: 500;
+    color: #9245d8;
+    display: inline-flex; /* Để icon và text cùng nằm trên 1 hàng */
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border: 1px solid #522283;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: 14px;
+}
+.page-header a:hover {
+    background-color: #662abd;
+    color: #fff;
+}
 
 .back-link {
     text-decoration: none;
@@ -79,7 +95,7 @@ body {
 .btn-edit {
     border: none;
     background: none;
-    color: #3B82F6;
+    color: #3a2483;
     font-weight: 600;
     cursor: pointer;
 }
@@ -109,7 +125,7 @@ body {
 
 .tag-home {
     background: #EFF6FF;
-    color: #3B82F6;
+    color: #573478;
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 11px;
@@ -157,7 +173,7 @@ body {
 
 .item-mini .qty-price span {
     font-weight: 700;
-    color: #3B82F6;
+    color: #8537cd;
     margin-left: 10px;
 }
 
@@ -244,7 +260,7 @@ body {
 }
 
 .check-mark {
-    color: #3B82F6;
+    color: #721bc5;
     font-size: 20px;
     opacity: 0;
     transition: 0.2s;
@@ -252,7 +268,7 @@ body {
 
 /* Hiệu ứng khi ĐƯỢC CHỌN */
 .payment-card-item input:checked + .card-box {
-    border-color: #3B82F6; /* Viền xanh */
+    border-color: #280957; /* Viền xanh */
     background-color: #F0F9FF; /* Nền xanh nhạt */
     box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
 }
@@ -311,6 +327,7 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
+
 }
 
 .voucher-box input {
@@ -322,7 +339,7 @@ body {
 }
 
 .voucher-box button {
-    background: #0F172A;
+    background: #3a0a67;
     color: white;
     border: none;
     padding: 0 15px;
@@ -362,14 +379,14 @@ body {
 .price-big {
     font-size: 24px;
     font-weight: 800;
-    color: #3B82F6;
+    color: #8220dd;
 }
 
 .btn-confirm {
     width: 100%;
     padding: 18px;
     border: none;
-    background: #3B82F6;
+    background: #6318a3;
     color: white;
     font-size: 16px;
     font-weight: 800;
@@ -377,12 +394,17 @@ body {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
     transition: 0.2s;
+
+}
+.btn-confirm span {
+    font-family:  "Inter";
 }
 
 .btn-confirm:hover {
     transform: translateY(-2px);
     background: #2563EB;
 }
+
 
 .note-secure {
     text-align: center;

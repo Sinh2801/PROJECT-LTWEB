@@ -278,7 +278,7 @@ button {
 .item-price {
     font-size: 19px;
     font-weight: 700;
-    color: #FF4D4D; /* Giá tiền màu đỏ */
+    color: #341c9f;
     margin-bottom: 10px;
 }
 
@@ -315,7 +315,7 @@ button {
     font-weight: 600;
     color: #333;
     background-color: #fff;
-    -moz-appearance: textfield; /* Loại bỏ mũi tên trên Firefox */
+
     outline: none;
 }
 .qty-input::-webkit-outer-spin-button,
@@ -325,22 +325,24 @@ button {
 }
 
 .continue-shopping {
-    margin-top: 25px;
-    text-align: right; /* Căn phải */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left; /* Căn phải */
+
 }
 .continue-shopping a {
     font-weight: 500;
-    color: #007bff;
+    color: #9245d8;
     display: inline-flex; /* Để icon và text cùng nằm trên 1 hàng */
     align-items: center;
     gap: 8px;
     padding: 8px 15px;
-    border: 1px solid #007bff;
+    border: 1px solid #522283;
     border-radius: 20px;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 .continue-shopping a:hover {
-    background-color: #007bff;
+    background-color: #662abd;
     color: #fff;
 }
 
@@ -393,7 +395,7 @@ button {
 }
 
 .apply-voucher-btn {
-    background-color: #007bff;
+    background-color: #8e56c5;
     color: #fff;
     padding: 0 20px;
     border-radius: 6px;
@@ -439,12 +441,12 @@ button {
 .final-total {
     font-size: 26px;
     font-weight: 800;
-    color: #FF4D4D; /* Tổng tiền màu đỏ nổi bật */
+    color: #5a31e6; /* Tổng tiền màu đỏ nổi bật */
 }
 
 .checkout-btn {
     width: 100%;
-    background-color: #FF4D4D; /* Màu đỏ nổi bật */
+    background-color: #4b368f; /* Màu đỏ nổi bật */
     color: #fff;
     padding: 15px 20px;
     border-radius: 8px;
@@ -456,7 +458,7 @@ button {
     box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
 }
 .checkout-btn:hover {
-    background-color: #e03e3f;
+    background-color: #7427bd;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(255, 77, 77, 0.5);
 }

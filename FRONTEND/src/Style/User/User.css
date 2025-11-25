@@ -9,14 +9,14 @@
 }
 
 body {
-    background: #f5f7fa; /* Nền xám nhạt */
+    background-image: url("FRONTEND/Source/Image/Banner/img1.jpg"); /* Nền xám nhạt */
     color: #333;
     line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #0ea5e9;
+    color: #573478;
     transition: color 0.2s ease;
 }
 
@@ -226,7 +226,7 @@ a:hover {
 }
 
 .btn-save {
-    background: #0ea5e9;
+    background: #573478;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -383,7 +383,7 @@ a:hover {
 .tab-item {
     padding: 14px 20px;
     text-decoration: none;
-    color: #555;
+    color: #573478;
     font-weight: 500;
     font-size: 15px;
     border-bottom: 3px solid transparent;
@@ -490,9 +490,13 @@ a:hover {
     border-radius: 6px;
     transition: all 0.2s ease;
 }
+.tab-item a {
+
+}
+
 
 .review-tabs .tab-item:hover { background: #f4f4f4; }
-.review-tabs .tab-item.active { background: #0ea5e9; color: #fff; }
+.review-tabs .tab-item.active { background: #573478; color: #fff; }
 
 .review-list-container {
     display: flex;

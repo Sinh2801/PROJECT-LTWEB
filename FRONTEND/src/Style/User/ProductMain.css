@@ -295,7 +295,7 @@
 .buy-now-full {
     width: 100%;
     padding: 18px 24px;
-    background: #000;
+    background: #4b1283;
     color: white;
     font-weight: 700;
     font-size: 16px;
@@ -306,7 +306,7 @@
     margin-bottom: 0;
 }
 .buy-now-full:hover {
-    background: #333;
+    background: #250740;
 }
 /* ================= REVIEW SECTION ============================== */
 .product-reviews {
