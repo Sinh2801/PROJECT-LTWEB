@@ -308,6 +308,105 @@
 .buy-now-full:hover {
     background: #250740;
 }
+/* ================= PRODUCT INFO (NEW) ============================== */
+.product-info-section {
+    padding: 60px 0;
+    background-color: #fff;
+    border-top: 1px solid #eee; /* Tạo đường ngăn cách nhẹ với phần trên */
+}
+
+.info-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-subtitle {
+    color: #f1c40f; /* Màu vàng giống nút active của bạn */
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    color: #333;
+}
+
+/* Đường kẻ dưới tiêu đề */
+.info-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #f1c40f;
+}
+
+.info-content-body {
+    max-width: 900px; /* Thu hẹp nội dung để dễ đọc như ảnh mẫu */
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #444;
+    font-size: 15px;
+}
+
+.spec-list, .sub-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sub-list {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.highlight-text {
+    font-weight: 700;
+    font-style: italic;
+    margin: 25px 0;
+    color: #333;
+}
+
+.scent-options-wrap {
+    margin-top: 30px;
+}
+
+.scent-main-label {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.scent-item {
+    margin-bottom: 25px;
+}
+
+.scent-name {
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.scent-item p {
+    margin: 4px 0;
+    padding-left: 15px;
+}
+
+/* Responsive một chút cho điện thoại */
+@media (max-width: 768px) {
+    .info-content-body {
+        padding: 0 10px;
+    }
+}
 /* ================= REVIEW SECTION ============================== */
 .product-reviews {
     margin-top: 40px;
@@ -534,17 +633,6 @@
 .review-stars i {
     color: #f39c12;
     font-size: 14px;
-}
-
-.review-tag {
-    display: inline-block;
-    padding: 4px 8px;
-    background: #f1f1f1;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #555;
 }
 
 .review-text {
