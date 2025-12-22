@@ -1,13 +1,16 @@
+/* =================== RESET & CHUNG ==================== */
 main {
     background-color: #F3F3F3;
     min-height: 100vh;
     padding-top: 0;
     width: 100%;
 }
-body{
+body {
     background-color: #F3F3F3;
+    font-family: Arial, sans-serif;
 }
-/* =================== Slideshow (Banner) ==================== */
+
+/* =================== SLIDESHOW (BANNER) ==================== */
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -15,36 +18,26 @@ body{
     overflow: hidden;
     background-color: #000;
 }
-
 .slide {
     display: none;
     width: 100%;
     height: 100%;
 }
-
-.slide:first-child {
-    display: block;
-}
-
+.slide:first-child { display: block; }
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-
-/* Hiệu ứng mờ dần */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @keyframes fade {
     from { opacity: 0.4; }
     to { opacity: 1; }
 }
-
-/* Nút điều hướng trái/phải */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -62,15 +55,9 @@ body{
     transition: 0.3s;
     z-index: 5;
 }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
 .prev { left: 10px; }
 .next { right: 10px; }
-
-/* Dots */
 .dots {
     position: absolute;
     bottom: 15px;
@@ -79,7 +66,6 @@ body{
     text-align: center;
     z-index: 5;
 }
-
 .dot {
     cursor: pointer;
     height: 12px;
@@ -90,13 +76,9 @@ body{
     display: inline-block;
     transition: background-color 0.3s;
 }
+.active, .dot:hover { background-color: #717171; }
 
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Vùng chứa toàn bộ loại sản phẩm */
-
+/* =================== PRODUCT SECTION ==================== */
 .product-section {
     background: #f5f5f5;
     padding: 10px 10px;
@@ -105,8 +87,6 @@ body{
     width: 100%;
     position: relative;
 }
-
-/* Tiêu đề */
 .product-section h2 {
     position: absolute;
     top: -20px;
@@ -115,14 +95,12 @@ body{
     color: #222;
     font-weight: 900;
 }
-/* Định dạng liên kết bên trong tiêu đề H2 */
 .product-section h2 a {
     text-decoration: none;
     color: inherit;
     display: block;
     cursor: pointer;
 }
-/* Danh sách sản phẩm */
 .product-list {
     display: flex;
     justify-content: space-between;
@@ -131,7 +109,7 @@ body{
     margin-top: 50px;
 }
 
-/* Card sản phẩm */
+/* =================== PRODUCT CARD  ==================== */
 .product-card {
     width: 23.5%;
     background: #fff;
@@ -141,7 +119,6 @@ body{
     border: 1px solid #e8e8e8;
     position: relative;
 }
-
 .product-card a {
     display: block;
     height: 100%;
@@ -149,26 +126,36 @@ body{
     text-decoration: none;
     color: inherit;
 }
-
-/* Hiệu ứng hover cho thẻ cha */
 .product-card:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transform: translateY(-4px);
 }
 
-/* Hộp ảnh */
+/* Hộp ảnh & Nhãn Sale */
 .img-box {
     width: 100%;
     height: 240px;
     overflow: hidden;
     border-bottom: 1px solid #eee;
     background: #fff;
+    position: relative;
 }
-
 .img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.badge-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EE4D2D;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+    border-bottom-right-radius: 4px;
 }
 
 /* Tên sản phẩm */
@@ -183,18 +170,48 @@ body{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    padding: 2px 6px;
+    padding: 2px 8px;
 }
 
-/* Giá */
-.product-price {
+/* KHỐI GIÁ  */
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 8px;
+    margin-bottom: 4px;
+}
+.price-container .product-price {
     font-size: 19px;
-    color: #222;
+    color: #000;
     font-weight: bold;
-    margin-bottom: 6px;
-    padding: 2px 6px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
+    margin: 0;
+}
+
+/* Giá hiện tại (Sau khi giảm): Bold + Màu đỏ */
+.current-price {
+    font-size: 19px;
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+/* Giá cũ  */
+.old-price {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Nhãn % giảm giá */
+.discount-tag {
+    font-size: 12px;
+    color: #EE4D2D;
+    background-color: #FEF6F5;
+    border: 1px solid #EE4D2D;
+    padding: 1px 4px;
+    border-radius: 4px;
 }
 
 /* Sold + Rating */
@@ -202,28 +219,27 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
     color: #444;
-    padding: 2px 6px;
-    margin-top: 6px;
+    padding: 8px 8px;
+    border-top: 1px solid #f0f0f0;
 }
-
-/* Rating  */
 .product-sold .rating {
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 4px 8px;
-    border-radius: 6px;
-    border: 1px solid #000;
+    padding: 2px 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
     background: #fff;
 }
+
 .product-sold .rating i {
-    color: #000;
-    font-size: 16px;
+    font-size: 12px;
 }
 
-/* Nút Xem thêm */
+/* =================== NÚT XEM THÊM & RESPONSIVE ==================== */
 .see-more-btn {
     display: block;
     margin: 25px auto 0;
@@ -236,25 +252,9 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
-.see-more-btn:hover {
-    background: #333;
-    color: yellow;
-}
-.see-more-btn a {
-    color: white;
-    text-decoration: none;
-}
-/* Responsive */
-@media (max-width: 992px) {
-    .product-card {
-        width: 47%;
-    }
-}
-@media (max-width: 600px) {
-    .product-card {
-        width: 100%;
-    }
-}
-html {
-    scroll-behavior: smooth;
-}
+.see-more-btn:hover { background: #333; color: yellow; }
+.see-more-btn a { color: white; text-decoration: none; }
+
+@media (max-width: 992px) { .product-card { width: 47%; } }
+@media (max-width: 600px) { .product-card { width: 100%; } }
+html { scroll-behavior: smooth; }
