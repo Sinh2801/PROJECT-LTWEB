@@ -8,6 +8,7 @@ main {
 body {
     background-color: #F3F3F3;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 /* =================== SLIDESHOW (BANNER) ==================== */
@@ -78,22 +79,35 @@ body {
 }
 .active, .dot:hover { background-color: #717171; }
 
+/* =================== DIVIDER (ĐƯỜNG PHÂN CÁCH) ==================== */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 95%;
+    margin: 40px auto;
+}
+
 /* =================== PRODUCT SECTION ==================== */
 .product-section {
-    background: #f5f5f5;
-    padding: 10px 10px;
+    background: #F3F3F3;
+    padding: 15px 15px;
     border-radius: 12px;
-    margin: 30px auto;
+    margin: 40px auto 80px; /* Tăng margin bottom lên 80px để tách xa section sau */
     width: 100%;
     position: relative;
 }
 .product-section h2 {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 0;
-    font-size: 28px;
-    color: #222;
-    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.008em;
+    color: #1b1b1b;
+    margin: 0;
 }
 .product-section h2 a {
     text-decoration: none;
@@ -106,10 +120,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 30px; /* Giảm khoảng cách để sát với tiêu đề hơn */
 }
 
-/* =================== PRODUCT CARD  ==================== */
+/* =================== PRODUCT CARD ==================== */
 .product-card {
     width: 23.5%;
     background: #fff;
@@ -173,7 +187,7 @@ body {
     padding: 2px 8px;
 }
 
-/* KHỐI GIÁ  */
+/* KHỐI GIÁ */
 .price-container {
     display: flex;
     align-items: center;
@@ -181,6 +195,8 @@ body {
     padding: 2px 8px;
     margin-bottom: 4px;
 }
+
+/* Giá mặc định (cho sản phẩm không sale) */
 .price-container .product-price {
     font-size: 19px;
     color: #000;
@@ -188,14 +204,14 @@ body {
     margin: 0;
 }
 
-/* Giá hiện tại (Sau khi giảm): Bold + Màu đỏ */
+/* Giá hiện tại (cho sản phẩm có sale - màu đỏ) */
 .current-price {
     font-size: 19px;
     color: #EE4D2D;
     font-weight: bold;
 }
 
-/* Giá cũ  */
+/* Giá cũ (có gạch ngang) */
 .old-price {
     font-size: 14px;
     color: #000;
@@ -234,15 +250,14 @@ body {
     font-size: 13px;
     background: #fff;
 }
-
 .product-sold .rating i {
     font-size: 12px;
 }
 
-/* =================== NÚT XEM THÊM & RESPONSIVE ==================== */
+/* =================== NÚT XEM THÊM (CHUNG) ==================== */
 .see-more-btn {
     display: block;
-    margin: 25px auto 0;
+    margin: 30px auto 10px; /* Cách trên 30px, dưới 10px */
     background: black;
     color: white;
     border: none;
@@ -252,9 +267,21 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-.see-more-btn:hover { background: #333; color: yellow; }
-.see-more-btn a { color: white; text-decoration: none; }
+.see-more-btn:hover {
+    background: #333;
+    color: yellow;
+    transform: scale(1.05);
+}
+.see-more-btn a {
+    color: white;
+    text-decoration: none;
+}
 
-@media (max-width: 992px) { .product-card { width: 47%; } }
-@media (max-width: 600px) { .product-card { width: 100%; } }
+/* =================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+    .product-card { width: 47%; }
+}
+@media (max-width: 600px) {
+    .product-card { width: 100%; }
+}
 html { scroll-behavior: smooth; }
