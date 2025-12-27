@@ -1,0 +1,231 @@
+/* --- GENERAL SETTINGS --- */
+body {
+    background-color: #f1f2f4; /* Màu nền xám nhạt hiện đại */
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.dashboard {
+    padding: 20px 30px 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- PAGE HEADER --- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-header .left h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 5px 0 0 0;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.back-btn:hover { color: #000; }
+
+.page-header .right {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #108a00; /* Xanh lá đậm chuyên nghiệp */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-primary:hover { background-color: #0c6b00; }
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-secondary:hover { background-color: #f5f5f5; }
+
+/* --- GRID LAYOUT (2 CỘT) --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Cột trái lớn gấp đôi cột phải */
+    gap: 25px;
+}
+
+/* --- CARD COMPONENT --- */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+/* --- FORM ELEMENTS --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #108a00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 138, 0, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Checkbox style */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 25px; /* Căn chỉnh với input bên cạnh */
+}
+.checkbox-wrapper input { margin: 0; width: 16px; height: 16px; cursor: pointer; }
+.checkbox-wrapper label { margin: 0; cursor: pointer; }
+
+/* --- MEDIA UPLOAD --- */
+.media-upload-area {
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background: #fafafa;
+    margin-bottom: 15px;
+}
+
+.main-preview img {
+    max-height: 250px;
+    width: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn-upload:hover { background: #f0f0f0; }
+
+.media-thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.thumb.active { border: 2px solid #108a00; }
+
+.thumb-add {
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    cursor: pointer;
+}
+.thumb-add:hover { border-color: #108a00; color: #108a00; }
+
+/* --- RIGHT COLUMN SPECIFICS --- */
+.status-select {
+    font-weight: 500;
+}
+.status-select.active { border-color: #108a00; color: #108a00; }
+
+.delete-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-delete-text {
+    background: red;
+    border-radius: 15px;
+    color: white ;
+    border: none;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-delete-text:hover { color: #b91c1c; }
+

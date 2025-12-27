@@ -1,0 +1,208 @@
+/* ======================= FOOTER WRAPPER – FULL WIDTH =========================== */
+.footer-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 40px 0;
+}
+
+/* ============================== FOOTER CONTAINER ===================== */
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+/* ============== GRID 4 CỘT ============= */
+.footer-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* ===================== TIÊU ĐỀ CỘT =================== */
+.footer-col h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+/* ==================== LINK & TEXT ====================== */
+.footer-col a,
+.footer-col p {
+    font-size: 14px;
+    color: #BBB9B6;
+    line-height: 1.7;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer-col a:hover {
+    color: #000;
+}
+
+/* ===============ICON PAYMENT & SHIPPING (HỢP VỚI HTML MỚI)================== */
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Hover icon */
+.icon-box:hover {
+    transform: scale(1.07);
+    background: #fff;
+    border-color: #ccc;
+}
+
+/* =============== SOCIAL ICONS – FONT AWESOME ================= */
+.social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 28px;
+    transition: 0.25s ease;
+}
+
+/* --- Màu thương hiệu --- */
+.social-icons a:nth-child(1) i { color: #1877F2; }
+.social-icons a:nth-child(2) i { color: #E4405F; }
+.social-icons a:nth-child(3) i { color: #000000; }
+.social-icons a:nth-child(4) i { color: #FF0000; }
+/* --- Hover --- */
+.social-icons i:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
+
+/* =========SUBSCRIBE BOX======== */
+.subscribe-box {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+    color: #000;
+}
+
+.subscribe-box input::placeholder {
+    color: #BBB9B6;
+}
+
+.subscribe-box button {
+    padding: 10px 16px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.subscribe-box button:hover {
+    background: #333;
+}
+
+/* ===================  FOOTER BOTTOM ===================== */
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #BBB9B6;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* ====================  RESPONSIVE =================== */
+@media (max-width: 1024px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .icon-row,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .subscribe-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-box input,
+    .subscribe-box button {
+        width: 100%;
+        border-radius: 6px;
+    }
+}

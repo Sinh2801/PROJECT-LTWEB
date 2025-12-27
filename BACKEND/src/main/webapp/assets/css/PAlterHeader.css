@@ -1,0 +1,253 @@
+/* =================== Header ==================== */
+/* Giữ nguyên cấu trúc căn giữa */
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+/* Tràn nền header ra toàn màn hình */
+.header-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #ffffff; /* màu nền header */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Bản thân header giữ nội dung căn giữa */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header, header * {
+    font-weight: bold;
+}
+/* === User Menu === */
+.user-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.user-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+}
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    color: #888695;
+    font-weight: bold;
+}
+
+.user-trigger:hover {
+    color: purple;
+}
+
+/* Dropdown */
+.user-dropdown {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    display: none;
+    z-index: 5000;
+}
+
+.user-dropdown li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-dropdown li a:hover {
+    background: #f3f3f3;
+}
+
+/* Divider */
+.user-dropdown hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 6px 0;
+}
+
+.logout {
+    color: red !important;
+}
+
+/* Dòng 2 - Logo, Tìm kiếm, Giỏ hàng */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: #fff;
+    gap: 30px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+/* Left side (menu + logo) */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo img {
+    width: 100px;
+    heght: auto;
+}
+.menu-toggle {
+    font-size: 30px;
+    color: purple;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== Dropdown menu ===== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    background: #fff;
+    border: 1px solid #e6e0f0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    padding: 8px 0;
+    width: 220px;
+    z-index: 1200;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background: #f7f0ff;
+    color: purple;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+/* ===== Overlay (mờ nền) ===== */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
+    z-index: 1100;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Search bar */
+.center {
+    display: flex;
+    flex: 1;
+    max-width: 950px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px 20px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.search-btn {
+    position: absolute;
+    right: 14px;
+    background: none;
+    border: none;
+    color: purple;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* Giỏ hàng */
+.cart {
+    position: relative;
+    font-size: 1.4em;
+    color: purple;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: orangered;
+    color: white;
+    font-size: 0.6em;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Dòng 3 Breadcrumb */
+.breadcrumb {
+    width: 93%;
+    align-items: center;
+    padding: 5px 0 20px;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.breadcrumb a {
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+.breadcrumb .current {
+    font-weight: 500;
+    color: #000;
+}
+
+.breadcrumb span {
+    color: #000;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+
+
