@@ -5,10 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBContext {
-    /* LƯU Ý:
-       - 'inola_db' là tên database bạn tạo trong phpMyAdmin.
-       - root/trống là tài khoản mặc định của WampServer.
-    */
+
     private final String serverName = "localhost";
     private final String dbName = "inola_db";
     private final String portNumber = "3306";
@@ -20,8 +17,7 @@ public class DBContext {
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(url, userID, password);
     }
-
-    // Hàm main này dùng để chạy thử xem kết nối thành công chưa
+    //
     public static void main(String[] args) {
         try {
             System.out.println(new DBContext().getConnection());
