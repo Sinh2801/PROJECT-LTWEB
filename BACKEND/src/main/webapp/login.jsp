@@ -72,7 +72,7 @@
                     <button type="button" class="btn_google light_bg">
                         <i class="fa-brands fa-google"></i> Đăng ký với Google
                     </button>
-                    <a href="Signup.html" class="btn_register light_bg" style="text-decoration: none;">
+                    <a href="${pageContext.request.contextPath}/signup" class="btn_register light_bg" style="text-decoration: none;">
                         <i class="fa fa-user-plus"></i> Đăng ký tài khoản mới
                     </a>
                 </form>
