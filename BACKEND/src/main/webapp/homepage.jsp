@@ -40,8 +40,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <div class="logo">
-                        <a href="${pageContext.request.contextPath}/HomePage.jsp">
-                            <img src="${pageContext.request.contextPath}/assets/images/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
+                        <a href="${pageContext.request.contextPath}/homepage">
+                            <img src="${pageContext.request.contextPath}/assets/image/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
                         </a>
                     </div>
                 </div>
@@ -73,13 +73,21 @@
 
     <main class="main-container">
         <div class="slideshow-container" id="headerSlideshow">
-            <div class="slide"><img src="${pageContext.request.contextPath}/assets/images/Banner/img1.jpg" alt="Banner 1" style="width:100%"/></div>
-            <div class="slide"><img src="${pageContext.request.contextPath}/assets/images/Banner/img2.jpg" alt="Banner 2" style="width:100%"/></div>
-            <div class="slide"><img src="${pageContext.request.contextPath}/assets/images/Banner/img3.jpg" alt="Banner 3" style="width:100%"/></div>
+            <c:if test="${not empty bannerList}">
+                <c:forEach items="${bannerList}" var="b">
+                    <div class="slide">
+                        <img src="${pageContext.request.contextPath}/${b.imageUrl}" alt="${b.title}" style="width:100%"/>
+                    </div>
+                </c:forEach>
+            </c:if>
+
+            <c:if test="${empty bannerList}">
+                <div class="slide"><img src="${pageContext.request.contextPath}/assets/image/Banner/img1.jpg" style="width:100%"/></div>
+            </c:if>
+
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
         </div>
-
         <hr class="divider">
 
         <section id="Loai1" class="product-section">
