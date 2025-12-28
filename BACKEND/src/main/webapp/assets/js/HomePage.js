@@ -1,26 +1,33 @@
 
 // ---------------- Slideshow Banner ---------------- //
 document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-    const slideshow = document.getElementById("headerSlideshow");
+    // 1. Tìm đúng các phần tử trong #headerSlideshow
+    const container = document.getElementById("headerSlideshow");
+    if (!container) return; // Nếu không tìm thấy banner thì dừng ngay, tránh lỗi
+
+    // Tìm slide và nút bấm BÊN TRONG container đó để tránh nhầm lẫn
+    const slides = container.querySelectorAll(".slide");
+    const prevBtn = container.querySelector(".prev");
+    const nextBtn = container.querySelector(".next");
+
+    // Nếu chỉ có 0 hoặc 1 banner thì không cần chạy slide
+    if (slides.length < 2) {
+        if(slides.length === 1) slides[0].style.display = "block";
+        if(prevBtn) prevBtn.style.display = "none";
+        if(nextBtn) nextBtn.style.display = "none";
+        return;
+    }
 
     let currentIndex = 0;
     let autoPlayInterval;
 
-    // Hiển thị slide hiện tại
     function showSlide(index) {
         slides.forEach((slide, i) => {
+            // Dùng inline style để ghi đè CSS .slide:first-child
             slide.style.display = (i === index) ? "block" : "none";
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
         });
     }
 
-    // Chuyển slide
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
@@ -31,30 +38,31 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(currentIndex);
     }
 
-    // Tự động chạy
     function startAutoPlay() {
-        autoPlayInterval = setInterval(nextSlide, 3000);
+        // Xóa interval cũ nếu có để tránh chạy chồng chéo
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = setInterval(nextSlide, 3000); // 3 giây chuyển 1 lần
     }
 
     function stopAutoPlay() {
         clearInterval(autoPlayInterval);
     }
 
-    // Gán sự kiện
-    nextBtn.addEventListener("click", nextSlide);
-    prevBtn.addEventListener("click", prevSlide);
-
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            currentIndex = index;
-            showSlide(currentIndex);
-        });
+    // Gắn sự kiện (Kiểm tra tồn tại trước khi gắn)
+    if(nextBtn) nextBtn.addEventListener("click", () => {
+        nextSlide();
+        startAutoPlay(); // Reset lại timer khi bấm thủ công
     });
 
-    slideshow.addEventListener("mouseenter", stopAutoPlay);
-    slideshow.addEventListener("mouseleave", startAutoPlay);
+    if(prevBtn) prevBtn.addEventListener("click", () => {
+        prevSlide();
+        startAutoPlay();
+    });
 
-    // Khởi tạo
+    container.addEventListener("mouseenter", stopAutoPlay);
+    container.addEventListener("mouseleave", startAutoPlay);
+
+    // Bắt đầu
     showSlide(currentIndex);
     startAutoPlay();
 });
