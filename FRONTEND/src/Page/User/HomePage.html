@@ -15,37 +15,55 @@
 <div class="page-container">
     <div class="header-wrapper">
         <header class="header-container page-container">
-                <!-- Dòng 1: Đăng nhập / Đăng ký -->
-                <div class="user-bar">
-                    <div class="right">
-                        <a href="Login.html" class="login">Đăng nhập</a>
-                        <span>|</span>
-                        <a href="Signup.html" class="register">Đăng ký</a>
-                    </div>
+
+            <div class="user-bar">
+                <div class="right">
+                    <a href="Login.html" class="login">Đăng nhập</a>
+                    <span>|</span>
+                    <a href="Signup.html" class="register">Đăng ký</a>
                 </div>
-            <!-- Dòng 2: List (menu button) - Logo – Tìm kiếm – Giỏ hàng -->
+            </div>
+
             <div class="main-header">
+
                 <div class="left">
                     <button id="menuBtn" class="menu-toggle" aria-label="Mở menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
-                        <a href="#ProductT.html" >Quà Tặng Cá Nhân Hóa</a>
-                        <a href="#ProductT.html" >Hộp Quà Tặng</a>
-                        <a href="#ProductT.html" >Trang Sức Và Phụ Kiện </a>
-                        <a href="#ProductT.html" >Trang Trí Và Thủ Công </a>
-                        <a href="#ProductT.html" >Quà Lưu Niệm Nhỏ Gọn </a>
-                    </div>
-                    <div class="logo">
-                        <a href="HomePage.html"><img src="../../../Source/Image/Logo/Logo-removebg-preview.png"  alt="INOLA Logo" height="36">
-                        </a>
 
+                    <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                        <a href="#ProductT.html">Quà Tặng Cá Nhân Hóa</a>
+                        <a href="#ProductT.html">Hộp Quà Tặng</a>
+                        <a href="#ProductT.html">Trang Sức Và Phụ Kiện</a>
+                        <a href="#ProductT.html">Trang Trí Và Thủ Công</a>
+                        <a href="#ProductT.html">Quà Lưu Niệm Nhỏ Gọn</a>
+                    </div>
+
+                    <div class="logo">
+                        <a href="HomePage.html">
+                            <img src="../../../Source/Image/Logo/Logo-removebg-preview.png" alt="INOLA Logo" height="36">
+                        </a>
                     </div>
                 </div>
 
                 <div class="center">
-                    <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar">
-                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fa fa-search"></i></button>
+                    <div class="search-wrapper">
+                        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm..." class="search-bar" autocomplete="off">
+                        <button class="search-btn" aria-label="Tìm kiếm"><i class="fa fa-search"></i></button>
+
+                        <div class="search-dropdown" id="searchDropdown">
+
+                            <div class="dropdown-top">
+                                <span class="history-title">Tìm kiếm gần đây</span>
+                                <span class="clear-all">Xóa tất cả</span>
+                            </div>
+
+                            <div class="empty-state">
+                                <img src="../../../Source/Image/Icon/empty-search.png" alt="Chưa có lịch sử">
+                                <p>Không có từ khóa tìm kiếm gần đây</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="right">
@@ -57,18 +75,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Dòng 3: Menu điều hướng -->
+
             <nav class="menu-bar">
                 <a href="#Loai1" class="menu-link">Quà Tặng Cá Nhân Hóa</a>
                 <a href="#Loai2" class="menu-link">Hộp Quà Tặng</a>
-                <a href="#Loai3" class="menu-link">Trang Sức Và Phụ Kiện </a>
+                <a href="#Loai3" class="menu-link">Trang Sức Và Phụ Kiện</a>
                 <a href="#Loai4" class="menu-link">Đồ Trang Trí Và Thủ Công</a>
                 <a href="#Loai5" class="menu-link">Quà Lưu Niệm Nhỏ Gọn</a>
                 <a href="#extension" class="menu-link">Mọi Người Đang Mua Gì</a>
             </nav>
-            <div id="headerOverlay" class="overlay" aria-hidden="true"></div>
+
         </header>
     </div>
+    <div id="headerOverlay" class="overlay"></div>
     <main class="main-container">
         <!-- Banner slideshow  -->
         <div class="slideshow-container" id="headerSlideshow">
