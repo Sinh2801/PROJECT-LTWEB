@@ -1,108 +1,88 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Asus
-  Date: 12/23/2025
-  Time: 2:37 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Đăng Nhập</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    /* style.css */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+    <title>Đăng nhập - INOLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/HomePageFooter.css">
 
-    .login-container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        text-align: center;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    .input-group {
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    input {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button {
-        width: 100%;
-        padding: 10px;
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-
-</style>
-<body>
-<div class="login-container">
-    <h2>Đăng Nhập</h2>
-    <form id="loginForm">
-        <div class="input-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
-        </div>
-        <div class="input-group">
-            <label for="password">Mật khẩu:</label>
-            <input type="password" id="password" name="password" required placeholder="Nhập mật khẩu">
-        </div>
-        <button type="submit">Đăng Nhập</button>
-    </form>
-    <p id="error-message" style="color: red;"></p>
-</div>
-<script>
-    // app.js
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Ngừng gửi form mặc định
-
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const errorMessage = document.getElementById('error-message');
-
-        // Kiểm tra thông tin đăng nhập (có thể thay đổi theo yêu cầu thực tế)
-        if (email === 'user@example.com' && password === '123456') {
-            alert('Đăng nhập thành công!');
-            // Chuyển hướng đến trang khác (nếu cần)
-            // window.location.href = "homepage.html";
-        } else {
-            errorMessage.textContent = 'Email hoặc mật khẩu không chính xác!';
+    <style>
+        .login_right {
+            flex: 1;
+            background-image: url("${pageContext.request.contextPath}/assets/images/Product/Ca-nhan-hoa/imgbut.jpg");
+            background-size: cover;
+            background-position: center;
         }
-    });
+        /* Style cho thông báo lỗi */
+        .error-message {
+            color: #d9534f;
+            background-color: #f2dede;
+            border: 1px solid #ebccd1;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
-</script>
+<div class="page_login">
+    <div class="container">
+        <img src="${pageContext.request.contextPath}/assets/images/Logo/Logo-removebg-preview.png" alt="Logo INOLA" style="height:36px; width:auto;">
+        <a href="${pageContext.request.contextPath}/homepage.jsp" class="pix_button small_button purple_bg">
+            <span>Trung tâm trợ giúp</span>
+        </a>
+    </div>
+</div>
+
+<div class="pixfort_login_1">
+    <div class="container">
+        <div class="login_wrapper">
+            <div class="login_left">
+                <h2 class="login_title">ĐĂNG NHẬP</h2>
+                <div class="login_illustration">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="User Illustration">
+                </div>
+
+                <c:if test="${not empty error}">
+                    <div class="error-message">
+                        <i class="fa fa-exclamation-circle"></i> ${error}
+                    </div>
+                </c:if>
+
+                <form class="login_form" action="${pageContext.request.contextPath}/login" method="post">
+                    <div class="input_group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="text" name="username" placeholder="Email hoặc số điện thoại" required>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" name="password" placeholder="Mật khẩu" required>
+                    </div>
+                    <div class="forgot_pass">
+                        <a href="step1_forgot_password.html">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn_login">ĐĂNG NHẬP</button>
+                    <button type="button" class="btn_google light_bg">
+                        <i class="fa-brands fa-google"></i> Đăng ký với Google
+                    </button>
+                    <a href="${pageContext.request.contextPath}/signup" class="btn_register light_bg" style="text-decoration: none;">
+                        <i class="fa fa-user-plus"></i> Đăng ký tài khoản mới
+                    </a>
+                </form>
+            </div>
+            <div class="login_right"></div>
+        </div>
+    </div>
+</div>
+
+<jsp:include page="/footer.jsp" />
+
 </body>
 </html>
-

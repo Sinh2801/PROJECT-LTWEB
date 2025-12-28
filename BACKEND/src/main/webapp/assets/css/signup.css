@@ -1,0 +1,233 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_login a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.page_login {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pix_button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.purple_bg {
+    background-color: #800080;
+    color: #fff;
+}
+
+.purple_bg:hover {
+    background-color: #800080;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main_content {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.split_panel {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== LEFT PANEL==== */
+.left_panel {
+    /* CHỈ THAY ĐỔI PHẦN NÀY */
+    background: linear-gradient(135deg, #800080, #ffffff); /* Tím (#6E4ACD) → Trắng (#ffffff) */
+    color: var(--white); /* Màu chữ mặc định là trắng */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px; /* Giữ padding 60px như trong code gốc */
+    /* Loại bỏ các thuộc tính không cần thiết như position/overflow */
+}
+
+.left_panel h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.left_panel p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.login_button {
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login_button:hover {
+    background-color: #fff;
+    color: #800080;
+}
+
+/* ===== RIGHT PANEL ===== */
+.right_panel {
+    background-color: #fff;
+}
+
+.right_panel h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.social_login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social_icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 35px;
+    text-align: center;
+    color: #555;
+}
+
+.separator {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* ===== FORM ===== */
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_group {
+    position: relative;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 15px;
+    padding-right: 45px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input_group input:focus {
+    border-color: #800080;
+}
+
+.input_group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.input_group input:not(:placeholder-shown) + label,
+.input_group input:focus + label {
+    top: 0;
+    font-size: 12px;
+    transform: translateY(-50%);
+    color: #800080;
+    font-weight: 500;
+}
+
+.eye_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* ===== SIGNUP BUTTON===== */
+.signup_button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #800080;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup_button:hover {
+    background-color:#800080;
+}
+

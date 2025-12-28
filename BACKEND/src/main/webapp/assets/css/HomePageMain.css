@@ -1,0 +1,287 @@
+/* =================== RESET & CHUNG ==================== */
+main {
+    background-color: #F3F3F3;
+    min-height: 100vh;
+    padding-top: 0;
+    width: 100%;
+}
+body {
+    background-color: #F3F3F3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* =================== SLIDESHOW (BANNER) ==================== */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #000;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.slide:first-child { display: block; }
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    user-select: none;
+    transition: 0.3s;
+    z-index: 5;
+}
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+.prev { left: 10px; }
+.next { right: 10px; }
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 5;
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.active, .dot:hover { background-color: #717171; }
+
+/* =================== DIVIDER (ĐƯỜNG PHÂN CÁCH) ==================== */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 95%;
+    margin: 40px auto;
+}
+
+/* =================== PRODUCT SECTION ==================== */
+.product-section {
+    background: #F3F3F3;
+    padding: 15px 15px;
+    border-radius: 12px;
+    margin: 40px auto 80px; /* Tăng margin bottom lên 80px để tách xa section sau */
+    width: 100%;
+    position: relative;
+}
+.product-section h2 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.008em;
+    color: #1b1b1b;
+    margin: 0;
+}
+.product-section h2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px; /* Giảm khoảng cách để sát với tiêu đề hơn */
+}
+
+/* =================== PRODUCT CARD ==================== */
+.product-card {
+    width: 23.5%;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.25s ease;
+    border: 1px solid #e8e8e8;
+    position: relative;
+}
+.product-card a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+/* Hộp ảnh & Nhãn Sale */
+.img-box {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    position: relative;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.badge-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EE4D2D;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+    border-bottom-right-radius: 4px;
+}
+
+/* Tên sản phẩm */
+.product-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 6px;
+    height: 42px;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 2px 8px;
+}
+
+/* KHỐI GIÁ */
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 8px;
+    margin-bottom: 4px;
+}
+
+/* Giá mặc định (cho sản phẩm không sale) */
+.price-container .product-price {
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Giá hiện tại (cho sản phẩm có sale - màu đỏ) */
+.current-price {
+    font-size: 19px;
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+/* Giá cũ (có gạch ngang) */
+.old-price {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Nhãn % giảm giá */
+.discount-tag {
+    font-size: 12px;
+    color: #EE4D2D;
+    background-color: #FEF6F5;
+    border: 1px solid #EE4D2D;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+
+/* Sold + Rating */
+.product-sold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+    padding: 8px 8px;
+    border-top: 1px solid #f0f0f0;
+}
+.product-sold .rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background: #fff;
+}
+.product-sold .rating i {
+    font-size: 12px;
+}
+
+/* =================== NÚT XEM THÊM (CHUNG) ==================== */
+.see-more-btn {
+    display: block;
+    margin: 30px auto 10px; /* Cách trên 30px, dưới 10px */
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.see-more-btn:hover {
+    background: #333;
+    color: yellow;
+    transform: scale(1.05);
+}
+.see-more-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* =================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+    .product-card { width: 47%; }
+}
+@media (max-width: 600px) {
+    .product-card { width: 100%; }
+}
+html { scroll-behavior: smooth; }
