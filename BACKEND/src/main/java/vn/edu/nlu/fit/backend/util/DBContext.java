@@ -17,7 +17,6 @@ public class DBContext {
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(url, userID, password);
     }
-    //
     public static void main(String[] args) {
         try {
             System.out.println(new DBContext().getConnection());
