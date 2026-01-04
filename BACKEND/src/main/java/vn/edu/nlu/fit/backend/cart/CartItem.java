@@ -1,5 +1,7 @@
 package vn.edu.nlu.fit.backend.cart;
 
+import vn.edu.nlu.fit.backend.model.Product;
+
 import java.io.Serializable;
 
 public class CartItem  implements Serializable {
