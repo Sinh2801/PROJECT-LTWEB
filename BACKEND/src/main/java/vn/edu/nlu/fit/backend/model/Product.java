@@ -1,4 +1,4 @@
-package vn.edu.nlu.fit.backend.cart;
+package vn.edu.nlu.fit.backend.model;
 
 public class Product {
     private int id;

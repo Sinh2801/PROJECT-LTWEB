@@ -1,9 +1,8 @@
 package vn.edu.nlu.fit.backend.controller;
 
 import vn.edu.nlu.fit.backend.dao.BannerDAO;
-import vn.edu.nlu.fit.backend.dao.ProductDAO;
 import vn.edu.nlu.fit.backend.model.Banner;
-import vn.edu.nlu.fit.backend.model.Product;
+
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;

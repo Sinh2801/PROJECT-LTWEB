@@ -22,8 +22,6 @@ public class UserDAO {
             if (rs.next()) {
                 String hashedPasswordFromDB = rs.getString("password");
 
-                // 2. Dùng PasswordUtil để so sánh mật khẩu người dùng nhập với chuỗi đã mã hóa
-                // [Hàm này sẽ tự giải mã và so sánh cho bạn]
                 if (PasswordUtil.checkPassword(password, hashedPasswordFromDB)) { // Nếu đúng, trả về đối tượng User để Controller xử lý
                     User user = new User();
                     user.setUsername(rs.getString("username"));
