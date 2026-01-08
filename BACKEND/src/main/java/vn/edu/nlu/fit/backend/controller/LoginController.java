@@ -27,13 +27,11 @@ public class LoginController extends HttpServlet {
         User authUser = dao.login(u, p);
 
         if (authUser != null) {
-            // TRƯỜNG HỢP ĐÚNG:
-            // - Lưu user vào Session để hiển thị tên trên homepage
+
+
             HttpSession session = request.getSession();
             session.setAttribute("userInSession", authUser);
-
-            // - Chuyển sang homepage.jsp (đảm bảo file đã đổi tên đúng chính tả)
-            response.sendRedirect(request.getContextPath() + "/homepage.jsp");
+            response.sendRedirect(request.getContextPath() + "/home/homepage.jsp");
         } else {
             // TRƯỜNG HỢP SAI:
             // - Gửi attribute "error" trùng với biến ${error} ở login.jsp

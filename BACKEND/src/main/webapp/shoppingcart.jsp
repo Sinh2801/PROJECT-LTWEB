@@ -18,7 +18,7 @@
     <div class="cart-layout">
         <div class="cart-items-section">
             <div class="continue-shopping">
-                <a href="${pageContext.request.contextPath}/home"><i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm</a>
+                <a href="${pageContext.request.contextPath}/home/homepage.jsp"><i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm</a>
             </div>
 
             <div class="section-header">
@@ -31,7 +31,7 @@
             <c:if test="${empty sessionScope.cart || sessionScope.cart.totalQuantity() == 0}">
                 <div style="text-align: center; padding: 50px;">
                     <p>Giỏ hàng của bạn đang trống.</p>
-                    <a href="${pageContext.request.contextPath}/home" class="checkout-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">Mua sắm ngay</a>
+                    <a href="${pageContext.request.contextPath}/home/homepage.jsp" class="checkout-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">Mua sắm ngay</a>
                 </div>
             </c:if>
 
@@ -88,7 +88,11 @@
                 </div>
 
                 <button class="checkout-btn">
-                    <a href="Payment.jsp" style="color: white; text-decoration: none;">Tiến hành thanh toán</a>
+                    <a href="${pageContext.request.contextPath}/shoppingcart.jsp"
+                       style="color: white; text-decoration: none; font-weight: bold;"
+                       onclick="return confirm('Bạn xác nhận thanh toán đơn hàng này?')">
+                        XÁC NHẬN THANH TOÁN
+                    </a>
                 </button>
             </div>
         </div>

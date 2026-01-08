@@ -27,7 +27,7 @@
                 <img src="${pageContext.request.contextPath}/assets/image/Logo/Logo-removebg-preview.png" alt="Logo INOLA" style="height:36px; width:auto;">
             </div>
             <div>
-                <a href="${pageContext.request.contextPath}/homepage.jsp" class="pix_button small_button purple_bg">
+                <a href="${pageContext.request.contextPath}/home/homepage.jsp" class="pix_button small_button purple_bg">
                     <span>Trung tâm trợ giúp</span>
                 </a>
             </div>

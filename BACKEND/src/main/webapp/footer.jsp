@@ -27,17 +27,17 @@
             <div class="footer-col">
                 <h3>Phương thức thanh toán</h3>
                 <div class="icon-row">
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Payment/visa.jpg" alt="Visa"></div>
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Payment/mastercard.png" alt="Mastercard"></div>
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Payment/momo.webp" alt="Momo"></div>
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Payment/vnpay.webp" alt="VNPAY"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Payment/visa.jpg" alt="Visa"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Payment/mastercard.png" alt="Mastercard"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Payment/momo.webp" alt="Momo"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Payment/vnpay.webp" alt="VNPAY"></div>
                 </div>
 
                 <h3 style="margin-top:16px;">Phương thức vận chuyển</h3>
                 <div class="icon-row">
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Transport/ghtk.webp" alt="GHTK"></div>
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Transport/ghn.png" alt="GHN"></div>
-                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/images/Transport/jnt.webp" alt="J&T"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Transport/ghtk.webp" alt="GHTK"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Transport/ghn.png" alt="GHN"></div>
+                    <div class="icon-box"><img src="${pageContext.request.contextPath}/assets/image/Transport/jnt.webp" alt="J&T"></div>
                 </div>
             </div>
 
