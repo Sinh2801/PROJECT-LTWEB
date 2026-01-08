@@ -9,33 +9,12 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/HomePageFooter.css">
 
-    <style>
-        .login_right {
-            flex: 1;
-            background-image: url("${pageContext.request.contextPath}/assets/images/Product/Ca-nhan-hoa/imgbut.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-        /* Style cho thông báo lỗi */
-        .error-message {
-            color: #d9534f;
-            background-color: #f2dede;
-            border: 1px solid #ebccd1;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 14px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-
 <div class="page_login">
     <div class="container">
-        <img src="${pageContext.request.contextPath}/assets/images/Logo/Logo-removebg-preview.png" alt="Logo INOLA" style="height:36px; width:auto;">
-        <a href="${pageContext.request.contextPath}/homepage.jsp" class="pix_button small_button purple_bg">
+        <img src="${pageContext.request.contextPath}/assets/image/Logo/Logo-removebg-preview.png" alt="Logo INOLA" style="height:36px; width:auto;">
+        <a href="${pageContext.request.contextPath}/home/homepage.jsp" class="pix_button small_button purple_bg">
             <span>Trung tâm trợ giúp</span>
         </a>
     </div>
