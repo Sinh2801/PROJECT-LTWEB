@@ -1,63 +1,63 @@
-/* ===== MENU TOGGLE (click) & OVERLAY ===== */
-const menuBtn = document.getElementById('menuBtn');
-const dropdownMenu = document.getElementById('dropdownMenu');
-const headerOverlay = document.getElementById('headerOverlay');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    const searchInput = document.getElementById('search');
+    const searchDropdown = document.getElementById('searchDropdown');
+    const overlay = document.getElementById('headerOverlay');
+    const searchWrapper = document.querySelector('.search-wrapper');
 
-// mở/đóng menu khi nhấn nút
-menuBtn?.addEventListener('click', (e) => { e.stopPropagation();
-    const isOpen = dropdownMenu.classList.toggle('open');
-    if (isOpen) {
-        headerOverlay.classList.add('show');
-        dropdownMenu.setAttribute('aria-hidden', 'false');
-    } else {
-        headerOverlay.classList.remove('show');
-        dropdownMenu.setAttribute('aria-hidden', 'true');
+    function showOverlay() {
+        overlay.classList.add('active');
     }
-});
 
-// đóng menu khi click overlay (ngoài vùng menu)
-headerOverlay?.addEventListener('click', () => {
-    dropdownMenu.classList.remove('open');
-    headerOverlay.classList.remove('show');
-    dropdownMenu.setAttribute('aria-hidden', 'true');
-});
-
-// đóng menu khi click vào 1 link bên trong menu và cuộn mượt tới section
-document.querySelectorAll('.dropdown-menu a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        // nếu là anchor tới section trong trang
-        const href = link.getAttribute('href');
-        if (href && href.startsWith('#')) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    function hideOverlayIfNeeded() {
+        if (
+            !dropdownMenu.classList.contains('open') &&
+            searchDropdown.style.display !== 'block'
+        ) {
+            overlay.classList.remove('active');
         }
-        // đóng menu
-        dropdownMenu.classList.remove('open');
-        headerOverlay.classList.remove('show');
-        dropdownMenu.setAttribute('aria-hidden', 'true');
-    });
-});
-
-// đóng menu khi click bất kỳ ở ngoài (document), nhưng tránh khi click vào menuBtn/dropdown
-document.addEventListener('click', (e) => {
-    if (!dropdownMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-        dropdownMenu.classList.remove('open');
-        headerOverlay.classList.remove('show');
-        dropdownMenu.setAttribute('aria-hidden', 'true');
     }
-});
-/* ===== MENU BAR ===== */
-document.querySelectorAll('.menu-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = this.getAttribute('href');
-        document.querySelector(id).scrollIntoView({
-            behavior: "smooth"
-        });
+
+    /* ===== SEARCH ===== */
+    function openSearch() {
+        searchDropdown.style.display = 'block';
+        searchWrapper.classList.add('active-search');
+        showOverlay();
+    }
+
+    function closeSearch() {
+        searchDropdown.style.display = 'none';
+        searchWrapper.classList.remove('active-search');
+        searchInput.style.borderRadius = "20px";
+        searchInput.style.borderBottom = "2px solid purple";
+    }
+
+    searchInput.addEventListener('focus', openSearch);
+
+    searchWrapper.addEventListener('click', function (e) {
+        e.stopPropagation();
+        openSearch();
+    });
+
+    /* ===== MENU ===== */
+    menuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('open');
+        showOverlay();
+    });
+
+    /* ===== OVERLAY CLICK ===== */
+    overlay.addEventListener('click', function () {
+        dropdownMenu.classList.remove('open');
+        closeSearch();
+        overlay.classList.remove('active');
+    });
+
+    /* ===== CLICK OUTSIDE HEADER ===== */
+    document.addEventListener('click', function () {
+        dropdownMenu.classList.remove('open');
+        closeSearch();
+        hideOverlayIfNeeded();
     });
 });
-
-
-
-
