@@ -1,4 +1,4 @@
-package controller;
+package vn.edu.nlu.fit.backend.controller;
 
 import vn.edu.nlu.fit.backend.dao.CategoryDAO;
 import vn.edu.nlu.fit.backend.dao.ProductDAO;
@@ -12,22 +12,26 @@ import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "HomeController", urlPatterns = {"/home"})
-public class HomeController extends HttpServlet {
+@WebServlet(name = "ProductTypeController", urlPatterns = {"/category"})
+public class ProductTypeController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        CategoryDAO categoryDAO = new CategoryDAO();
+        int categoryId = Integer.parseInt(request.getParameter("id"));
+
         ProductDAO productDAO = new ProductDAO();
+        CategoryDAO categoryDAO = new CategoryDAO();
 
+        List<Product> products = productDAO.getProductsByCategory(categoryId);
         List<Category> categories = categoryDAO.getAllCategories();
-        List<Product> bestSellers = productDAO.getBestSellingProducts(8);
 
+        request.setAttribute("products", products);
         request.setAttribute("categories", categories);
-        request.setAttribute("products", bestSellers);
+        request.setAttribute("categoryId", categoryId);
 
-        request.getRequestDispatcher("home.jsp").forward(request, response);
+        request.getRequestDispatcher("productType.jsp").forward(request, response);
     }
 }
+
