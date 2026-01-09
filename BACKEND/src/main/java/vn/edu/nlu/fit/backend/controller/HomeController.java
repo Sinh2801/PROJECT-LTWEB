@@ -1,33 +1,36 @@
-package controller;
+package vn.edu.nlu.fit.backend.controller;
 
-import vn.edu.nlu.fit.backend.dao.CategoryDAO;
-import vn.edu.nlu.fit.backend.dao.ProductDAO;
+import vn.edu.nlu.fit.backend.dao.HomeDAO;
 import vn.edu.nlu.fit.backend.model.Category;
-import vn.edu.nlu.fit.backend.model.Product;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-
 import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "HomeController", urlPatterns = {"/home"})
 public class HomeController extends HttpServlet {
+    private HomeDAO HomeDAO;
 
+    @Override
+    public void init() throws ServletException {
+        HomeDAO = new HomeDAO();
+    }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        CategoryDAO categoryDAO = new CategoryDAO();
-        ProductDAO productDAO = new ProductDAO();
+        // Section chính: 5 category bán chạy
+        List<Category> topCategories = HomeDAO.getTopCategoriesForHome();
 
-        List<Category> categories = categoryDAO.getAllCategories();
-        List<Product> bestSellers = productDAO.getBestSellingProducts(8);
+        // Extension section
+        List<Category> extensionCategories = HomeDAO.getExtensionSections();
 
-        request.setAttribute("categories", categories);
-        request.setAttribute("products", bestSellers);
+        request.setAttribute("topCategories", topCategories);
+        request.setAttribute("extensionCategories", extensionCategories);
 
-        request.getRequestDispatcher("home.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/home.jsp").forward(request, response);
+
     }
 }
