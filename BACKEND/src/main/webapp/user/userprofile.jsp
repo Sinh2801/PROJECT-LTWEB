@@ -18,7 +18,7 @@
 </c:if>
 
 <div class="page-container">
-    <jsp:include page="/header.jsp" />
+    <jsp:include page=" /WEB-INF/views/common/header.jsp" />
 
     <div class="account-container">
         <jsp:include page="/user/sidebar.jsp" />
@@ -76,7 +76,7 @@
         </main>
     </div>
 
-    <jsp:include page="/footer.jsp" />
+    <jsp:include page="/WEB-INF/views/common/footer.jsp" />
 </div>
 </body>
 </html>

@@ -88,7 +88,7 @@
     </div>
 </div>
 
-<jsp:include page="/footer.jsp" />
+<jsp:include page="/WEB-INF/views/common/footer.jsp" />
 
 <script>
     function togglePassword(inputId, iconContainer) {
